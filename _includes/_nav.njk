@@ -1,3 +1,12 @@
-<nav class="lg:hidden bg-primary-70 h-9 flex pl-3 items-center">
-    {% include "_includes/svg/_hamburger-menu.njk"%}
-</nav>
+<div x-data="{ isOpen: false }">
+  <nav class="lg:hidden bg-primary-70 h-9 flex pl-3 items-center" @keydown.escape="isOpen = false">
+    <button class="p-3 rounded-sm focus:outline-neutral-0 focus:outline-dashed focus:outline-1" @click="isOpen = !isOpen">
+      {% include "_includes/svg/_hamburger-menu.njk" %}
+    </button>
+  </nav>
+  <p>isOpen:<span x-text="isOpen"></span>
+  </p>
+  <div :class="{ hidden: !isOpen } ">
+    <span>sidebar</span>
+  </div>
+</div>
