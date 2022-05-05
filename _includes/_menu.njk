@@ -1,12 +1,30 @@
-<div class="fixed top-0 left-0 h-screen w-screen md:w-[20rem] bg-primary-70" x-cloak="x-cloak" x-show="isToggled">
+{% import "./components/menu-item.njk" as menuitem %}
+{% set labels = [
+    { type: 'menuitem', text: 'Home' },
+    { type: 'sectionitem', text: 'Approach' }
+] %}
+<div
+    id="menu"
+    class="fixed top-0 left-0 h-screen w-screen md:w-[20rem] bg-primary-70"
+    x-cloak="x-cloak"
+    x-show="isToggled">
     <div id="menu-header" class="h-9 flex pl-3 items-center">
         <button
             class="flex items-center p-3 rounded-sm group focus:outline-neutral-0 focus:outline-dashed focus:outline-1"
             @click="() => { isToggled = !isToggled }"
             aria-labelledby="close-menu-button-label">
-            {% include "_includes/svg/close.njk"%}
+            {% include "_includes/svg/close.njk" %}
             <span id="close-menu-button-label" class="pl-3 text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0">
                 Close</span>
         </button>
     </div>
+    <ul>
+        {% for label in labels %}
+            {% if label.type === 'menuitem' %}
+                {{ menuitem.label(label.text) }}
+            {% elif label.type === 'sectionitem' %}
+                {{ menuitem.sectionlabel(label.text) }}
+            {% endif %}
+        {% endfor %}
+    </ul>
 </div>
