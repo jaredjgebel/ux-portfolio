@@ -1,17 +1,32 @@
 {% import "./components/menu-item.njk" as menuitem %}
 {% set labels = [
     { type: 'menuitem', text: 'Home' },
-    { type: 'sectionitem', text: 'Approach' }
+    { type: 'sectionitem', text: 'Approach' },
+    { type: 'menuitem', text: 'Perspective' },
+    { type: 'menuitem', text: 'Skills' },
+    { type: 'menuitem', text: 'Training' },
+    { type: 'menuitem', text: 'Strengths' },
+    { type: 'sectionitem', text: 'Writing' },
+    { type: 'menuitem', text: 'Q & A' },
+    { type: 'menuitem', text: 'Blog' },
+    { type: 'sectionitem', text: 'Contact' },
+    { type: 'menuitem', text: 'Email' },
+    { type: 'menuitem', text: 'LinkedIn' },
+    { type: 'menuitem', text: 'Github' }
 ] %}
 <div
     id="menu"
-    class="fixed top-0 left-0 h-screen w-screen md:w-[20rem] bg-primary-70"
+    class="fixed top-0 left-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto"
     x-cloak="x-cloak"
-    x-show="isToggled">
+    x-show="isToggled"
+    x-transition
+    @click.away="isToggled = false"
+    @keydown.escape="isToggled = false">
     <div id="menu-header" class="h-9 flex pl-3 items-center">
         <button
+            id="close-menu-button"
             class="flex items-center p-3 rounded-sm group focus:outline-neutral-0 focus:outline-dashed focus:outline-1"
-            @click="() => { isToggled = !isToggled }"
+            @click="isToggled = !isToggled"
             aria-labelledby="close-menu-button-label">
             {% include "_includes/svg/close.njk" %}
             <span id="close-menu-button-label" class="pl-3 text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0">
