@@ -18,7 +18,7 @@
                 Close</span>
         </button>
     </div>
-    <ul>
+    <ul id="menu-list" class="w-full">
         {% for label in labels %}
             {% if label.type === 'menuitem' %}
                 {{ menuitem.label(label.text) }}
