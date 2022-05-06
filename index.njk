@@ -2,5 +2,8 @@
 {% block title %}It does work{% endblock %}
 {% block content %}
     {% include "_includes/_nav.njk"%}
-    {% include "_includes/_header.njk"%}
+    <div id="body-container" class="flex flex-col items-center px-5 bg-neutral-10 text-primary-90">
+        {% include "_includes/_header.njk"%}
+        {% include "_includes/_main.njk"%}
+    </div>
 {% endblock %}

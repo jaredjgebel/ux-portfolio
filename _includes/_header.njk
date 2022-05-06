@@ -1,12 +1,16 @@
-<header>
-    <div id="header-content" class="flex flex-col gap-6 pt-13 px-5 pb-7 bg-primary-80 text-primary-0">
+<header class="flex flex-col items-center w-screen pt-13 lg:pt-[232px] xl:pt-[256px] max:pt-[320px] pb-7 md:pb-12 lg:pb-[140px]
+        xl:pb-[160px] max:pb-[192px] px-5 bg-primary-80 text-primary-0">
+    <div
+        id="header-content"
+        class="gap-6 w-full max-w-[30rem] md:max-w-screen-md lg:max-w-[40rem] xl:max-w-[60.125rem] max:max-w-[72rem] lg:mr-5
+            max:mr-6">
         <div id="title-and-divider" class="flex flex-col gap-7">
-            <div id="title-and-subtitle" class="flex flex-col gap-2">
+            <div id="title-and-subtitle" class="flex flex-col gap-2 leading-none">
                 <h1 class="sm-heading-display">Jared Gebel</h1>
                 <h2 class="sm-heading-2">UX Research and Design</h2>
             </div>
             {% include "fragments/_divider-light.njk" %}
-            <div id="specialties" class="flex flex-col font-['Prodigy_Sans'] leading-5">
+            <div id="specialties" class="flex flex-col leading-5">
                 <span>Interaction Design</span>
                 <span>Usability</span>
                 <span>UI Design</span>
