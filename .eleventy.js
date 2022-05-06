@@ -16,6 +16,8 @@ module.exports = function (eleventyConfig) {
     "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
   });
 
+  eleventyConfig.addPassthroughCopy("assets");
+
   eleventyConfig.addShortcode("version", function () {
     return now;
   });
