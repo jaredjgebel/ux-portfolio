@@ -1,0 +1,17 @@
+{% extends "_includes/_layout.njk" %}
+{% block title %}It does work{% endblock %}
+{% block content %}
+    <div class="bg-slate-800 flex flex-col items-center">
+        <div class="grid grid-cols-[repeat(4,_minmax(60px,_1fr))] w-full max-w-[480px] md:grid-cols-[repeat(8,_80px)] md:max-w-none
+                md:w-auto lg:grid-cols-[repeat(16,_64px)]">
+            <div id="sidebar" class="hidden row-span-full lg:flex bg-yellow-800">sidebar</div>
+            <div class="col-span-full mx-5 md:mx-0 bg-green-800">header</div>
+        </div>
+    </div>
+    <div class="bg-neutral-10 flex flex-col items-center">
+        <div class="grid grid-cols-[repeat(4,_minmax(60px,_1fr))] w-full max-w-[480px] md:grid-cols-[repeat(8,_80px)] md:max-w-none
+                md:w-auto lg:grid-cols-[repeat(16,_64px)]">
+            <div class="col-span-full mx-5 md:mx-0 bg-blue-700">content</div>
+        </div>
+    </div>
+{% endblock %}
