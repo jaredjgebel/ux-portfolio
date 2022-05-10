@@ -1,0 +1,30 @@
+{% import "./components/sidebar-nav-item.njk" as navbaritem %}
+{% set labels = [
+    { type: 'menuitem', text: 'Home' },
+    { type: 'sectionitem', text: 'Approach' },
+    { type: 'menuitem', text: 'Perspective' },
+    { type: 'menuitem', text: 'Skills' },
+    { type: 'menuitem', text: 'Training' },
+    { type: 'menuitem', text: 'Strengths' },
+    { type: 'sectionitem', text: 'Writing' },
+    { type: 'menuitem', text: 'Q & A' },
+    { type: 'menuitem', text: 'Blog' },
+    { type: 'sectionitem', text: 'Contact' },
+    { type: 'menuitem', text: 'Email' },
+    { type: 'menuitem', text: 'LinkedIn' },
+    { type: 'menuitem', text: 'Github' }
+] %}
+<nav
+    id="sidebar"
+    class="hidden lg:row-start-1 lg:row-end-4 lg:col-span-5 lg:grid lg:grid-cols-8 lg:pt-10 bg-primary-70">
+    <ul id="sidebar-nav" class="col-start-2 col-span-6">
+        {% for label in labels %}
+            {% if label.type === 'menuitem' %}
+                {{ navbaritem.label(label.text) }}
+            {% endif %}
+            {% if label.type === 'sectionitem' %}
+                {{ navbaritem.sectionlabel(label.text) }}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

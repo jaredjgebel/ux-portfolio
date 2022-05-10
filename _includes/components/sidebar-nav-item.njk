@@ -1,0 +1,13 @@
+{% macro label(text) %}
+    <li id="sidebar-nav-item" class="flex">
+        <a href="#" id="sidebar-nav-item-label" class="inline-flex flex-row w-full h-full lg-nav-link-sidebar text-neutral-10">
+            <div id="active-indicator" class="flex justify-center items-center w-6">
+                <div class="active-indicator-circle h-4 w-4 bg-[#EDED53] rounded-full"></div>
+            </div>
+            {{ text }}
+        </a>
+    </li>
+{% endmacro %}
+{% macro sectionlabel(text) %}
+    <li id="navbar-section-label" class="mt-7">{{ text }}</li>
+{% endmacro %}
