@@ -43,6 +43,27 @@
 }
 
 @layer utilities {
+  /* grid layout styles */
+  /* base grid layout for all pages */
+  .grid-layout-base {
+    @apply lg:grid lg:grid-cols-[16px_repeat(4,_64px)_1fr_repeat(12,_64px)_1fr_16px]
+    xl:grid-cols-[16px_repeat(4,_80px)_1fr_repeat(12,80px)_1fr_16px]
+    max:grid-cols-[24px_repeat(4,_96px)_1fr_repeat(12,96px)_1fr_24px];
+  }
+
+  /* grid layout for each content section */
+  .grid-layout-row {
+    @apply lg:col-start-6 lg:col-[span-14] grid grid-cols-[1fr_repeat(4,_minmax(60px,_120px))_1fr]
+    md:grid-cols-[1fr_repeat(8,_80px)_1fr] lg:grid-cols-[1fr_repeat(12,_64px)_1fr_16px]
+    xl:grid-cols-[1fr_repeat(12,_80px)_1fr_16px] max:grid-cols-[1fr_repeat(12,96px)_1fr_24px];
+  }
+
+  /* grid layout for inner content in each row */
+  .grid-layout-content {
+    @apply col-start-2 col-span-4 md:col-start-2 md:col-span-8 lg:col-start-3 lg:col-span-10 xl:col-start-4 xl:col-span-8;
+  }
+
+  /* font styles for all breakpoints */
   .xl-heading-display {
     font-family: "Prodigy Sans";
     font-size: 3.375rem;

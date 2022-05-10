@@ -21,9 +21,12 @@
             }
         </style>
     </head>
-    <body class="">
-        {% block content %}
-            {{ content | safe }}
-        {% endblock %}
+    <body>
+        {% include "./_nav.njk" %}
+        <div class="flex flex-col grid-layout-base">
+            {% block content %}
+                {{ content | safe }}
+            {% endblock %}
+        </div>
     </body>
 </html>
