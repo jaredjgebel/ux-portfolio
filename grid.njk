@@ -1,17 +1,32 @@
 {% extends "_includes/_layout.njk" %}
 {% block title %}It does work{% endblock %}
 {% block content %}
-    <div class="bg-slate-800 flex flex-col items-center">
-        <div class="grid grid-cols-[repeat(4,_minmax(60px,_1fr))] w-full max-w-[480px] md:grid-cols-[repeat(8,_80px)] md:max-w-none
-                md:w-auto lg:grid-cols-[repeat(16,_64px)]">
-            <div id="sidebar" class="hidden row-span-full lg:flex bg-yellow-800">sidebar</div>
-            <div class="col-span-full mx-5 md:mx-0 bg-green-800">header</div>
-        </div>
-    </div>
-    <div class="bg-neutral-10 flex flex-col items-center">
-        <div class="grid grid-cols-[repeat(4,_minmax(60px,_1fr))] w-full max-w-[480px] md:grid-cols-[repeat(8,_80px)] md:max-w-none
-                md:w-auto lg:grid-cols-[repeat(16,_64px)]">
-            <div class="col-span-full mx-5 md:mx-0 bg-blue-700">content</div>
-        </div>
-    </div>
-{% endblock %}
+    <div class="flex flex-col lg:grid lg:grid-cols-[16px_repeat(4,_64px)_1fr_repeat(12,_64px)_1fr_16px]
+            xl:grid-cols-[16px_repeat(4,_80px)_1fr_repeat(12,80px)_1fr_16px]
+            max:grid-cols-[24px_repeat(4,_96px)_1fr_repeat(12,96px)_1fr_24px] bg-neutral-80">
+        <div id="sidebar" class="hidden lg:row-start-1 lg:row-end-4 lg:col-span-5 lg:flex bg-yellow-800">sidebar</div>
+        <header class="lg:col-start-6 lg:col-[span-14] grid grid-cols-[1fr_repeat(4,_minmax(60px,_120px))_1fr]
+                md:grid-cols-[1fr_repeat(8,_80px)_1fr] lg:grid-cols-[1fr_repeat(12,_64px)_1fr_16px]
+                xl:grid-cols-[1fr_repeat(12,_80px)_1fr_16px] max:grid-cols-[1fr_repeat(12,96px)_1fr_24px] bg-green-300">
+            <div
+                id="header-content"
+                class="col-start-2 col-span-4 md:col-start-2 md:col-span-8 lg:col-start-3 lg:col-span-10 xl:col-start-4 xl:col-span-8
+                    flex flex-col gap-6 pt-13 px-5 lg:px-0 pb-7 md:pb-12 lg:pt-[232px] lg:pb-13 xl:pt-64 max:pt-80 max:pb-48 bg-primary-80
+                    text-primary-0">
+                <div id="title-and-divider" class="flex flex-col gap-7">
+                    <div id="title-and-subtitle" class="flex flex-col gap-2">
+                        <h1 class="sm-heading-display">Jared Gebel</h1>
+                        <h2 class="sm-heading-2">UX Research and Design</h2>
+                    </div>
+                    {% include "fragments/_divider-light.njk" %}
+                    <div id="specialties" class="flex flex-col font-['Prodigy_Sans'] leading-5">
+                        <span>Interaction Design</span>
+                        <span>Usability</span>
+                        <span>UI Design</span>
+                    </div>
+                </header>
+                <div class="lg:col-start-7 lg:col-span-12 bg-green-800">main
+                </div>
+                <div class="lg:col-start-7 lg:col-span-12 bg-blue-800">footer</div>
+            </div>
+        {% endblock %}
