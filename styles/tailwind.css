@@ -252,6 +252,7 @@
     font-style: normal;
     line-height: 1.38;
     letter-spacing: normal;
+    text-transform: uppercase;
   }
   .sm-paragraph-short-bold {
     font-family: "Prodigy Sans";
@@ -360,6 +361,7 @@
     font-style: normal;
     line-height: 1.14;
     letter-spacing: normal;
+    text-transform: uppercase;
   }
   caption {
     font-family: "Prodigy Sans";
