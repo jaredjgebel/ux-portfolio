@@ -1,5 +1,8 @@
 {% macro label(text) %}
-    <li id="nav-item-footer" class="">
-        <a href="#" class="inline-flex flex-row w-full h-full rounded sm-nav-link-footer">{{ text }}</a>
+    <li class="nav-item-footer">
+        <a
+            href="#"
+            class="inline-flex flex-row h-full p-3 rounded sm-nav-link-footer xl:xl-nav-link-footer text-neutral-10
+                hover:text-neutral-0 hover:underline focus:outline focus:outline-2 focus:outline-primary-30">{{ text }}</a>
     </li>
 {% endmacro %}
