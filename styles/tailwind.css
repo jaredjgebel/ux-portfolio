@@ -46,16 +46,16 @@
   /* grid layout styles */
   /* base grid layout for all pages */
   .grid-layout-base {
-    @apply lg:grid lg:grid-cols-[16px_repeat(4,_64px)_1fr_repeat(12,_64px)_1fr_16px]
-    xl:grid-cols-[16px_repeat(4,_80px)_1fr_repeat(12,80px)_1fr_16px]
-    max:grid-cols-[24px_repeat(4,_96px)_1fr_repeat(12,96px)_1fr_24px];
+    @apply lg:grid lg:grid-cols-[minmax(15px,_16px)_repeat(4,_64px)_minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
+    xl:grid-cols-[minmax(15px,_16px)_repeat(4,_80px)_minmax(0,_1fr)_repeat(12,80px)_minmax(0,_1fr)_minmax(0,_16px)]
+    max:grid-cols-[minmax(0,_24px)_repeat(4,_96px)_minmax(0,_1fr)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
   }
 
   /* grid layout for each content section */
   .grid-layout-row {
-    @apply lg:col-start-6 lg:col-[span-14] grid grid-cols-[1fr_repeat(4,_minmax(60px,_120px))_1fr]
-    md:grid-cols-[1fr_repeat(8,_80px)_1fr] lg:grid-cols-[1fr_repeat(12,_64px)_1fr_16px]
-    xl:grid-cols-[1fr_repeat(12,_80px)_1fr_16px] max:grid-cols-[1fr_repeat(12,96px)_1fr_24px];
+    @apply lg:col-start-6 lg:col-[span-14] grid grid-cols-[minmax(0,_1fr)_repeat(4,_minmax(60px,_120px))_minmax(0,_1fr)]
+    md:grid-cols-[minmax(0,_1fr)_repeat(8,_80px)_minmax(0,_1fr)] lg:grid-cols-[minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
+    xl:grid-cols-[minmax(0,_1fr)_repeat(12,_80px)_minmax(0,_1fr)_minmax(0,_16px)] max:grid-cols-[minmax(0,_1fr)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
   }
 
   /* grid layout for inner content in each row */

@@ -16,7 +16,8 @@
 ] %}
 <nav
     id="sidebar"
-    class="hidden lg:row-start-1 lg:row-end-4 lg:col-span-5 lg:grid lg:grid-cols-8 lg:pt-10 bg-primary-70">
+    class="hidden lg:row-start-1 lg:row-end-4 lg:col-span-5 lg:grid lg:grid-cols-8 lg:pt-10 lg:sticky lg:top-0 max-h-screen
+        bg-primary-70">
     <ul id="sidebar-nav" class="col-start-2 col-span-6">
         {% for label in labels %}
             {% if label.type === 'menuitem' %}
