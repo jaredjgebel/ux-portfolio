@@ -1,5 +1,6 @@
 {% extends "_includes/_layout.njk" %}
-{% block title %}It does work{% endblock %}
+{% from "_includes/components/content-item-vertical.njk" import contentItemVertical as contentItemVertical %}
+{% block title %}Jared Gebel, UX Research and Design{% endblock %}
 {% block content %}
     <header class="grid-layout-row bg-primary-80">
         <div
@@ -20,4 +21,16 @@
             </div>
         </div>
     </header>
+    <main class="grid-layout-row bg-neutral-10 flex flex-col items-center g-10">
+        <div id="content-items-and-title" class="grid-layout-content flex flex-col gap-6 py-10 px-5">
+            <div id="content-title" class="pt-3">
+                <h2 class="sm-heading-2">Overview</h2>
+            </div>
+            <div id="content-items" class="md:hidden flex flex-col gap-8">
+                {{ contentItemVertical("Human-centered perspective", ["Experiences in nonprofits, education, and customer service", "Coursework in psychology and anthropology"], "sm", "User Bubbles") }}
+                {{ contentItemVertical("Self-directed UX education", ["Core texts and online specialization", "User interviews, usability testing, and prototyping"], "sm", "Road") }}
+                {{ contentItemVertical("Web development skill", ["Websites, front-end frameworks, and full-stack web applications", "Knowledge of tech industry practices"], "sm", "Monitor") }}
+            </div>
+        </div>
+    </main>
 {% endblock %}
