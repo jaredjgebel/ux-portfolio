@@ -1,0 +1,17 @@
+{% from "./icon.njk" import icon as icon %}
+{% macro contentItem(heading, subheadings, size, iconName) %}
+    <div class="content-item flex w-full">
+        <div class="icon-area flex items-center justify-center shrink-0 w-11 h-11 md:w-13 md:h-13 bg-neutral-0 rounded-2xl">
+            {{ icon(size, iconName) }}
+        </div>
+        <div class="text-region flex flex-col justify-center w-full px-5 gap-5">
+            <h3 class="sm-heading-3">{{ heading }}</h3>
+            <div class="horizontal-line h-1 bg-neutral-30"></div>
+            <div class="subheadings flex flex-col gap-2">
+                {% for subheading in subheadings %}
+                    <p class="subheading sm-paragraph-short">{{ subheading }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

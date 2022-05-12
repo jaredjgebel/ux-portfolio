@@ -1,35 +1,27 @@
 {% extends "_includes/_layout.njk" %}
 {% from "_includes/components/content-item-vertical.njk" import contentItemVertical as contentItemVertical %}
+{% from "_includes/components/content-item.njk" import contentItem as contentItem %}
 {% block title %}Jared Gebel, UX Research and Design{% endblock %}
 {% block content %}
-    <header class="grid-layout-row bg-primary-80">
-        <div
-            id="header-content"
-            class="grid-layout-content flex flex-col gap-6 pt-13 px-5 lg:px-0 pb-7 md:pb-12 lg:pt-[232px] lg:pb-13 xl:pt-64 max:pt-80
-                max:pb-48 text-primary-0">
-            <div id="title-and-divider" class="flex flex-col gap-7">
-                <div id="title-and-subtitle" class="flex flex-col gap-2">
-                    <h1 class="sm-heading-display">Jared Gebel</h1>
-                    <h2 class="sm-heading-2">UX Research and Design</h2>
+    {% include "_includes/_header.njk" %}
+    <main class="grid-layout-row bg-neutral-10">
+        <div class="grid-layout-content flex flex-col items-center py-10 xl:py-12 gap-10">
+            <div id="content-items-and-title" class="flex flex-col gap-8 xl:gap-9 px-5 md:px-0">
+                <div id="content-title" class="pt-3">
+                    <h2 class="sm-heading-2">Overview</h2>
                 </div>
-                {% include "fragments/_divider-light.njk" %}
-                <div id="specialties" class="flex flex-col font-['Prodigy_Sans'] leading-5">
-                    <span>Interaction Design</span>
-                    <span>Usability</span>
-                    <span>UI Design</span>
+                {# Content items at small breakpoint #}
+                <div id="content-items-sm" class="md:hidden flex flex-col gap-8">
+                    {{ contentItemVertical("Human-centered perspective", ["Experiences in nonprofits, education, and customer service", "Coursework in psychology and anthropology"], "sm", "User Bubbles") }}
+                    {{ contentItemVertical("Self-directed UX education", ["Core texts and online specialization", "User interviews, usability testing, and prototyping"], "sm", "Road") }}
+                    {{ contentItemVertical("Web development skill", ["Websites, front-end frameworks, and full-stack web applications", "Knowledge of tech industry practices"], "sm", "Monitor") }}
                 </div>
-            </div>
-        </div>
-    </header>
-    <main class="grid-layout-row bg-neutral-10 flex flex-col items-center g-10">
-        <div id="content-items-and-title" class="grid-layout-content flex flex-col gap-6 py-10 px-5">
-            <div id="content-title" class="pt-3">
-                <h2 class="sm-heading-2">Overview</h2>
-            </div>
-            <div id="content-items" class="md:hidden flex flex-col gap-8">
-                {{ contentItemVertical("Human-centered perspective", ["Experiences in nonprofits, education, and customer service", "Coursework in psychology and anthropology"], "sm", "User Bubbles") }}
-                {{ contentItemVertical("Self-directed UX education", ["Core texts and online specialization", "User interviews, usability testing, and prototyping"], "sm", "Road") }}
-                {{ contentItemVertical("Web development skill", ["Websites, front-end frameworks, and full-stack web applications", "Knowledge of tech industry practices"], "sm", "Monitor") }}
+                {# Content items at medium breakpoint and above #}
+                <div id="content-items-md" class="sm:hidden md:flex md:flex-col gap-8">
+                    {{ contentItem("Human-centered perspective", ["Experiences in nonprofits, education, and customer service", "Coursework in psychology and anthropology"], "lg", "User Bubbles") }}
+                    {{ contentItem("Self-directed UX education", ["Core texts and online specialization", "User interviews, usability testing, and prototyping"], "lg", "Road") }}
+                    {{ contentItem("Web development skill", ["Websites, front-end frameworks, and full-stack web applications", "Knowledge of tech industry practices"], "lg", "Monitor") }}
+                </div>
             </div>
         </div>
     </main>
