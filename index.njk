@@ -4,9 +4,9 @@
 {% from "_includes/components/page.njk" import page as pageComponent %}
 {% block title %}Jared Gebel, UX Research and Design{% endblock %}
 {% block content %}
-    <main class="grid-layout-row sm:gap lg:my-12 xl:my-13">
+    <main class="grid-layout-row lg:my-12 xl:my-13">
         <div class="grid-layout-content flex flex-col items-center gap-10 md:gap-12 xl:gap-13">
-            <div id="approach">Approach</div>
+            {% include "_includes/_approach.njk" %}
             <div id="background">Background</div>
             <div id="cards">Cards</div>
             <div class="pages flex flex-col px-5 gap-11 lg:gap-12">
