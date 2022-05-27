@@ -1,19 +1,18 @@
 <header class="grid-layout-row bg-primary-80">
     <div
         id="header-content"
-        class="grid-layout-content flex flex-col gap-6 pt-13 px-5 md:px-0 pb-7 md:pb-12 lg:pt-[232px] lg:pb-13 xl:pt-64 max:pt-80
-            max:pb-48 text-primary-0">
-        <div id="title-and-divider" class="flex flex-col gap-7">
+        class="grid-layout-content flex flex-col gap-7 pt-13 px-5 pb-12 md:gap-9 md:px-0 lg:pt-[232px] lg:pb-13 xl:gap-10
+            xl:pt-64 max:pt-80 max:pb-48 text-primary-0">
+        <div id="title-and-divider" class="flex flex-col gap-9 md:gap-10 xl:gap-11">
             <div id="title-and-subtitle" class="flex flex-col gap-2">
-                <h1 class="sm-heading-display">Jared Gebel</h1>
-                <h2 class="sm-heading-2">UX Research and Design</h2>
+                <h1 class="sm:sm-heading-display lg:lg-heading-display xl:xl-heading-display">Jared Gebel</h1>
+                <h2 class="sm:sm-heading-2 lg:lg-heading-2 xl:xl-heading-2">UX Research and Design</h2>
             </div>
             {% include "fragments/_divider-light.njk" %}
-            <div id="specialties" class="flex flex-col font-['Prodigy_Sans'] leading-5">
-                <span>Interaction Design</span>
-                <span>Usability</span>
-                <span>UI Design</span>
-            </div>
+        </div>
+        <div id="header-subheading" class="flex flex-col sm:sm-paragraph-short md:md-paragraph-short lg:lg-paragraph-short">
+            <p>I’m a UX generalist interested in a spectrum of UX topics, including interaction design, usability, and information
+                architecture, and content design.</p>
         </div>
     </div>
 </header>

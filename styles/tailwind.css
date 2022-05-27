@@ -369,6 +369,7 @@
     font-style: normal;
     line-height: 1.13;
     letter-spacing: normal;
+    text-transform: uppercase;
   }
   .lg-heading-sidebar {
     font-family: "Prodigy Sans";
@@ -378,6 +379,7 @@
     font-style: normal;
     line-height: 1.13;
     letter-spacing: normal;
+    text-transform: uppercase;
   }
   .sm-paragraph-short-bold {
     font-family: "Prodigy Sans";
