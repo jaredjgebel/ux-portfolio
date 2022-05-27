@@ -23,8 +23,9 @@
     </head>
     <body>
         {% include "./_nav.njk" %}
-        <div class="flex flex-col grid-layout-base">
+        <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
             {% include "./_sidebar.njk" %}
+            {% include "_header.njk" %}
             {% block content %}
                 {{ content | safe }}
             {% endblock %}

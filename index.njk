@@ -1,28 +1,21 @@
 {% extends "_includes/_layout.njk" %}
 {% from "_includes/components/content-item-vertical.njk" import contentItemVertical as contentItemVertical %}
 {% from "_includes/components/content-item.njk" import contentItem as contentItem %}
+{% from "_includes/components/page.njk" import page as pageComponent %}
 {% block title %}Jared Gebel, UX Research and Design{% endblock %}
 {% block content %}
-    {% include "_includes/_header.njk" %}
-    <main class="grid-layout-row bg-neutral-10">
-        <div class="grid-layout-content flex flex-col items-center py-10 xl:py-12 gap-10">
-            <div id="content-items-and-title" class="flex flex-col gap-8 xl:gap-9 px-5 md:px-0">
-                <div id="content-title" class="pt-3">
-                    <h2 class="sm-heading-2">Overview</h2>
-                </div>
-                {# Content items at small breakpoint #}
-                <div id="content-items-sm" class="md:hidden flex flex-col gap-8">
-                    {{ contentItemVertical("Human-centered perspective", ["Experiences in nonprofits, education, and customer service", "Coursework in psychology and anthropology"], "sm", "User Bubbles") }}
-                    {{ contentItemVertical("Self-directed UX education", ["Core texts and online specialization", "User interviews, usability testing, and prototyping"], "sm", "Road") }}
-                    {{ contentItemVertical("Web development skill", ["Websites, front-end frameworks, and full-stack web applications", "Knowledge of tech industry practices"], "sm", "Monitor") }}
-                </div>
-                {# Content items at medium breakpoint and above #}
-                <div id="content-items-md" class="sm:hidden md:flex md:flex-col gap-8">
-                    {{ contentItem("Human-centered perspective", ["Experiences in nonprofits, education, and customer service", "Coursework in psychology and anthropology"], "lg", "User Bubbles") }}
-                    {{ contentItem("Self-directed UX education", ["Core texts and online specialization", "User interviews, usability testing, and prototyping"], "lg", "Road") }}
-                    {{ contentItem("Web development skill", ["Websites, front-end frameworks, and full-stack web applications", "Knowledge of tech industry practices"], "lg", "Monitor") }}
-                </div>
+    <main class="grid-layout-row sm:gap lg:my-12 xl:my-13">
+        <div class="grid-layout-content flex flex-col items-center gap-10 md:gap-12 xl:gap-13">
+            <div id="approach">Approach</div>
+            <div id="background">Background</div>
+            <div id="cards">Cards</div>
+            <div class="pages flex flex-col px-5 gap-11 lg:gap-12">
+                {% for page in pages %}
+                    {{ pageComponent(page.heading, page.headline, page.sections, page.cta) }}
+                {% endfor %}
             </div>
+            <div>Divider</div>
+            <div id="contact">Contact</div>
         </div>
     </main>
 {% endblock %}
