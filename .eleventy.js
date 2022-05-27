@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
 
   eleventyConfig.addShortcode("version", function () {
-    return now;
+    return process.env.ELEVENTY_PRODUCTION ? "" : `?v=${now}`;
   });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
