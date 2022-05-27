@@ -53,27 +53,36 @@
 
   /* grid layout for each content section */
   .grid-layout-row {
-    @apply lg:col-start-6 lg:col-[span-14] grid grid-cols-[minmax(0,_1fr)_repeat(4,_minmax(60px,_120px))_minmax(0,_1fr)]
-    md:grid-cols-[minmax(0,_1fr)_repeat(8,_80px)_minmax(0,_1fr)] lg:grid-cols-[minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
+    @apply grid grid-cols-[minmax(0,_1fr)_repeat(4,_minmax(60px,_108px))_minmax(0,_1fr)] md:grid-cols-[minmax(0,_1fr)_repeat(8,_80px)_minmax(0,_1fr)] lg:col-[span-14]
+    lg:col-start-6 lg:grid-cols-[minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
     xl:grid-cols-[minmax(0,_1fr)_repeat(12,_80px)_minmax(0,_1fr)_minmax(0,_16px)] max:grid-cols-[minmax(0,_1fr)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
   }
 
   /* grid layout for inner content in each row */
   .grid-layout-content {
-    @apply col-start-2 col-span-4 md:col-start-2 md:col-span-8 lg:col-start-3 lg:col-span-10 xl:col-start-4 xl:col-span-8;
+    @apply col-span-4 col-start-2 md:col-span-8 md:col-start-2 lg:col-span-10 lg:col-start-3 xl:col-span-8 xl:col-start-4;
   }
 
   /* font styles for all breakpoints */
   .xl-heading-display {
     font-family: "Prodigy Sans";
-    font-size: 3.375rem;
+    font-size: 4.75rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.11;
     letter-spacing: normal;
   }
   .xl-heading-1 {
+    font-family: "Prodigy Sans";
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+  }
+  .lg-heading-display {
     font-family: "Prodigy Sans";
     font-size: 3.375rem;
     font-weight: 500;
@@ -82,76 +91,76 @@
     line-height: 1.19;
     letter-spacing: normal;
   }
-  .lg-heading-display {
+  .sm-heading-display {
     font-family: "Prodigy Sans";
     font-size: 3rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.17;
     letter-spacing: normal;
   }
-  .sm-heading-display {
+  .lg-heading-1 {
+    font-family: "Prodigy Sans";
+    font-size: 2.75rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+  }
+  .xl-heading-2 {
     font-family: "Prodigy Sans";
     font-size: 2.625rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.14;
     letter-spacing: normal;
   }
-  .xl-heading-2 {
+  .sm-heading-1 {
+    font-family: "Prodigy Sans";
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+  }
+  .lg-heading-2 {
     font-family: "Prodigy Sans";
     font-size: 2.25rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-  }
-  .sm-heading-1 {
-    font-family: "Prodigy Sans";
-    font-size: 2rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-  }
-  .lg-heading-1 {
-    font-family: "Prodigy Sans";
-    font-size: 2rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
+    line-height: 1.11;
     letter-spacing: normal;
   }
   .xl-heading-3 {
     font-family: "Prodigy Sans";
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.29;
+    line-height: 1.13;
     letter-spacing: normal;
   }
   .sm-heading-2 {
     font-family: "Prodigy Sans";
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.29;
+    line-height: 1.13;
     letter-spacing: normal;
   }
-  .lg-heading-2 {
+  .lg-heading-3 {
     font-family: "Prodigy Sans";
     font-size: 1.75rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.29;
+    line-height: 1.14;
     letter-spacing: normal;
   }
   .xl-nav-link-sidebar {
@@ -160,17 +169,10 @@
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 1.33;
     letter-spacing: normal;
   }
-  .sm-heading-3 {
-    font-family: 'Prodigy Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .lg-heading-3 {
+  .xl-heading-4 {
     font-family: "Prodigy Sans";
     font-size: 1.5rem;
     font-weight: 500;
@@ -179,7 +181,52 @@
     line-height: 1.17;
     letter-spacing: normal;
   }
+  .sm-heading-3 {
+    font-family: "Prodigy Sans";
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+  }
+  .xl-nav-link-footer-hover {
+    font-family: "Prodigy Sans";
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+  }
+  .xl-nav-link-footer {
+    font-family: "Prodigy Sans";
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+  }
   .xl-body-featured {
+    font-family: "Prodigy Sans";
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+  }
+  .lg-heading-4 {
+    font-family: "Prodigy Sans";
+    font-size: 1.375rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+  }
+  .lg-body-featured {
     font-family: "Prodigy Sans";
     font-size: 1.375rem;
     font-weight: normal;
@@ -197,22 +244,31 @@
     line-height: 1.4;
     letter-spacing: normal;
   }
+  .sm-nav-link-footer-hover {
+    font-family: "Prodigy Sans";
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+  }
+  .sm-nav-link-footer {
+    font-family: "Prodigy Sans";
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+  }
   .sm-body-featured {
     font-family: "Prodigy Sans";
     font-size: 1.25rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-  }
-  .lg-body-featured {
-    font-family: "Prodigy Sans";
-    font-size: 1.25rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: normal;
   }
   .xl-paragraph-short-bold {
@@ -224,7 +280,25 @@
     line-height: 1.33;
     letter-spacing: normal;
   }
+  .lg-paragraph-short-bold {
+    font-family: "Prodigy Sans";
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+  }
   .xl-paragraph-short-italic {
+    font-family: "Prodigy Sans";
+    font-size: 1.125rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: normal;
+  }
+  .lg-paragraph-short-italic {
     font-family: "Prodigy Sans";
     font-size: 1.125rem;
     font-weight: normal;
@@ -251,15 +325,59 @@
     line-height: 1.56;
     letter-spacing: normal;
   }
+  .lg-paragraph-short {
+    font-family: "Prodigy Sans";
+    font-size: 1.125rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+  }
+  .lg-paragraph-long {
+    font-family: "Prodigy Sans";
+    font-size: 1.125rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+  }
+  .xl-nav-text-light {
+    font-family: "Prodigy Sans";
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+  }
+  .lg-nav-text-light {
+    font-family: "Prodigy Sans";
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+  }
   .xl-heading-sidebar {
     font-family: "Prodigy Sans";
     font-size: 1rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.38;
+    line-height: 1.13;
     letter-spacing: normal;
-    text-transform: uppercase;
+  }
+  .lg-heading-sidebar {
+    font-family: "Prodigy Sans";
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
   }
   .sm-paragraph-short-bold {
     font-family: "Prodigy Sans";
@@ -270,25 +388,16 @@
     line-height: 1.38;
     letter-spacing: normal;
   }
-  .lg-paragraph-short-bold {
+  .sm-heading-4 {
     font-family: "Prodigy Sans";
     font-size: 1rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.38;
+    line-height: 1.25;
     letter-spacing: normal;
   }
   .sm-paragraph-short-italic {
-    font-family: "Prodigy Sans";
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: italic;
-    line-height: 1.38;
-    letter-spacing: normal;
-  }
-  .lg-paragraph-short-italic {
     font-family: "Prodigy Sans";
     font-size: 1rem;
     font-weight: normal;
@@ -315,33 +424,6 @@
     line-height: 1.5;
     letter-spacing: normal;
   }
-  .lg-paragraph-short {
-    font-family: "Prodigy Sans";
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.38;
-    letter-spacing: normal;
-  }
-  .lg-paragraph-long {
-    font-family: "Prodigy Sans";
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-  }
-  .xl-nav-text-light {
-    font-family: "Prodigy Sans";
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.38;
-    letter-spacing: normal;
-  }
   .sm-nav-text-light {
     font-family: "Prodigy Sans";
     font-size: 1rem;
@@ -349,48 +431,6 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 1.38;
-    letter-spacing: normal;
-  }
-  .lg-nav-text-light {
-    font-family: "Prodigy Sans";
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.38;
-    letter-spacing: normal;
-  }
-  .lg-heading-sidebar {
-    font-family: "Prodigy Sans";
-    font-size: 0.875rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.14;
-    letter-spacing: normal;
-    text-transform: uppercase;
-  }
-  .sm-nav-link-footer {
-    font-family: 'Prodigy Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1;
-  }
-  .xl-nav-link-footer {
-    font-family: 'Prodigy Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1;
-  }
-  caption {
-    font-family: "Prodigy Sans";
-    font-size: 0.75rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
     letter-spacing: normal;
   }
 }
