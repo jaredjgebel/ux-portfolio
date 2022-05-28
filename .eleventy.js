@@ -3,7 +3,7 @@ const markdownIt = require("markdown-it");
 const markdownItClass = require("@toycode/markdown-it-class");
 const mapping = require("./styles/mapStylesToClasses");
 
-const md = markdownIt({ linkify: true });
+const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItClass, mapping);
 
 const now = String(Date.now());
@@ -21,6 +21,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("version", function () {
     return process.env.ELEVENTY_PRODUCTION ? "" : `?v=${now}`;
   });
+
+  eleventyConfig.addNunjucksShortcode(
+    "markdown",
+    (content) => `${md.render(content)}`
+  );
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (

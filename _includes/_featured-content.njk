@@ -1,0 +1,16 @@
+{% set perspective %}{% include "../_data/markdown/_featuredContentPerspective.md"%}{% endset %}
+<div
+    id="background-featured-items" class="flex flex-col px-3 gap-8">
+    {# Featured content: Human-centered perspective #}
+    <div id="featured-content-item" class="flex flex-col pt-[60px] pb-5 px-5">
+        <div
+            id="text-box"
+            class="flex flex-col justify-center gap-6 pt-[84px] px-7 pb-7 border-4 border-solid border-neutral-0 rounded-lg">
+            {% markdown perspective %}
+        </div>
+    </div>
+    <div class="absolute flex justify-center items-center w-[120px] h-[120px] left-[calc(50%-120px/2-1px)] bg-neutral-0
+            rounded-2xl">
+        {% include "./svg/medium/user-bubbles.njk"%}
+    </div>
+</div>
