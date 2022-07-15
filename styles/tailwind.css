@@ -78,6 +78,11 @@
     @apply col-span-4 col-start-2 md:col-span-8 md:col-start-2 lg:col-span-10 lg:col-start-3 xl:col-span-8 xl:col-start-4;
   }
 
+  /* featured content component, using Render plugin */
+  .markdown-featured-content h2 {
+    color: darkcyan;
+  }
+
   /* font styles for all breakpoints */
   .xl-heading-display {
     font-family: "Prodigy Sans";

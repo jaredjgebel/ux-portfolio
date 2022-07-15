@@ -1,3 +1,4 @@
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItClass = require("@toycode/markdown-it-class");
@@ -22,10 +23,7 @@ module.exports = function (eleventyConfig) {
     return process.env.ELEVENTY_PRODUCTION ? "" : `?v=${now}`;
   });
 
-  eleventyConfig.addNunjucksShortcode(
-    "markdown",
-    (content) => `${md.render(content)}`
-  );
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (
