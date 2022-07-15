@@ -2,13 +2,9 @@ const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItClass = require("@toycode/markdown-it-class");
 const mapping = require("./styles/mapStylesToClasses");
-const blogMapping = require("./styles/blogMapStylesToClasses");
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItClass, mapping);
-
-const mdBlog = markdownIt({ linkify: true, html: true });
-mdBlog.use(markdownItClass, blogMapping);
 
 const now = String(Date.now());
 
@@ -48,5 +44,5 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  eleventyConfig.setLibrary("md", mdBlog);
+  eleventyConfig.setLibrary("md", md);
 };

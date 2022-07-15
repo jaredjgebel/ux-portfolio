@@ -28,6 +28,14 @@
         <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
             {% include "../_includes/_sidebar.njk" %}
             <main class="grid-layout-row">
+                <div class="grid-layout-content pt-6">
+                    <a
+                        href="/journal"
+                        class="inline-flex flex-row items-center text-primary-70 hover:text-primary-50 active:text-primary-50">
+                        {% include "../_includes/svg/arrow-left.njk" %}
+                        <span>All posts</span>
+                    </a>
+                </div>
                 <div class="grid-layout-content">
                     {% block content %}
                         {{ content | safe }}
