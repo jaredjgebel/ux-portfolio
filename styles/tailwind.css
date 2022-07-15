@@ -59,23 +59,23 @@
 
 @layer utilities {
   /* grid layout styles */
-  /* base grid layout for all pages */
+  /* base grid layout for all pages, for breakpoints with sidebar (lg, xl, max) */
   .grid-layout-base {
     @apply lg:grid lg:grid-cols-[minmax(15px,_16px)_repeat(4,_64px)_minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
     xl:grid-cols-[minmax(15px,_16px)_repeat(4,_80px)_minmax(0,_1fr)_repeat(12,80px)_minmax(0,_1fr)_minmax(0,_16px)]
-    max:grid-cols-[minmax(0,_24px)_repeat(4,_96px)_minmax(0,_1fr)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
+    max:grid-cols-[minmax(0,_24px)_repeat(4,_96px)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
   }
 
   /* grid layout for each content section */
   .grid-layout-row {
-    @apply grid grid-cols-[minmax(0,_1fr)_repeat(4,_minmax(60px,_108px))_minmax(0,_1fr)] md:grid-cols-[minmax(0,_1fr)_repeat(8,_80px)_minmax(0,_1fr)] lg:col-[span-14]
+    @apply grid grid-cols-[minmax(0,_1fr)_repeat(4,_minmax(60px,_120px))_minmax(0,_1fr)] md:grid-cols-[minmax(0,_1fr)_repeat(8,_80px)_minmax(0,_1fr)] lg:col-[span-14]
     lg:col-start-6 lg:grid-cols-[minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
-    xl:grid-cols-[minmax(0,_1fr)_repeat(12,_80px)_minmax(0,_1fr)_minmax(0,_16px)] max:grid-cols-[minmax(0,_1fr)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
+    xl:grid-cols-[minmax(0,_1fr)_repeat(12,_80px)_minmax(0,_1fr)_minmax(0,_16px)] max:grid-cols-[repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
   }
 
   /* grid layout for inner content in each row */
   .grid-layout-content {
-    @apply col-span-4 col-start-2 md:col-span-8 md:col-start-2 lg:col-span-10 lg:col-start-3 xl:col-span-8 xl:col-start-4;
+    @apply col-span-4 col-start-2 px-5 md:col-span-6 md:col-start-3 md:px-0 lg:col-span-8 lg:col-start-4 xl:col-span-8 xl:col-start-3;
   }
 
   /* font styles for all breakpoints */
