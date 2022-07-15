@@ -2,10 +2,12 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItClass = require("@toycode/markdown-it-class");
+const markdownItAttrs = require("markdown-it-attrs");
 const mapping = require("./styles/mapStylesToClasses");
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItClass, mapping);
+md.use(markdownItAttrs);
 
 const now = String(Date.now());
 

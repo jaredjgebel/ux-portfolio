@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["_site/**/*.html"],
@@ -56,9 +56,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        'sans': ['Prodigy Sans', ...defaultTheme.fontFamily.sans]
-      }
+        sans: ["Prodigy Sans", ...defaultTheme.fontFamily.sans],
+      },
     },
   },
-  plugins: [],
 };

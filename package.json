@@ -18,6 +18,7 @@
     "tailwindcss": "^3.0.0"
   },
   "dependencies": {
-    "@toycode/markdown-it-class": "^1.2.4"
+    "@toycode/markdown-it-class": "^1.2.4",
+    "markdown-it-attrs": "^4.1.4"
   }
 }
