@@ -3,11 +3,26 @@ const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItClass = require("@toycode/markdown-it-class");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItContainer = require("markdown-it-container");
 const mapping = require("./styles/mapStylesToClasses");
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItClass, mapping);
 md.use(markdownItAttrs);
+md.use(markdownItContainer, "dynamic", {
+  validate: function () {
+    return true;
+  },
+  render: function (tokens, idx) {
+    const token = tokens[idx];
+    console.log(token);
+    if (token.nesting === 1) {
+      return '<div class="' + token.info.trim() + '">';
+    } else {
+      return "</div>";
+    }
+  },
+});
 
 const now = String(Date.now());
 

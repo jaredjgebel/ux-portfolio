@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            {% block title %}
-                {{ title }}
+  <head>
+    <title>
+      {% block title %}
+        {{ title }}
+      {% endblock %}
+    </title>
+    <meta charset="UTF-8"/>
+    {% if description %}
+      <meta name="description" content="{{ description }}"/>
+    {% endif %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
+    <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
+    <script defer src="../../js/alpine.js{% version %}"></script>
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "../_includes/_nav.njk" %}
+    <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
+      {% include "../_includes/_sidebar.njk" %}
+      <main class="grid-layout-row">
+        <div class="grid-layout-content flex flex-col pt-6 gap-10 xl:gap-12">
+          <a
+            href="/journal"
+            class="inline-flex flex-row items-center text-primary-70 hover:text-primary-50 active:text-primary-50">
+            {% include "../_includes/svg/arrow-left.njk" %}
+            <span>All posts</span>
+          </a>
+          <div class="flex flex-col gap-9 ">
+            {% block content %}
+              {{ content | safe }}
             {% endblock %}
-        </title>
-        <meta charset="UTF-8"/>
-        {% if description %}
-            <meta name="description" content="{{ description }}"/>
-        {% endif %}
-        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-        <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
-        <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
-        <script defer src="../../js/alpine.js{% version %}"></script>
-        <style>
-            [x-cloak] {
-                display: none !important;
-            }
-        </style>
-    </head>
-    <body>
-        {% include "../_includes/_nav.njk" %}
-        <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
-            {% include "../_includes/_sidebar.njk" %}
-            <main class="grid-layout-row">
-                <div class="grid-layout-content pt-6 px-5 md:px-0">
-                    <a
-                        href="/journal"
-                        class="inline-flex flex-row items-center text-primary-70 hover:text-primary-50 active:text-primary-50">
-                        {% include "../_includes/svg/arrow-left.njk" %}
-                        <span>All posts</span>
-                    </a>
-                </div>
-                <div class="grid-layout-content px-5 md:px-0">
-                    {% block content %}
-                        {{ content | safe }}
-                    {% endblock %}
-                </div>
-            </main>
+          </div>
         </div>
-        {% include "../_includes/_footer.njk" %}</body>
-</html></div></body></html>
+      </main>
+    </div>
+    {% include "../_includes/_footer.njk" %}
+  </body>
+</html>

@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@toycode/markdown-it-class": "^1.2.4",
-    "markdown-it-attrs": "^4.1.4"
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-container": "^3.0.0"
   }
 }
