@@ -1,32 +1,11 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
-const markdownItClass = require("@toycode/markdown-it-class");
-const markdownItAttrs = require("markdown-it-attrs");
-const markdownItContainer = require("markdown-it-container");
-const mapping = require("./styles/mapStylesToClasses");
 const markdownItAnchor = require("markdown-it-anchor");
-// const markdownItTableOfContents = require("markdown-it-table-of-contents");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItAnchor);
-// md.use(markdownItTableOfContents);
-// md.use(markdownItClass, mapping);
-// md.use(markdownItAttrs);
-// md.use(markdownItContainer, "dynamic", {
-//   validate: function () {
-//     return true;
-//   },
-//   render: function (tokens, idx) {
-//     const token = tokens[idx];
-//     console.log(token);
-//     if (token.nesting === 1) {
-//       return '<div class="' + token.info.trim() + '">';
-//     } else {
-//       return "</div>";
-//     }
-//   },
-// });
 
 const now = String(Date.now());
 
@@ -45,6 +24,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  eleventyConfig.addPlugin(svgContents);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (

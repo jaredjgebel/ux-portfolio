@@ -31,8 +31,10 @@
         <div class="grid-layout-content flex flex-col pt-6 gap-10 xl:gap-12">
           <a
             href="/journal"
-            class="inline-flex flex-row items-center text-primary-70 hover:text-primary-50 active:text-primary-50">
-            {% include "../_includes/svg/arrow-left.njk" %}
+            class="group inline-flex flex-row items-center w-fit p-3 text-primary-70 rounded-sm hover:text-primary-50 focus:outline
+              focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+            {# {% include "../_includes/svg/arrow-left.njk" %} #}
+            {{ '/assets/svg/arrow-left.svg' | svgContents("fill-primary-70 group-hover:fill-primary-50") | safe }}
             <span>All posts</span>
           </a>
           <article class="prose lg:prose-lg prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin
