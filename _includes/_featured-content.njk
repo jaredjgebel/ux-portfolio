@@ -6,18 +6,19 @@
             id="text-box"
             class="flex flex-col justify-center gap-6 pt-[84px] px-5 pb-7 md:px-7 lg:pt-[120px] lg:px-10 lg:pb-7 border-4
                 border-solid border-neutral-0 rounded-lg">
-            <div class="markdown-featured-content">
-                {% renderFile "./_includes/markdown/_featuredContentPerspective.md" %}
+            <div class="markdown-featured-content prose prose-custom prose-custom-fonts first-header-no-margin first-paragraph-margin
+                    italic-in-heading ordered-list-items unordered-list-items list-items-with-margins">
+                {% renderFile "./_includes/markdown/_perspective.md" %}
             </div>
         </div>
     </div>
     <div class="absolute flex justify-center items-center w-[120px] h-[120px] lg:w-13 lg:h-13 left-[calc(50%-120px/2-1px)]
             lg:left-[calc(50%-160px/2)] bg-neutral-0 rounded-2xl">
         <div class="lg:hidden">
-            {% include "./svg/medium/user-bubbles.njk"%}
+            {{ '/assets/svg/medium/user-bubbles.svg' | svgContents("fill-primary-80") | safe }}
         </div>
-        <div class="sm:hidden lg:flex">
-            {% include "./svg/large/user-bubbles.njk"%}
+        <div class="hidden lg:flex">
+            {{ '/assets/svg/large/user-bubbles.svg' | svgContents("fill-primary-80") | safe }}
         </div>
     </div>
 </div>

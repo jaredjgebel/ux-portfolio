@@ -10,12 +10,12 @@
                 class="flex items-center gap-3 p-3 rounded-sm group focus:outline-neutral-0 focus:outline-dashed focus:outline-1"
                 @click="isToggled = !isToggled"
                 aria-labelledby="open-menu-button-label">
-                {% include "_includes/svg/hamburger-menu.njk" %}
+                {{ '/assets/svg/hamburger-menu.svg' | svgContents("stroke-neutral-10 stroke-2 group-hover:stroke-neutral-0 group-focus:stroke-neutral-0") | safe }}
                 <span id="open-menu-button-label" class="text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0">Menu</span>
             </button>
         </div>
         <div>
-            {% include "_includes/_menu.njk"%}
+            {% include "_includes/_menu.njk" %}
         </div>
     </nav>
 </div>

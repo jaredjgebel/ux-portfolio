@@ -1,7 +1,5 @@
 {% extends "_includes/_layout.njk" %}
-{% from "_includes/components/content-item-vertical.njk" import contentItemVertical as contentItemVertical %}
-{% from "_includes/components/content-item.njk" import contentItem as contentItem %}
-{% from "_includes/components/page.njk" import page as pageComponent %}
+{# {% from "_includes/components/page.njk" import page as pageComponent %} #}
 {% block title %}Jared Gebel, UX Research and Design{% endblock %}
 {% block content %}
     <main class="grid-layout-row lg:my-12 xl:my-13">
@@ -9,11 +7,11 @@
             {% include "_includes/_approach.njk" %}
             {% include "_includes/_background.njk" %}
             <div id="cards">Cards</div>
-            <div class="pages flex flex-col gap-11 lg:gap-12">
-                {% for page in pages %}
-                    {{ pageComponent(page.heading, page.headline, page.sections, page.cta) }}
-                {% endfor %}
-            </div>
+            {# <div class="pages flex flex-col gap-11 lg:gap-12">
+                                        {% for page in pages %}
+                                            {{ pageComponent(page.heading, page.headline, page.sections, page.cta) }}
+                                        {% endfor %}
+                                    </div> #}
             <div>Divider</div>
             <div id="contact">Contact</div>
         </div>
