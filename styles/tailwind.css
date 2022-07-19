@@ -43,6 +43,14 @@
 }
 
 @font-face {
+  font-family: "Prodigy Sans";
+  src: url("../assets/woff2/ProdigySans-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: Bitter;
   src: url("../assets/woff2/Bitter-VariableFont_wght.woff2") format("woff2");
   font-display: swap;
@@ -75,12 +83,53 @@
 
   /* grid layout for inner content in each row */
   .grid-layout-content {
-    @apply col-span-4 col-start-2 px-5 md:col-span-6 md:col-start-3 md:px-0 lg:col-span-8 lg:col-start-4 xl:col-span-8 xl:col-start-3;
+    @apply col-span-4 col-start-2 px-5 md:col-span-6 md:col-start-3 md:px-0 lg:col-span-8 lg:col-start-4 xl:col-span-8 xl:col-start-4 max:col-start-3;
   }
 
   /* smaller top padding for paragraphs after h4's */
   .paragraph-padding-small {
     @apply pt-4;
+  }
+
+  /* custom prose font styles */
+  /* consider moving to tailwind config at some point */
+  .prose-custom-fonts {
+    @apply prose-h1:sm-heading-1 lg:prose-h1:lg-heading-1 xl:prose-h1:xl-heading-1
+    prose-h2:sm-heading-2 lg:prose-h2:lg-heading-2 xl:prose-h2:xl-heading-2 prose-h3:sm-heading-3 lg:prose-h3:lg-heading-3
+    xl:prose-h3:xl-heading-3 prose-h4:sm-heading-4 lg:prose-h4:lg-heading-4 xl:prose-h4:xl-heading-4 prose-p:sm-paragraph-long prose-strong:font-medium prose-em:italic;
+  }
+
+  .prose-custom-lists {
+    @apply prose:ul;
+  }
+
+  .prose-custom-layout {
+    @apply xl:pr-11 max:pr-48;
+  }
+
+  .first-header-no-margin h1 {
+    @apply mb-0;
+  }
+
+  .first-paragraph-margin h1 + p {
+    @apply mt-5 mb-9;
+  }
+
+  .italic-in-heading h4 em {
+    @apply sm-heading-4-italic;
+  }
+
+  /* colon in Prodigy Sans' bold italic is illegible */
+  .italic-in-heading span {
+    @apply not-italic;
+  }
+
+  .ordered-list-items ol li {
+    @apply sm-paragraph-long lg:lg-paragraph-long xl:xl-paragraph-long marker:text-primary-70;
+  }
+
+  .unordered-list-items ul li {
+    @apply sm-paragraph-short lg:lg-paragraph-short xl:xl-paragraph-short;
   }
 
   /* font styles for all breakpoints */
@@ -494,6 +543,15 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 1.38;
+    letter-spacing: normal;
+  }
+  .sm-heading-4-italic {
+    font-family: "Prodigy Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.25;
     letter-spacing: normal;
   }
   caption {
