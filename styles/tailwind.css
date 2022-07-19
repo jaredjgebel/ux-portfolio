@@ -96,7 +96,7 @@
   .prose-custom-fonts {
     @apply prose-h1:sm-heading-1 lg:prose-h1:lg-heading-1 xl:prose-h1:xl-heading-1
     prose-h2:sm-heading-2 lg:prose-h2:lg-heading-2 xl:prose-h2:xl-heading-2 prose-h3:sm-heading-3 lg:prose-h3:lg-heading-3
-    xl:prose-h3:xl-heading-3 prose-h4:sm-heading-4 lg:prose-h4:lg-heading-4 xl:prose-h4:xl-heading-4 prose-p:sm-paragraph-long prose-strong:font-medium prose-em:italic;
+    xl:prose-h3:xl-heading-3 prose-h4:sm-heading-4 lg:prose-h4:lg-heading-4 xl:prose-h4:xl-heading-4 prose-p:sm-paragraph-long lg:prose-p:lg-paragraph-long xl:prose-p:xl-paragraph-long prose-strong:font-medium prose-em:italic;
   }
 
   .prose-custom-lists {

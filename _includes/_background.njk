@@ -1,10 +1,10 @@
-<div id="background" class="flex flex-col w-full gap-7 md:gap-8">
-    <div id="background-introduction" class="flex flex-col gap-6 md:gap-7 md:px-0 md:pr-13 lg:pr-48 xl:pr-13 max:pr-48">
-        <h2 class="sm-heading-1 lg:lg-heading-1 xl:xl-heading-1">Background</h2>
-        <p class="sm-paragraph-long lg:lg-paragraph-long xl:xl-paragraph-long">
-            My past experiences shape my UX work: studying behavior, working directly with people from diverse backgrounds, and
-            creating websites and web applications.
-        </p>
+{# exception for front page: h2 uses h1 styling #}
+<div class="background flex flex-col gap-8">
+    <div class="background-introduction prose prose-custom max-w-none prose-custom-fonts prose-custom-layout
+            first-header-no-margin first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items
+            prose-h2:sm-heading-1 lg:prose-h2:lg-heading-1 xl:prose-h2:xl-heading-1 prose-h2:mb-7 md:pr-11 lg:pr-10 xl:pr-13
+            max:pr-48">
+        {% renderFile "./_includes/markdown/_background.md" %}
     </div>
-    {% include "_featured-content.njk" %}
+    {% include "./_featured-content.njk"%}
 </div>

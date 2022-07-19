@@ -1,10 +1,6 @@
-<div id="approach" class="flex flex-col gap-7 w-full md:pr-13 lg:pr-48 xl:pr-13 max:pr-48">
-    <h2 id="approach-title" class="sm-heading-1 lg:lg-heading-1 xl:xl-heading-1">My approach</h2>
-    <div id="approach-introduction" class="flex flex-col gap-6 lg:gap-7 xl:gap-[36px]">
-        {% for paragraph in approach.paragraphs %}
-            <p class="sm-paragraph-long lg:lg-paragraph-long xl:xl-paragraph-long">
-                {{ paragraph }}
-            </p>
-        {% endfor %}
-    </div>
+{# exception for front page: h2 uses h1 styling #}
+<div class="approach prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin
+        first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items prose-h2:sm-heading-1
+        lg:prose-h2:lg-heading-1 xl:prose-h2:xl-heading-1 prose-h2:mb-7 md:pr-11 lg:pr-10 xl:pr-13 max:pr-48">
+    {% renderFile "./_includes/markdown/_approach.md" %}
 </div>
