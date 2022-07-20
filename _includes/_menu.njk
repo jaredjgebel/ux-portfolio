@@ -1,4 +1,5 @@
 {% import "./components/menu-item.njk" as menuitem %}
+{% from "./components/icon.njk" import icon as icon %}
 {% set labels = [
     { type: 'menuitem', text: 'Home' },
     { type: 'sectionitem', text: 'Approach' },
@@ -28,8 +29,8 @@
             class="flex items-center p-3 rounded-sm group focus:outline-neutral-0 focus:outline-dashed focus:outline-1"
             @click="isToggled = !isToggled"
             aria-labelledby="close-menu-button-label">
-            {{ '/assets/svg/close.svg' | svgContents("stroke-0 fill-neutral-10
-                        group-hover:fill-neutral-0 group-focus:fill-neutral-0") | safe }}
+            {{ icon("small", "close", "stroke-0 fill-neutral-10
+                        group-hover:fill-neutral-0 group-focus:fill-neutral-0") }}
             <span id="close-menu-button-label" class="pl-3 text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0">
                 Close</span>
         </button>
