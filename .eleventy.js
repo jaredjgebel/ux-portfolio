@@ -3,6 +3,7 @@ const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const svgContents = require("eleventy-plugin-svg-contents");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItAnchor);
@@ -26,6 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addPlugin(svgContents);
+  eleventyConfig.addPlugin(faviconsPlugin);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (
