@@ -142,6 +142,10 @@
     @apply mb-6;
   }
 
+  .first-paragraph-featured-text h2 + p {
+    @apply sm-body-featured lg:lg-body-featured xl:xl-body-featured;
+  }
+
   /* font styles for all breakpoints */
   .xl-heading-display {
     font-family: "Prodigy Sans";

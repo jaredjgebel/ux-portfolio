@@ -1,0 +1,20 @@
+{% from "./cta.njk" import cta as ctaComponent %}
+{% macro page(heading, headline, sections, cta) %}
+    <div class="page flex flex-col gap-5 md:gap-6 xl:gap-8">
+        <h2 class="heading sm-heading-2">{{ heading }}</h2>
+        <p class="headline sm-body-featured">{{ headline }}</p>
+        {% for section in sections %}
+            <div class="page-section flex flex-col gap-5">
+                {% if section.subheading !== "" %}
+                    <h4 class="subheading sm-heading-4">{{ section.subheading }}</h4>
+                {% endif %}
+                <ul class="bullet-points flex flex-col pl-7 pr-5 gap-5 marker:text-primary-70">
+                    {% for point in section.points %}
+                        <li class="list-disc">{{ point }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+        {{ ctaComponent(cta.icon, cta.text, cta.link) }}
+    </div>
+{% endmacro %}
