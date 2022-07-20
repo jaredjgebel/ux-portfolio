@@ -1,0 +1,4 @@
+{% macro icon(size, iconName, class) %}
+    {% set fileName = ["/assets/svg/", size, "/", iconName, ".svg"] | join %}
+    {{ fileName | svgContents(class) | safe }}
+{% endmacro %}

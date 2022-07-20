@@ -1,3 +1,4 @@
+{% from "./components/icon.njk" import icon as icon %}
 <div
     id="background-featured-items" class="relative flex flex-col items-center gap-8">
     {# Featured content: Human-centered perspective #}
@@ -15,7 +16,7 @@
     <div class="absolute flex justify-center items-center w-[120px] h-[120px] lg:w-13 lg:h-13 left-[calc(50%-120px/2-1px)]
             lg:left-[calc(50%-160px/2)] bg-neutral-0 rounded-2xl">
         <div class="lg:hidden">
-            {{ '/assets/svg/medium/user-bubbles.svg' | svgContents("fill-primary-80") | safe }}
+            {{ icon("medium", "user-bubbles", "fill-primary-80") }}
         </div>
         <div class="hidden lg:flex">
             {{ '/assets/svg/large/user-bubbles.svg' | svgContents("fill-primary-80") | safe }}
