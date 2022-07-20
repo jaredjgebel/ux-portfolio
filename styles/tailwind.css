@@ -138,6 +138,10 @@
     @apply px-5 md:pl-7 lg:pl-9 xl:pr-7;
   }
 
+  .h3-bottom-margin h3 {
+    @apply mb-6;
+  }
+
   /* font styles for all breakpoints */
   .xl-heading-display {
     font-family: "Prodigy Sans";

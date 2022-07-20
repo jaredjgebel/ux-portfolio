@@ -1,15 +1,13 @@
 {% from "./components/icon.njk" import icon %}
 {% from "./components/cta.njk" import cta %}
 <div
-    id="background-featured-items" class="relative flex flex-col items-center gap-8">
+    class="background-featured-item relative flex flex-col items-center gap-8">
     {# Featured content: Human-centered perspective #}
-    <div id="featured-content-item" class="flex flex-col md:w-[480px] lg:w-[640px] pt-[60px] pb-5 lg:pt-[80px]">
-        <div
-            id="text-box"
-            class="flex flex-col justify-center gap-6 pt-[84px] px-5 pb-7 md:px-7 lg:pt-[120px] lg:px-10 lg:pb-7 border-4
+    <div class="featured-content-item flex flex-col md:w-[480px] lg:w-[640px] pt-[60px] pb-5 lg:pt-[80px]">
+        <div class="text-box flex flex-col justify-center gap-6 pt-[84px] px-5 pb-7 md:px-7 lg:pt-[120px] lg:px-10 lg:pb-7 border-4
                 border-solid border-neutral-0 rounded-lg">
             <div class="markdown-featured-content prose prose-custom prose-custom-fonts first-header-no-margin first-paragraph-margin
-                    italic-in-heading ordered-list-items unordered-list-items list-items-with-margins">
+                    italic-in-heading ordered-list-items unordered-list-items list-items-with-margins h3-bottom-margin">
                 {% renderFile "./_includes/markdown/_perspective.md" %}
             </div>
             {{ cta("article", "Career Q & A: How my experiences inform my UX work", "/journal/career-q-and-a") }}
@@ -22,6 +20,53 @@
         </div>
         <div class="hidden lg:flex">
             {{ icon("large", "user-bubbles", "fill-primary-80") }}
+        </div>
+    </div>
+</div>
+{# Featured content: Self-directed education #}
+<div class="background-featured-item relative flex flex-col items-center gap-8">
+    <div class="featured-content-item flex flex-col md:w-[480px] lg:w-[640px] pt-[60px] pb-5 lg:pt-[80px]">
+        <div
+            id="text-box"
+            class="flex flex-col justify-center gap-6 pt-[84px] px-5 pb-7 md:px-7 lg:pt-[120px] lg:px-10 lg:pb-7 border-4
+                border-solid border-neutral-0 rounded-lg">
+            <div class="markdown-featured-content prose prose-custom prose-custom-fonts first-header-no-margin first-paragraph-margin
+                    italic-in-heading ordered-list-items unordered-list-items list-items-with-margins h3-bottom-margin">
+                {% renderFile "./_includes/markdown/_education.md" %}
+            </div>
+            {{ cta("article", "UX as an Independent Study: My approach to building skill in UX methods", "/journal/ux-as-an-independent-study") }}
+        </div>
+    </div>
+    <div class="absolute flex justify-center items-center w-[120px] h-[120px] lg:w-13 lg:h-13 left-[calc(50%-120px/2-1px)]
+            lg:left-[calc(50%-160px/2)] bg-neutral-0 rounded-2xl">
+        <div class="lg:hidden">
+            {{ icon("medium", "road", "fill-primary-80") }}
+        </div>
+        <div class="hidden lg:flex">
+            {{ icon("large", "road", "fill-primary-80") }}
+        </div>
+    </div>
+</div>
+{# Featured content: Building for the web #}
+<div class="background-featured-item relative flex flex-col items-center gap-8">
+    <div class="featured-content-item flex flex-col md:w-[480px] lg:w-[640px] pt-[60px] pb-5 lg:pt-[80px]">
+        <div
+            id="text-box"
+            class="flex flex-col justify-center gap-6 pt-[84px] px-5 pb-7 md:px-7 lg:pt-[120px] lg:px-10 lg:pb-7 border-4
+                border-solid border-neutral-0 rounded-lg">
+            <div class="markdown-featured-content prose prose-custom prose-custom-fonts first-header-no-margin first-paragraph-margin
+                    italic-in-heading ordered-list-items unordered-list-items list-items-with-margins h3-bottom-margin">
+                {% renderFile "./_includes/markdown/_web.md" %}
+            </div>
+        </div>
+    </div>
+    <div class="absolute flex justify-center items-center w-[120px] h-[120px] lg:w-13 lg:h-13 left-[calc(50%-120px/2-1px)]
+            lg:left-[calc(50%-160px/2)] bg-neutral-0 rounded-2xl">
+        <div class="lg:hidden">
+            {{ icon("medium", "monitor", "fill-primary-80") }}
+        </div>
+        <div class="hidden lg:flex">
+            {{ icon("large", "monitor", "fill-primary-80") }}
         </div>
     </div>
 </div>

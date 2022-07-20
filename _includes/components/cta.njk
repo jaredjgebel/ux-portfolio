@@ -1,10 +1,7 @@
 {% from "./icon.njk" import icon %}
-{% macro cta(iconName, text, link) %}
-    <a
-        href="#"
-        class="cta flex px-3 pb-3 pt-[5px] gap-3 rounded-[4px] group focus:outline focus:outline-2 active:outline
-            active:outline-2 active:outline-primary-50">
-        <div class="shrink-0 pt-[6px]">{{ icon("small", iconName, "fill-primary-70 group-hover:fill-primary-50 group-active:fill-primary-50") }}</div>
+{% macro cta(iconType, text, link) %}
+    <a href={{ link }} class="cta flex px-3 pb-3 pt-[5px] gap-3 rounded-[4px] group focus:outline focus:outline-2 active:outline active:outline-2 active:outline-primary-50">
+        <div class="shrink-0 pt-[6px]">{{ icon("small", iconType, "fill-primary-70 group-hover:fill-primary-50 group-active:fill-primary-50") }}</div>
         <span class="sm-body-featured text-primary-70 group-hover:text-primary-50 group-active:text-primary-50">{{ text }}</span>
     </a>
 {% endmacro %}
