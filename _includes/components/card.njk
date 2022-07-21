@@ -1,9 +1,10 @@
 {% from "./icon.njk" import icon as icon %}
-{% macro card(title, subtitle, iconName, iconClasses, bgColor, cardClasses,  link) %}
-    <a href="{{ link }}">
+{% macro card(title, subtitle, iconName, iconClasses, bgColor, link) %}
+    {# Breakpoint: small #}
+    <a href="{{ link }}" class="md:hidden">
         <div class="card bg-neutral-0 shadow-md w-72 h-80 rounded-md hover:mix-blend-multiply focus:outline focus:outline-2
-                focus:outline-primary-80 active:outline active:outline-2 active:outline-primary-80 {{ cardClasses }}">
-            <div class="flex flex-col items-center justify-center icon-area rounded-t-md h-1/2 {{ iconClasses }} {{ bgColor }}">
+                focus:outline-primary-80 active:outline active:outline-2 active:outline-primary-80">
+            <div class="flex flex-col items-center justify-center icon-area rounded-t-md h-1/2 {{ bgColor }}">
                 {{ icon("large", iconName, iconClasses) }}
             </div>
             <div class="card-information flex flex-col items-end p-4 h-1/2">
@@ -12,6 +13,23 @@
                     <p class="subtitle sm-paragraph-short lg:lg-paragraph-short xl:xl-paragraph-short">{{ subtitle }}</p>
                 </div>
                 {{ icon("small", "arrow-right", "flex-grow-0 fill-neutral-90") }}
+            </div>
+        </div>
+    </a>
+    {# Breakpoint: medium and up #}
+    <a href="{{ link }}" class="sm:hidden md:flex">
+        <div class="card flex flex-row bg-neutral-0 shadow-md w-[480px] lg:w-[512px] xl:w-[640px] h-[120px] xl:h-[128px] max:h-36
+                rounded-md hover:mix-blend-multiply focus:outline focus:outline-2 focus:outline-primary-80 active:outline
+                active:outline-2 active:outline-primary-80">
+            <div class="icon-area flex items-center justify-center rounded-l-md h-full w-1/4 {{ bgColor }}">
+                {{ icon("medium", iconName, iconClasses) }}
+            </div>
+            <div class="card-information flex flex-col w-3/4 py-5 px-4 xl:px-5">
+                <div class="card-text flex flex-col justify-between flex-grow">
+                    <h3 class="sm-heading-3 lg:lg-heading-4 xl:xl-heading-4">{{ title }}</h3>
+                    <p class="subtitle sm-paragraph-short xl:xl-paragraph-short">{{ subtitle }}</p>
+                </div>
+                {{ icon("small", "arrow-right", "flex-grow-0 self-end fill-neutral-90") }}
             </div>
         </div>
     </a>
