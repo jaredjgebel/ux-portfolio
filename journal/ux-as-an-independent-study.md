@@ -1,7 +1,7 @@
 ---
 title: UX as an Independent Study
 description: I’ve always been inclined to design my own educational experiences. I took independent study courses in school and designed my own major in college...
-layout: ../layouts/journal-post.njk
+layout: layouts/journal-post.njk
 ---
 
 # UX as an Independent Study

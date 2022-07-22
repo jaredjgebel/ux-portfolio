@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {% block title %}
+                {{ title }}
+            {% endblock %}
+        </title>
+        <meta charset="UTF-8"/>
+        {% if description %}
+            <meta name="description" content="{{ description }}"/>
+        {% endif %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+        <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
+        <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
+        <script defer src="../../js/alpine.js{% version %}"></script>
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+        {% favicons './assets/svg/favicon.svg' %}
+    </head>
+    <body>
+        {% include "../_nav.njk" %}
+        <div class="grid-layout-base bg-neutral-10 min-h-screen">
+            {% include "../_sidebar.njk" %}
+            <main class="grid-layout-row bg-neutral-10">
+                <div class="grid-layout-content prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin
+                        first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items bg-neutral-10 py-10 xl:py-12">
+                    {% block content %}
+                        {{ content | safe }}
+                    {% endblock %}
+                </div>
+            </main>
+            {% include "../_footer.njk" %}
+        </div>
+    </body>
+</html>

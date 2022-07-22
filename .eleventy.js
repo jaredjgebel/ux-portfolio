@@ -29,7 +29,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addPlugin(svgContents);
-  eleventyConfig.addPlugin(faviconsPlugin);
+  eleventyConfig.addPlugin(faviconsPlugin, {
+    generateManifest: false,
+  });
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (
