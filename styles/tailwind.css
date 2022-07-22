@@ -125,7 +125,7 @@
   }
 
   .italic-in-heading h4 em {
-    @apply sm-heading-4-italic;
+    @apply sm-heading-4-italic lg:lg-heading-4-italic xl:xl-heading-4-italic;
   }
 
   /* colon in Prodigy Sans' bold italic is illegible */
@@ -577,6 +577,24 @@
     font-stretch: normal;
     font-style: italic;
     line-height: 1.25;
+    letter-spacing: normal;
+  }
+  .lg-heading-4-italic {
+    font-family: "Prodigy Sans";
+    font-size: 1.375rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.09;
+    letter-spacing: normal;
+  }
+  .xl-heading-4-italic {
+    font-family: "Prodigy Sans";
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.17;
     letter-spacing: normal;
   }
   caption {
