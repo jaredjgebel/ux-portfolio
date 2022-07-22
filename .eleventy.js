@@ -1,11 +1,13 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
 const svgContents = require("eleventy-plugin-svg-contents");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 
 const md = markdownIt({ linkify: true, html: true });
+md.use(markdownItAttrs);
 md.use(markdownItAnchor);
 
 const now = String(Date.now());

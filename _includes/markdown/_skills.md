@@ -1,4 +1,4 @@
-## The UX skills I’ve acquired
+## The UX skills I’ve acquired {#the-ux-skills-ive-acquired}
 
 I’ve focused on skills that have the most utility in meeting user needs and business objectives.
 
