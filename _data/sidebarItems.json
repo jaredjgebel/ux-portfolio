@@ -1,25 +1,29 @@
 [
   { "type": "menulabel", "text": "Home", "link": "/" },
   { "type": "sectionlabel", "text": "About" },
-  { "type": "menulabel", "text": "Approach", "link": "#my-approach" },
+  { "type": "menulabel", "text": "Approach", "link": "/#my-approach" },
   {
     "type": "menulabel",
     "text": "Background",
-    "link": "#all-roads-lead-to-ux"
+    "link": "/#all-roads-lead-to-ux"
   },
   {
     "type": "menulabel",
     "text": "Skills",
-    "link": "#the-ux-skills-ive-acquired"
+    "link": "/#the-ux-skills-ive-acquired"
   },
   {
     "type": "menulabel",
     "text": "Strengths",
-    "link": "#my-unique-strengths"
+    "link": "/#my-unique-strengths"
   },
   { "type": "sectionlabel", "text": "Writing" },
   { "type": "menulabel", "text": "Journal", "link": "/journal" },
-  { "type": "menulabel", "text": "Career Q & A", "link": "/career-q-and-a" },
+  {
+    "type": "menulabel",
+    "text": "Career Q & A",
+    "link": "/journal/career-q-and-a"
+  },
   { "type": "sectionlabel", "text": "Contact" },
   {
     "type": "menulabel",

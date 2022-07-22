@@ -17,7 +17,7 @@
 ] %}
 <div
     id="menu"
-    class="fixed top-0 left-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto"
+    class="fixed top-0 left-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto z-10"
     x-cloak="x-cloak"
     x-show="isToggled"
     x-transition
@@ -36,11 +36,12 @@
         </button>
     </div>
     <ul id="menu-list" class="w-full">
-        {% for label in labels %}
-            {% if label.type === 'menuitem' %}
-                {{ menuitem.label(label.text) }}
-            {% elif label.type === 'sectionitem' %}
-                {{ menuitem.sectionlabel(label.text) }}
+        {% for item in sidebarItems %}
+            {% if item.type === 'menulabel' %}
+                {{ menuitem.label(item.text, item.link) }}
+            {% endif %}
+            {% if item.type === 'sectionlabel' %}
+                {{ menuitem.sectionlabel(item.text) }}
             {% endif %}
         {% endfor %}
     </ul>

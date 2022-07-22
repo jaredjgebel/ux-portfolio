@@ -1,8 +1,6 @@
-{% macro label(text) %}
-    <a
-        href="#"
-        class="flex focus:outline focus:outline-1 focus:outline-primary-30 focus-visible:outline focus-visible:outline-1
-            focus-visible:outline-primary-30">
+{% macro label(text, link) %}
+    <a href="{{ link }}" class="flex focus:outline focus:outline-1 focus:outline-primary-30 focus-visible:outline focus-visible:outline-1
+                        focus-visible:outline-primary-30">
         <li class="flex flex-col flex-grow justify-center h-9 pl-5 hover:bg-primary-40 active:bg-primary-60  text-neutral-10">
             {{ text }}
         </li>
