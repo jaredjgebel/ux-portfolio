@@ -1,38 +1,41 @@
 {% import "./components/nav-item-footer.njk" as navitemfooter %}
 <nav id="footer" class="grid-layout-row bg-primary-80">
-    <ul class="grid-layout-content w-full pl-5 md:pl-0 py-9 md:pt-10 lg:pt-11 lg:pb-10 md:pb-9">
+    <ul
+        class="grid-layout-content w-full pl-5 md:pl-0 py-9 md:pt-10 lg:pt-11 lg:pb-10 md:pb-9">
+        {# Small breakpoint #}
         <div class="md:hidden flex flex-col gap-9">
             <div id="nav-section-1">
-                {{ navitemfooter.label("Home") }}
+                {{ navitemfooter.label("Home", "/") }}
             </div>
             <div id="nav-section-2" class="flex flex-col gap-3">
-                {{ navitemfooter.label("Blog") }}
-                {{ navitemfooter.label("Q & A") }}
+                {{ navitemfooter.label("Journal", "/journal") }}
+                {{ navitemfooter.label("Q & A", "/career-q-and-a") }}
             </div>
             <div id="nav-section-3" class="flex flex-col gap-3">
-                {{ navitemfooter.label("Email") }}
-                {{ navitemfooter.label("LinkedIn") }}
-                {{ navitemfooter.label("Github") }}
+                {{ navitemfooter.label("Email", "mailto:jaredjgebel@gmail.com") }}
+                {{ navitemfooter.label("LinkedIn", "https://www.linkedin.com/in/jaredjgebel/") }}
+                {{ navitemfooter.label("Github", "https://github.com/jaredjgebel/ux-portfolio") }}
             </div>
         </div>
+        {# Medium breakpoint and above #}
         <div id="nav-section-1" class="hidden md:flex md:flex-row md:items-center md:gap-3">
-            {{ navitemfooter.label("Home") }}
+            {{ navitemfooter.label("Home", "/") }}
             <span class="text-neutral-10">&#8226;</span>
-            {{ navitemfooter.label("Blog") }}
+            {{ navitemfooter.label("Journal", "/journal") }}
             <span class="text-neutral-10">&#8226;</span>
-            {{ navitemfooter.label("Q & A") }}
+            {{ navitemfooter.label("Q & A", "/career-q-and-a") }}
         </div>
         <div id="nav-section-2" class="hidden md:flex md:flex-row md:items-center md:gap-3">
-            {{ navitemfooter.label("Email") }}
+            {{ navitemfooter.label("Email", "mailto:jaredjgebel@gmail.com") }}
             <span class="text-neutral-10">&#8226;</span>
-            {{ navitemfooter.label("LinkedIn") }}
+            {{ navitemfooter.label("LinkedIn", "https://www.linkedin.com/in/jaredjgebel/") }}
             <span class="text-neutral-10">&#8226;</span>
-            {{ navitemfooter.label("Github") }}
+            {{ navitemfooter.label("Github", "https://github.com/jaredjgebel/ux-portfolio") }}
         </div>
         <div id="nav-section-4" class="pt-10 md:pt-12 lg:pt-13 ">
             <li class="nav-item-footer">
                 <a
-                    href="#"
+                    href="/attributions"
                     class="inline-flex flex-row h-full p-3 rounded text-neutral-10 leading-5 hover:underline focus:outline focus:outline-2
                         focus:outline-primary-30">
                     Attributions</a>
