@@ -75,13 +75,15 @@ module.exports = {
                 color: theme("colors.primary[50]"),
               },
               "&:focus": {
-                "outline-style": "auto",
+                "outline-style": "solid",
                 "outline-color": theme("colors.primary[70]"),
+                "outline-offset": "2px",
               },
               "&:active": {
                 color: theme("colors.primary[50]"),
-                "outline-style": "auto",
+                "outline-style": "solid",
                 "outline-color": theme("colors.primary[50]"),
+                "outline-offset": "2px",
               },
             },
           },
