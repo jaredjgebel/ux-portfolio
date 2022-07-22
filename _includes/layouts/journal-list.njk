@@ -1,3 +1,4 @@
+{% from "../components/icon.njk" import icon as icon %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,11 +32,29 @@
         <div class="grid-layout-base bg-neutral-10 min-h-screen">
             {% include "../_sidebar.njk" %}
             <main class="grid-layout-row bg-neutral-10">
-                <div class="grid-layout-content prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin
-                        first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items bg-neutral-10 py-10 xl:py-12">
-                    {% block content %}
-                        {{ content | safe }}
-                    {% endblock %}
+                <div class="grid-layout-content ">
+                    <a
+                        href="/"
+                        class="group inline-flex flex-row items-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
+                            focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+                        {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
+                        <span class="relative top-[0.105rem]">Home</span>
+                    </a>
+                    <div class="prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin first-paragraph-margin
+                            italic-in-heading ordered-list-items unordered-list-items py-10 xl:py-12">
+                        <h1>Jared's UX Journal</h1>
+                        <h2 class="sm:sm-heading-3">July 2022</h2>
+                        <h3 class="sm:sm-heading-2">
+                            <a href="/journal/ux-as-an-independent-study" class="py-3 outline-2 outline-primary-70">UX as an Independent Study</a>
+                        </h3>
+                        <p>I’ve always been inclined to design my own educational experiences. I took independent study courses in school and
+                            designed my own major in college...</p>
+                        <h3>
+                            <a href="/journal/career-q-and-a" class="py-3 outline-2 outline-primary-70">Career Q & A</a>
+                        </h3>
+                        <p>Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or
+                            technology. I’ve served...</p>
+                    </div>
                 </div>
             </main>
             {% include "../_footer.njk" %}
