@@ -1,52 +1,54 @@
 {% from "../components/icon.njk" import icon as icon %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-      {% block title %}
-        {{ title }}
-      {% endblock %}
-    </title>
-    <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{ description }}"/>
-    {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
-    <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
-    <script defer src="../../js/alpine.js{% version %}"></script>
-    <style>
-      [x-cloak] {
-        display: none !important;
-      }
-    </style>
-    {% favicons './assets/svg/favicon.svg' %}
-  </head>
-  <body>
-    {% include "../_nav.njk" %}
-    <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
-      {% include "../_sidebar.njk" %}
-      <main class="grid-layout-row">
-        <div class="grid-layout-content flex flex-col pt-6 gap-10 xl:gap-12">
-          <a
-            href="/journal"
-            class="group inline-flex flex-row items-center w-fit p-3 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
-              focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
-            {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
-            <span>All posts</span>
-          </a>
-          <article class="prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin first-paragraph-margin
-              italic-in-heading ordered-list-items unordered-list-items">
-            {% block content %}
-              {{ content | safe }}
+    <head>
+        <title>
+            {% block title %}
+                {{ title }}
             {% endblock %}
-          </article>
+        </title>
+        <meta charset="UTF-8"/>
+        {% if description %}
+            <meta name="description" content="{{ description }}"/>
+        {% endif %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+        <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
+        <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
+        <script defer src="../../js/alpine.js{% version %}"></script>
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+        <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+        <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    </head>
+    <body>
+        {% include "../_nav.njk" %}
+        <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
+            {% include "../_sidebar.njk" %}
+            <main class="grid-layout-row">
+                <div class="grid-layout-content flex flex-col pt-6 gap-10 xl:gap-12">
+                    <a
+                        href="/journal"
+                        class="group inline-flex flex-row items-center w-fit p-3 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
+                            focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+                        {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
+                        <span>All posts</span>
+                    </a>
+                    <article class="prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin first-paragraph-margin
+                            italic-in-heading ordered-list-items unordered-list-items">
+                        {% block content %}
+                            {{ content | safe }}
+                        {% endblock %}
+                    </article>
+                </div>
+            </main>
+            {% include "../_footer.njk" %}
         </div>
-      </main>
-      {% include "../_footer.njk" %}
-    </div>
-  </body>
+    </body>
 </html>
