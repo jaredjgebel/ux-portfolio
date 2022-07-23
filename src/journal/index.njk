@@ -1,0 +1,45 @@
+{% extends "../_includes/layouts/journal-list.njk" %}
+{% from "../_includes/components/icon.njk" import icon %}
+{% block title %}
+  Jared's UX Journal
+{% endblock title %}
+{% block description %}
+  List of posts for Jared Gebel's UX journal/blog
+{% endblock description %}
+{% block content %}
+  <main class="grid-layout-base bg-neutral-10 min-h-screen">
+    <div class="grid-layout-content">
+      <a
+        href="/"
+        class="group inline-flex flex-row items-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
+          focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-primary-70 group-hover:fill-primary-50">
+          <path d="M15.833 9.167H5.95l3.025-3.634a.834.834 0 1 0-1.283-1.066l-4.167 5a.992.992 0 0 0-.075.125c0 .041 0
+            .066-.058.108a.833.833 0 0 0-.059.3c.001.103.02.204.059.3 0 .042 0 .067.058.108a.998.998 0 0 0 .075.125l4.167 5a.833.833
+            0 0 0 1.175.109.834.834 0 0 0 .108-1.175L5.95 10.833h9.883a.833.833 0 0 0 0-1.666z"></path>
+        </svg>
+        <span class="relative top-[0.105rem]">Home</span>
+      </a>
+      <div class="prose prose-custom max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin first-paragraph-margin
+          italic-in-heading ordered-list-items unordered-list-items py-10 xl:py-12">
+        <h1>Jared's UX Journal</h1>
+        <h2 class="sm:sm-heading-3">July 2022</h2>
+        <h3 class="sm:sm-heading-2">
+          <a href="/journal/ux-as-an-independent-study" class="py-3 outline-2 outline-primary-70">UX as an Independent Study</a>
+        </h3>
+        <p>I’ve always been inclined to design my own educational experiences. I took independent study courses in school and
+          designed my own major in college...</p>
+        <h3>
+          <a href="/journal/career-q-and-a" class="py-3 outline-2 outline-primary-70">Career Q &amp; A</a>
+        </h3>
+        <p>Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or
+          technology. I’ve served...</p>
+      </div>
+    </div>
+  </main>
+{% endblock content %}

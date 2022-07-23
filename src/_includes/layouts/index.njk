@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <title>
-            {% block title %}Does it work?{% endblock %}
+            {% block title %}
+                {{ title }}
+            {% endblock %}
         </title>
         <meta charset="UTF-8"/>
         {% if description %}
@@ -25,14 +27,14 @@
         <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
     </head>
     <body>
-        {% include "./_nav.njk" %}
+        {% include "../_nav.njk" %}
         <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
-            {% include "./_sidebar.njk" %}
-            {% include "_header.njk" %}
+            {% include "../_sidebar.njk" %}
+            {% include "../_header.njk" %}
             {% block content %}
                 {{ content | safe }}
             {% endblock %}
-            {% include "./_footer.njk" %}
+            {% include "../_footer.njk" %}
         </div>
     </body>
 </html>

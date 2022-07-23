@@ -1,0 +1,40 @@
+{% from "../components/icon.njk" import icon as icon %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {% block title %}
+                {{ title }}
+            {% endblock %}
+        </title>
+        <meta charset="UTF-8"/>
+        {% if description %}
+            <meta name="description" content="{{ description }}"/>
+        {% endif %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+        <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
+        <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
+        <script defer src="../../js/alpine.js{% version %}"></script>
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+        <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+        <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    </head>
+    <body>
+        {% include "../_nav.njk" %}
+        <div class="grid-layout-base bg-neutral-10 min-h-screen">
+            {% include "../_sidebar.njk" %}
+            {% block content %}
+                {{ content | safe }}
+            {% endblock %}
+            {% include "../_footer.njk" %}
+        </div>
+    </body>
+</html>

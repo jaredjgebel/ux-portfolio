@@ -1,0 +1,9 @@
+{% from "./icon.njk" import icon %}
+{% macro iconInfo(iconName, link, author, website) %}
+    {{ icon("small", iconName, "fill-neutral-90") }}
+    <p>{{ iconName | capitalize }} by {{ author }}
+        {% if website %}
+            from {{ website }}
+        {% endif %}
+    </p>
+{% endmacro %}

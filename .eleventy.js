@@ -12,8 +12,8 @@ md.use(markdownItAnchor);
 const now = String(Date.now());
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./styles/tailwind.config.js");
-  eleventyConfig.addWatchTarget("./styles/tailwind.css");
+  eleventyConfig.addWatchTarget("./src/_styles/tailwind.config.js");
+  eleventyConfig.addWatchTarget("./src/_styles/tailwind.css");
 
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
@@ -47,4 +47,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setLibrary("md", md);
+
+  return {
+    dir: {
+      input: "src",
+    },
+  };
 };

@@ -1,20 +1,5 @@
 {% import "./components/menu-item.njk" as menuitem %}
 {% from "./components/icon.njk" import icon as icon %}
-{% set labels = [
-    { type: 'menuitem', text: 'Home' },
-    { type: 'sectionitem', text: 'Approach' },
-    { type: 'menuitem', text: 'Perspective' },
-    { type: 'menuitem', text: 'Skills' },
-    { type: 'menuitem', text: 'Training' },
-    { type: 'menuitem', text: 'Strengths' },
-    { type: 'sectionitem', text: 'Writing' },
-    { type: 'menuitem', text: 'Q & A' },
-    { type: 'menuitem', text: 'Blog' },
-    { type: 'sectionitem', text: 'Contact' },
-    { type: 'menuitem', text: 'Email' },
-    { type: 'menuitem', text: 'LinkedIn' },
-    { type: 'menuitem', text: 'Github' }
-] %}
 <div
     id="menu"
     class="fixed top-0 left-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto z-10"
@@ -43,7 +28,7 @@
                 {{ menuitem.label(item.text, item.link) }}
             {% endif %}
             {% if item.type === 'sectionlabel' %}
-                {{ menuitem.sectionlabel(item.text) }}
+                {{ menuitem.sectionLabel(item.text) }}
             {% endif %}
         {% endfor %}
     </ul>

@@ -1,0 +1,21 @@
+{% extends "../_includes/layouts/index.njk" %}
+{% from "../_includes/components/icon-info.njk" import iconInfo %}
+{% block title %}
+    Attributions
+{% endblock title %}
+{% block description %}
+    Attributions for Jared Gebel's personal website
+{% endblock description %}
+{% block content %}
+    <h1>Attributions</h1>
+    <h2>Font</h2>
+    <p>
+        <a href="https://github.com/weiweihuanghuang/Prodigy-Sans">Prodigy Sans</a>
+    </p>
+    <h2>Icons</h2>
+    <ul>
+        <li>
+            {{ iconInfo ("article", "https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aarticle%3A", "Material Icons") }}
+        </li>
+    </ul>
+{% endblock content %}
