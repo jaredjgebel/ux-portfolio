@@ -60,16 +60,12 @@ module.exports = {
         serif: ["Bitter", ...defaultTheme.fontFamily.serif],
       },
       typography: ({ theme }) => ({
-        custom: {
+        DEFAULT: {
           css: {
             "--tw-prose-body": theme("colors.neutral[90]"),
             "--tw-prose-headings": theme("colors.neutral[90]"),
             "--tw-prose-links": theme("colors.primary[70]"),
             "--tw-prose-bullets": theme("colors.primary[70]"),
-          },
-        },
-        DEFAULT: {
-          css: {
             a: {
               "&:hover": {
                 color: theme("colors.primary[50]"),
