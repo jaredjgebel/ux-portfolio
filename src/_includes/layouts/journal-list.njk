@@ -27,13 +27,17 @@
         <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
     </head>
-    <body>
+    <body class="">
         {% include "../_nav.njk" %}
-        <div class="grid-layout-base bg-neutral-10 min-h-screen">
+        <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
             {% include "../_sidebar.njk" %}
-            {% block content %}
-                {{ content | safe }}
-            {% endblock %}
+            <main class="grid-layout-row">
+                <div class="grid-layout-content">
+                    {% block content %}
+                        {{ content | safe }}
+                    {% endblock %}
+                </div>
+            </main>
             {% include "../_footer.njk" %}
         </div>
     </body>

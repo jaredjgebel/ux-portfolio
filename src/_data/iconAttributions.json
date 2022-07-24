@@ -1,0 +1,108 @@
+[
+  {
+    "iconName": "Article",
+    "fileName": "article",
+    "link": "https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aarticle%3A",
+    "author": "Material Icons",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Articles",
+    "fileName": "articles",
+    "link": "https://thenounproject.com/icon/articles-868185/",
+    "author": "Hans Draiman",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Arrow Back",
+    "fileName": "arrow-left",
+    "link": "https://akveo.github.io/eva-icons/#/",
+    "author": "Eva Icons",
+
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Arrow Forward",
+    "fileName": "arrow-right",
+    "link": "https://akveo.github.io/eva-icons/#/",
+    "author": "Eva Icons",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Close",
+    "fileName": "close",
+    "link": "https://akveo.github.io/eva-icons/#/",
+    "author": "Eva Icons",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Email",
+    "fileName": "email",
+    "link": "https://akveo.github.io/eva-icons/#/",
+    "author": "Eva Icons",
+
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Figma",
+    "fileName": "figma",
+    "link": "https://lucide.dev/icon/figma",
+    "author": "Lucide",
+    "paintType": "stroke"
+  },
+  {
+    "iconName": "Github",
+    "fileName": "github",
+    "link": "https://akveo.github.io/eva-icons/#/",
+    "author": "Eva Icons",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Hamburger Menu",
+    "fileName": "hamburger-menu",
+    "link": "https://github.com/jaynewey/charm-icons",
+    "author": "Charm Icons",
+    "paintType": "stroke"
+  },
+  {
+    "iconName": "User Research",
+    "fileName": "magnifying-glass",
+    "link": "https://thenounproject.com/icon/user-research-2457895/",
+    "author": "DailyPM",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Screen",
+    "fileName": "monitor",
+    "link": "https://thenounproject.com/icon/screen-3040227/",
+    "author": "Justin Blake",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "UX Roadmap",
+    "fileName": "road",
+    "link": "https://thenounproject.com/icon/ux-roadmap-229099/",
+    "author": "Yu Luck",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Assist",
+    "fileName": "text-boxes",
+    "link": "https://thenounproject.com/icon/assist-3147031/",
+    "author": "Justin Blake",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Connection",
+    "fileName": "user-bubbles",
+    "link": "https://thenounproject.com/icon/connection-4180704/",
+    "author": "Justin Blake",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  }
+]
