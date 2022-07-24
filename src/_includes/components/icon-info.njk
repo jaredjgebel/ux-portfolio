@@ -1,7 +1,6 @@
 {% from "./icon.njk" import icon %}
 {% macro iconInfo(iconName, fileName, link, author, website, paintType) %}
     {% set class = [paintType, "-neutral-90"] | join %}
-    {{ class | log }}
     <div class="inline-flex items-center gap-5">
         <span class="">
             {{ icon("small", fileName, class) }}
