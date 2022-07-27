@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{ title }}</title>
         <meta charset="UTF-8"/>
+        <title>{{ title }}</title>
         {% if description %}
             <meta name="description" content="{{ description }}"/>
         {% endif %}
-        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
         {% opengraph page.url, title, description, page.fileSlug %} <link rel="preload" href="../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
