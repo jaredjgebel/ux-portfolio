@@ -1,15 +1,10 @@
 {% macro label(text, link) %}
-  <li id="sidebar-nav-item" class="flex group py-1 my-2">
-    <a href="{{ link }}" id="sidebar-nav-item-label" class="inline-flex flex-row w-full h-full rounded group-hover:bg-primary-40 group-active:bg-primary-60 focus:outline
-                        focus:outline-2 focus:outline-primary-30 lg-nav-link-sidebar xl:xl-nav-link-sidebar text-neutral-10
-                        group-hover:text-neutral-0">
-      <div id="active-indicator" class="flex justify-center items-center w-6">
-        <div class="active-indicator-circle hidden h-4 w-4 bg-[#EDED53] rounded-full"></div>
-      </div>
+  <li class="sidebar-nav-item flex group py-1 my-2">
+    <a href="{{ link }}" class="sidebar-nav-item-label inline-flex flex-row w-full h-full pl-6 rounded group-hover:bg-primary-40 group-active:bg-primary-60 focus:outline focus:outline-2 focus:outline-primary-30 lg-nav-link-sidebar xl:xl-nav-link-sidebar text-neutral-10 group-hover:text-neutral-0">
       {{ text }}
     </a>
   </li>
 {% endmacro %}
 {% macro sectionlabel(text) %}
-  <li id="navbar-section-heading" class="mt-7 pl-6 lg-heading-sidebar xl:xl-heading-sidebar text-neutral-20">{{ text }}</li>
+  <li class="navbar-section-heading mt-7 pl-6 lg-heading-sidebar xl:xl-heading-sidebar text-neutral-20">{{ text }}</li>
 {% endmacro %}

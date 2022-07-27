@@ -28,12 +28,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode(
     "opengraph",
     function (url, title, description, slug) {
-      const imageSlug = slug === "" ? "/index" : `${url}`;
+      const imageSlug = slug === "" ? "index" : `${slug}`;
       return `<meta property="og:url" content="https://www.jaredjgebel.com${url}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="${title}">
     <meta property="og:description" content="${description}">
-    <meta property="og:image" content="/assets/open-graph${imageSlug}.png">`;
+    <meta property="og:image" content="/assets/open-graph/${imageSlug}.png">`;
     }
   );
 
