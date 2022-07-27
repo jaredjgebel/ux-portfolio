@@ -25,6 +25,18 @@ module.exports = function (eleventyConfig) {
     return process.env.ELEVENTY_PRODUCTION ? "" : `?v=${now}`;
   });
 
+  eleventyConfig.addNunjucksShortcode(
+    "opengraph",
+    function (url, title, description, slug) {
+      const imageSlug = slug === "" ? "/index" : `${url}`;
+      return `<meta property="og:url" content="https://www.jaredjgebel.com${url}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="${title}">
+    <meta property="og:description" content="${description}">
+    <meta property="og:image" content="/assets/open-graph${imageSlug}.png">`;
+    }
+  );
+
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addPlugin(svgContents);

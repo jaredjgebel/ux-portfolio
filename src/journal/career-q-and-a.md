@@ -1,6 +1,6 @@
 ---
 title: Career Q & A
-description: Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or technology. I’ve served...
+description: Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or technology...
 layout: ../_includes/layouts/journal-post.njk
 ---
 
