@@ -112,7 +112,16 @@
     @apply prose:ul;
   }
 
-  .prose-custom-layout p {
+  .prose-custom-layout p,
+  ul,
+  ol {
+    @apply xl:pr-11 max:pr-48;
+  }
+
+  .header-right-margin h1,
+  .header-right-margin h2,
+  .header-right-margin h3,
+  .header-right-margin h4 {
     @apply xl:pr-11 max:pr-48;
   }
 
