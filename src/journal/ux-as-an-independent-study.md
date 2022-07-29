@@ -40,13 +40,13 @@ This specialization is a series of six courses on UX research and design. While 
 - Conducting a user needs assessment of the My Notebook feature on Ravelry, a fiber arts website
 - Usability testing of [Momondo](https://www.momondo.com/), a flight booking site with some novel search features
 - Sketching, creating wireframes, and testing a paper prototype for a group streaming organizer I thought up called Watch Together
-- Writing a methodologically sound survey to gauge user satisfaction for a company intranet system
+- Writing a methodologically-sound survey to gauge user satisfaction for a company intranet system
 - Testing how the format of cookie notification content affects comprehension
 - Researching and designing an application for farmers watching the commodities markets
 
 ### Essential UX Books
 
-I’m an avid reader, and I love exploring topics in-depth. I researched what the most formative UX texts are, and this is what I’ve completed so far.
+I’m an avid reader, and I love exploring topics in depth. I researched what the most formative UX texts are, and this is what I’ve completed so far.
 
 #### _The Design of Everyday Things_, Don Norman
 
@@ -58,11 +58,11 @@ Here's another classic book that stresses anticipating user needs based on their
 
 #### _The Elements of User Experience<span>:</span> User-Centered Design for the Web and Beyond,_ Jesse James Garrett
 
-This is the third text that is almost universally recommended for UX beginners. Garrett breaks down UX into five “planes” that describe UX as a process and a product artifact. I found his ideas about breaking products into functionality and content particularly interesting. His description of navigation design is particularly interesting, and it's an area of the field that is perhaps still under-explored.
+This is the third text that is almost universally recommended for UX beginners. Garrett breaks UX into five “planes” that describe UX as a process and a product artifact. The book shifted my thinking around how both functionality _and_ content need to be considered in many areas of UX design. His description of navigation design is particularly interesting, and it's a crucial area of the field that I personally don't seem to see a ton of material about.
 
 #### _The User Experience Team of One<span>:</span> A Research and Design Survival Guide_, Leah Buley
 
-Buley describes the challenges of integrating UX into product teams that are still building their [UX maturity](https://www.nngroup.com/articles/ux-maturity-model/). She emphasizes how collaboration is key to getting organizational buy-in. After reading, I started thinking more about the ways UX requires relationship-building. She also includes a list of deliverables that pare down time-intensive practices without greatly diluting their efficacy. It's well worth the read, even if you're not the only UX practitioner in an organization.
+Buley describes the challenges of integrating UX into product teams that are still building their [UX maturity](https://www.nngroup.com/articles/ux-maturity-model/). She explains how bringing stakeholders into the process of creating deliverables can improve organizational buy-in. After reading, I started thinking more about the many ways in which UX requires relationship building. She also includes a list of deliverables that pare down time-intensive practices without undermining their efficacy. It's well worth the read, even if you're not the only UX practitioner in an organization.
 
 #### _Letting Go of the Words<span>:</span> Writing Web Content That Works_, Janice (Ginny) Reddish
 
@@ -70,11 +70,11 @@ Reddish covers everything that makes web content discoverable and digestible. Sh
 
 #### _Hooked<span>:</span> How to Build Habit-Forming Products_, Nir Eyal
 
-Eyal’s popular (and controversial) book exposes the psychological tactics that drive users to come back to a product again and again. He’s gotten some criticism for writing a playbook to model the triggers of addiction. Still, his description of how tech companies influence people's behavior is accurate. Eight years in retrospect, his perspective does come across as a bit naive (and he tries to offer a remedy in his 2019 book _Indistractable: How to Control Your Attention and Choose Your Life_). Regardless, one of the most salient points is that a product's most engaged users don’t return out of muscle memory - they invest themselves into the platform.
+Eyal’s popular (and controversial) book exposes the psychological tactics that drive users to come back to a product again and again. He’s gotten some criticism for essentially writing a playbook to model the triggers of addiction. Still, his description of how technology influences people's behavior is accurate. Eight years in retrospect, his perspective does come across as overly optimistic (and he offers a remedy in his 2019 book _Indistractable: How to Control Your Attention and Choose Your Life_). Regardless, one of the most salient points is that a product's most engaged users don’t return out of muscle memory - they invest themselves into the platform.
 
 #### _How to Make Sense of Any Mess_, Abby Covert
 
-Here, Covert lays out her approach to information architecture. The book is about developing a more attentive mindset toward the way organizations communicate and structure information. It’s based around a series of mantra-like tenets such as “By facing reality, we can find solutions” and “There’s distance between reality and your intent.” If you like theoretical and idea-driven works (raises hand), you’ll enjoy it. As an added plus, the book is [available online for free](http://www.howtomakesenseofanymess.com/).
+Here, Covert lays out her approach to information architecture. The book is about developing a more attentive mindset toward the way organizations communicate and structure information. It’s based around a series of mantra-like tenets such as “There’s distance between reality and your intent” and "The way you organize things says a lot about you." If you like theoretical and idea-driven works (raises hand), you’ll enjoy it. As an added plus, the book is [available online for free](http://www.howtomakesenseofanymess.com/).
 
 Up next on my list are:
 
@@ -161,7 +161,7 @@ I’m exploring Miro solo, but I’m anticipating using it for collaborative des
 
 #### Zeplin
 
-I can definitely see the utility in Zeplin as a source of truth for design. I used a plugin to generate Tailwind CSS classes for my custom text styles, which saved a lot of manual labor. It automatically saves optimized assets and can save spacing tokens, which are not yet available in Figma.
+I can definitely see the utility in Zeplin as a source of truth for design. I used a plugin to generate Tailwind CSS classes for my custom text styles, which saved a lot of manual labor. It automatically generates optimized assets and can save spacing tokens, which are not yet available in Figma.
 
 #### Visual Studio Code and Github
 
