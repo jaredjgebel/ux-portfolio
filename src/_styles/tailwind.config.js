@@ -66,6 +66,7 @@ module.exports = {
             "--tw-prose-headings": theme("colors.neutral[90]"),
             "--tw-prose-links": theme("colors.primary[70]"),
             "--tw-prose-bullets": theme("colors.primary[70]"),
+            "--tw-prose-quote-borders": theme("colors.primary[10]"),
             a: {
               "&:hover": {
                 color: theme("colors.primary[50]"),
@@ -81,6 +82,18 @@ module.exports = {
                 "outline-color": theme("colors.primary[50]"),
                 "outline-offset": "2px",
               },
+            },
+            blockquote: {
+              "background-color": theme("colors.primary[10]"),
+              "padding-top": "1px",
+              "padding-bottom": "1px",
+              "padding-left": "1em",
+              "padding-right": "1em",
+              "border-left": "none",
+              quotes: "none",
+              "border-radius": "4px",
+              "margin-left": "0px",
+              "margin-right": "0px",
             },
           },
         },

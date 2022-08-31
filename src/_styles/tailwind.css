@@ -112,9 +112,7 @@
     @apply prose:ul;
   }
 
-  .prose-custom-layout p,
-  ul,
-  ol {
+  .prose-custom-layout {
     @apply xl:pr-11 max:pr-48;
   }
 
