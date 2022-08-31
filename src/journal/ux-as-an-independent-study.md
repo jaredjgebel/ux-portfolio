@@ -2,11 +2,13 @@
 title: UX as an Independent Study
 description: I’ve always been inclined to design my own educational experiences. I took independent study courses in school...
 layout: ../_includes/layouts/journal-post.njk
+tags: [post, ux, education]
+date: 2022-07-29
 ---
 
 # UX as an Independent Study
 
-July 2022
+<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
 I’ve always been inclined to design my own educational experiences. I took independent study courses in school and designed my own major in college. When I started a remote web development bootcamp, I opted for the learning plan with the most autonomy. It's not a surprise I decided to study UX independently as well. However, I was only able to choose this path for myself because of free and lower-cost resources that have flourished on the web. I’d like to share my self-study "curriculum", and I hope that it’s useful for anyone who wants to explore the field.
 

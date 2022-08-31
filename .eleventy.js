@@ -4,12 +4,15 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
 const svgContents = require("eleventy-plugin-svg-contents");
+const moment = require("moment");
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItAttrs);
 md.use(markdownItAnchor);
 
 const now = String(Date.now());
+
+moment.locale("en");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/_styles/tailwind.config.js");
@@ -36,6 +39,14 @@ module.exports = function (eleventyConfig) {
     <meta property="og:image" content="/assets/open-graph/${imageSlug}.png">`;
     }
   );
+
+  eleventyConfig.addFilter("dateIso", (date) => {
+    return moment(date).toISOString();
+  });
+
+  eleventyConfig.addFilter("dateReadable", (date) => {
+    return moment(date).utc().format("LL");
+  });
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 

@@ -13,19 +13,29 @@ description: List of posts for Jared Gebel's UX journal/blog
     {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
     <span class="relative top-[0.105rem]">Home</span>
   </a>
-  <div class="prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin first-paragraph-margin
-      italic-in-heading ordered-list-items unordered-list-items py-10 xl:py-12">
+  <div class="prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin italic-in-heading
+      ordered-list-items unordered-list-items py-10 xl:py-12">
     <h1>Jared's UX Journal</h1>
-    <h2 class="sm:sm-heading-4 lg:lg-heading-4 xl:xl-heading-4">July 2022</h2>
-    <h3 class="sm:sm-heading-3 lg:lg-heading-3 xl:xl-heading-3">
-      <a href="/journal/ux-as-an-independent-study" class="py-3 outline-2 outline-primary-70">UX as an Independent Study</a>
-    </h3>
-    <p>I’ve always been inclined to design my own educational experiences. I took independent study courses in school and
-      designed my own major in college...</p>
-    <h3 class="sm:sm-heading-3 lg:lg-heading-3 xl:xl-heading-3">
-      <a href="/journal/career-q-and-a" class="py-3 outline-2 outline-primary-70">Career Q &amp; A</a>
-    </h3>
-    <p>Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or
-      technology. I’ve served...</p>
-  </div>
-{% endblock content %}
+    {% for post in collections.post | reverse %}
+      <h2 class="mb-1">
+        <a href="{{ post.data.page.url }}" class="outline-2 outline-primary-70">{{ post.data.title }}</a>
+      </h2>
+      <div class="date">
+        <span class="text-sm">
+          <time datetime="{{ post.data.date | dateIso }}">{{ post.data.date | dateReadable }}</time>
+        </span>
+      </div>
+      <p class="description mt-3 mb-5">{{ post.data.description }}</p>
+      <div class="tags inline-flex gap-4">
+        {% set tags = post.data.tags %}
+        {% for tag in tags %}
+          {% if tag !== "post" %}
+            <div class="tag bg-primary-10 px-3 rounded-sm">
+              <span class="text-sm">{{ tag }}</span>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  {% endblock content %}
+</div>

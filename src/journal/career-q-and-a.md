@@ -2,9 +2,13 @@
 title: Career Q & A
 description: Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or technology...
 layout: ../_includes/layouts/journal-post.njk
+tags: [post, career]
+date: 2022-07-22
 ---
 
 # Career Q & A
+
+<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
 ## How does working in UX fit into your career trajectory?
 

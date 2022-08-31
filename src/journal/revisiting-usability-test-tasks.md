@@ -2,13 +2,15 @@
 title: Revisiting Usability Test Tasks
 description: As a part of an online course in a UX specialization, I conducted a usability test. I chose to test the search feature of...
 layout: ../_includes/layouts/journal-post.njk
+tags: [post, ux, research, usability]
+date: 2022-08-31
 ---
 
 # Revisiting Usability Test Tasks
 
-August 2022
+<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
-As a part of an online course in a UX specialization, I conducted a remote usability test. I chose to test the search feature of the flight booking website[ Momondo.com](http://www.momondo.com). In this post, I’ll be comparing some general approaches to writing tasks for usability tests. I'll also describe how I would change the tasks if I were doing the assignment over again.
+As a part of an online course in a UX specialization, I conducted a remote usability test. I chose to test the search feature of the flight booking website [Momondo.com](http://www.momondo.com). In this post, I’ll be comparing some general approaches to writing tasks for usability tests. I'll also describe how I would change the tasks if I were doing the assignment over again.
 
 ## Methods
 
