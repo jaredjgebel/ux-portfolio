@@ -32,14 +32,18 @@
             <span class="text-neutral-10">&#8226;</span>
             {{ navitemfooter.label("Github", "https://github.com/jaredjgebel/ux-portfolio") }}
         </div>
-        <div class="pt-10 md:pt-12 lg:pt-13 ">
+        <div class="pt-10 md:pt-11 lg:pt-12">
             <li class="nav-item-footer">
-                <a
-                    href="/attributions"
-                    class="inline-flex flex-row h-full p-3 rounded text-neutral-10 leading-5 hover:underline focus:outline focus:outline-2
-                        focus:outline-primary-30">
-                    Attributions</a>
+                {{ navitemfooter.label("Attributions", "/attributions") }}
             </li>
+            <div class="built-with pt-6">
+                <p class="pl-3 text-neutral-10 text-sm leading-4">Built by Jared using
+                    <a class="hover:underline focus:outline focus:outline-2 focus:outline-primary-30" href="https://www.11ty.dev/">Eleventy</a>,
+                    <a class="hover:underline focus:outline focus:outline-2 focus:outline-primary-30" href="https://tailwindcss.com/">
+                        Tailwind CSS</a>, and
+                    <a class="hover:underline focus:outline focus:outline-2 focus:outline-primary-30" href="https://alpinejs.dev/">Alpine.js</a>
+                </p>
+            </div>
         </div>
     </ul>
 </nav>
