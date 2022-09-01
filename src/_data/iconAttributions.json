@@ -66,14 +66,6 @@
     "paintType": "stroke"
   },
   {
-    "iconName": "User Research",
-    "fileName": "magnifying-glass",
-    "link": "https://thenounproject.com/icon/user-research-2457895/",
-    "author": "DailyPM",
-    "website": "NounProject.com",
-    "paintType": "fill"
-  },
-  {
     "iconName": "Screen",
     "fileName": "monitor",
     "link": "https://thenounproject.com/icon/screen-3040227/",
@@ -102,6 +94,22 @@
     "fileName": "user-bubbles",
     "link": "https://thenounproject.com/icon/connection-4180704/",
     "author": "Justin Blake",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Evaluation",
+    "fileName": "evaluation",
+    "link": "https://thenounproject.com/icon/evaluation-3644103/",
+    "author": "Justin Blake",
+    "website": "NounProject.com",
+    "paintType": "fill"
+  },
+  {
+    "iconName": "Iteration",
+    "fileName": "iteration",
+    "link": "https://thenounproject.com/icon/iteration-339017/",
+    "author": "Yu luck",
     "website": "NounProject.com",
     "paintType": "fill"
   }
