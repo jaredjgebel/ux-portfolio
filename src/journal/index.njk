@@ -16,6 +16,7 @@ description: List of posts for Jared Gebel's UX journal/blog
   <div class="prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin italic-in-heading
       ordered-list-items unordered-list-items py-10 xl:py-12">
     <h1>Jared's UX Journal</h1>
+    {# {{ collections.post | log }} #}
     {% for post in collections.post | reverse %}
       <h2 class="mb-1">
         <a href="{{ post.data.page.url }}" class="outline-2 outline-primary-70">{{ post.data.title }}</a>

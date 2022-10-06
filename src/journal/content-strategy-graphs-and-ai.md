@@ -1,0 +1,13 @@
+---
+title: Content strategy, graphs, and AI
+description: Combining technologies to unearth connections
+date: 2022-09-06
+layout: ../_includes/layouts/journal-post.njk
+tags: [post, content strategy, ai, social posts]
+---
+
+# Content strategy, graphs, and AI
+
+<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+
+I've dabbled with graph queries when building websites with Gatsby.js, but I hadn't previously thought about how graphs could be used in content management. On a [recent episode of the Content Strategy Insights podcast](https://ellessmedia.com/csi/ashleigh-faith/), Ashleigh Faith talks about how utilizing data graphs and AI can yield insights that wouldn't otherwise be accessible, for both companies and users.
