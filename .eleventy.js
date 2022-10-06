@@ -48,6 +48,10 @@ module.exports = function (eleventyConfig) {
     return moment(date).utc().format("LL");
   });
 
+  eleventyConfig.addFilter("hasTag", (tags, tag) => {
+    return (tags || []).includes(tag);
+  });
+
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addPlugin(svgContents);

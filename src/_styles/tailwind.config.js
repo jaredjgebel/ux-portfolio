@@ -68,6 +68,7 @@ module.exports = {
             "--tw-prose-bullets": theme("colors.primary[70]"),
             "--tw-prose-quote-borders": theme("colors.primary[10]"),
             a: {
+              "text-decoration": "none",
               "&:hover": {
                 color: theme("colors.primary[50]"),
               },

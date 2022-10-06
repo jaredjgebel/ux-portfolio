@@ -1,0 +1,20 @@
+{% macro postListing(url, title, date, description, tags) %}
+    <h3 class="mb-1">
+        <a href="{{ url }}" class="outline-2 outline-primary-70">{{ title }}</a>
+    </h3>
+    <div class="date">
+        <span class="text-sm">
+            <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+        </span>
+    </div>
+    <p class="description mt-3 mb-5">{{ description }}</p>
+    <div class="tags inline-flex gap-4">
+        {% for tag in tags %}
+            {% if (tag !== "post") and (tag !== "social posts") %}
+                <div class="tag bg-primary-10 px-3 rounded-sm">
+                    <span class="text-sm">{{ tag }}</span>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endmacro %}

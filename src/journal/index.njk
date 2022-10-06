@@ -5,6 +5,7 @@ description: List of posts for Jared Gebel's UX journal/blog
 
 {% extends "../_includes/layouts/journal-list.njk" %}
 {% from "../_includes/components/icon.njk" import icon %}
+{% from "../_includes/components/post-listing.njk" import postListing %}
 {% block content %}
   <a
     href="/"
@@ -16,27 +17,19 @@ description: List of posts for Jared Gebel's UX journal/blog
   <div class="prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin italic-in-heading
       ordered-list-items unordered-list-items py-10 xl:py-12">
     <h1>Jared's UX Journal</h1>
-    {# {{ collections.post | log }} #}
+    <h2>Long-Form Posts</h2>
     {% for post in collections.post | reverse %}
-      <h2 class="mb-1">
-        <a href="{{ post.data.page.url }}" class="outline-2 outline-primary-70">{{ post.data.title }}</a>
-      </h2>
-      <div class="date">
-        <span class="text-sm">
-          <time datetime="{{ post.data.date | dateIso }}">{{ post.data.date | dateReadable }}</time>
-        </span>
-      </div>
-      <p class="description mt-3 mb-5">{{ post.data.description }}</p>
-      <div class="tags inline-flex gap-4">
-        {% set tags = post.data.tags %}
-        {% for tag in tags %}
-          {% if tag !== "post" %}
-            <div class="tag bg-primary-10 px-3 rounded-sm">
-              <span class="text-sm">{{ tag }}</span>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% set tags = post.data.tags %}
+      {% if not tags | hasTag('social posts') %}
+        {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
+      {% endif %}
+    {% endfor %}
+    <h2>Social Media Posts</h2>
+    {% for post in collections.post | reverse %}
+      {% set tags = post.data.tags %}
+      {% if tags | hasTag('social posts') %}
+        {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
+      {% endif %}
     {% endfor %}
   {% endblock content %}
 </div>
