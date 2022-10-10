@@ -24,12 +24,16 @@ description: List of posts for Jared Gebel's UX journal/blog
         {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
       {% endif %}
     {% endfor %}
-    <h2>Social Media Posts</h2>
+    <h2>Social Posts</h2>
     {% for post in collections.post | reverse %}
       {% set tags = post.data.tags %}
-      {% if tags | hasTag('social posts') %}
+      {# content is each markdown file rendered as HTML #}
+      {# this is necessary to access each post without frontmatter #}
+      {% set content = post._templateContent %}
+        {% if tags | hasTag('social posts') %}
         {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
-      {% endif %}
-    {% endfor %}
-  {% endblock content %}
-</div>
+        {# shortcode strips title and date from post using regex #}
+      {% socialPost content %}
+    {% endif %}
+  {% endfor %}
+{% endblock content %}</div>

@@ -40,6 +40,13 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addNunjucksShortcode("socialPost", function (htmlString) {
+    const stripBeginning = /(?<=time\>\<\/p\>)(\W|\w)+/;
+    const result = stripBeginning.exec(htmlString);
+
+    return result && result[0];
+  });
+
   eleventyConfig.addFilter("dateIso", (date) => {
     return moment(date).toISOString();
   });
