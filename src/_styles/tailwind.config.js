@@ -56,8 +56,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Prodigy Sans", ...defaultTheme.fontFamily.sans],
-        serif: ["Bitter", ...defaultTheme.fontFamily.serif],
+        sans: ["Prodigy Sans", "Adjusted Verdana Fallback", ...defaultTheme.fontFamily.sans],
+        serif: ["Bitter", "Adjusted Georgia Fallback", ...defaultTheme.fontFamily.serif],
       },
       typography: ({ theme }) => ({
         DEFAULT: {

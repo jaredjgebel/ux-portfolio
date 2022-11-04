@@ -74,6 +74,22 @@
   font-weight: 600;
 }
 
+/* fallback font for Prodigy Sans */
+@font-face {
+  font-family: 'Adjusted Verdana Fallback';
+  src: local(Verdana);
+  size-adjust: 93%;
+  ascent-override: 107%;
+  descent-override: 52%;  
+}
+
+/* fallback font for Bitter */
+@font-face {
+  font-family: 'Adjusted Georgia Fallback';
+  src: local(Georgia);
+  size-adjust: 104%;
+}
+
 @layer utilities {
   /* grid layout styles */
   /* base grid layout for all pages, for breakpoints with sidebar (lg, xl, max) */
