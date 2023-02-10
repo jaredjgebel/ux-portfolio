@@ -6,34 +6,36 @@ description: List of posts for Jared Gebel's UX journal/blog
 {% extends "../_includes/layouts/journal-list.njk" %}
 {% from "../_includes/components/icon.njk" import icon %}
 {% from "../_includes/components/post-listing.njk" import postListing %}
+{% from "../_includes/components/social-post-listing.njk" import socialPostListing %}
+{% from "../_includes/components/card.njk" import card as card %}
 {% block content %}
   <a
     href="/"
-    class="group inline-flex flex-row items-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
-      focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+    class="group inline-flex flex-row itemis-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm
+      hover:text-primary-50 focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50
+      active:outline-primary-50">
     {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
     <span class="relative top-[0.105rem]">Home</span>
   </a>
   <div class="prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin italic-in-heading
       ordered-list-items unordered-list-items py-10 xl:py-12">
     <h1>Jared's UX Journal</h1>
-    <h2>Long-Form Posts</h2>
+    <h2 class="sm:sm-heading-3 lg:lg-heading-3 xl:xl-heading-3">Featured posts</h2>
+    <div class="cards flex flex-col gap-6 md:gap-5 w-fit mb-10">
+      {{ card("Revisiting Usability Test Tasks", "Mistakes to avoid in usability testing", "iteration", "fill-neutral-10", "bg-primary-60", "/journal/revisiting-usability-test-tasks") }}
+      {{ card("UX as an Independent Study", "My approach to building skill in UX methods", "evaluation", "fill-neutral-10", "bg-primary-90", "/journal/ux-as-an-independent-study") }}
+    </div>
     {% for post in collections.post | reverse %}
       {% set tags = post.data.tags %}
+      {% set postContent = post._templateContent %}
       {% if not tags | hasTag('social posts') %}
         {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
       {% endif %}
+      {% if tags | hasTag('social posts') %}
+        {{ socialPostListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags, postContent) }}
+      {# shortcode strips title and date from post using regex #}
+        {# {% socialPost postContent %} #}
+      {% endif %}
     {% endfor %}
-    <h2>Social Posts</h2>
-    {% for post in collections.post | reverse %}
-      {% set tags = post.data.tags %}
-      {# content is each markdown file rendered as HTML #}
-      {# this is necessary to access each post without frontmatter #}
-      {% set content = post._templateContent %}
-        {% if tags | hasTag('social posts') %}
-        {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
-        {# shortcode strips title and date from post using regex #}
-      {% socialPost content %}
-    {% endif %}
-  {% endfor %}
-{% endblock content %}</div>
+  {% endblock content %}
+</div>

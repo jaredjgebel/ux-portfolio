@@ -1,0 +1,24 @@
+{% from "./tag.njk" import tag %}
+{% macro socialPostListing(url, title, date, description, tagLabels, postContent) %}
+    <h3 class="mb-1">
+        <a href="{{ url }}" class="outline-2 outline-primary-70">{{ title }}</a>
+    </h3>
+    <div class="date">
+        <span class="text-sm leading-4">
+            <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+        </span>
+    </div>
+    <div class="journal-index-posts">
+        {% socialPost postContent %}
+        <div class="tags flex gap-4 mt-7">
+            {% for label in tagLabels %}
+                {% if (label !== "post") %}
+                    {{ tag(label) }}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="">
+            <hr class="my-11 mx-8 border border-t-2 border-primary-30"/>
+        </div>
+    </div>
+{% endmacro %}

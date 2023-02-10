@@ -91,6 +91,10 @@
 }
 
 @layer utilities {
+  /* custom heading styles for journal index page */
+  .journal-index-posts h2 {
+    @apply sm-heading-4 lg:lg-heading-4 xl:xl-heading-4;
+  }
   /* grid layout styles */
   /* base grid layout for all pages, for breakpoints with sidebar (lg, xl, max) */
   .grid-layout-base {

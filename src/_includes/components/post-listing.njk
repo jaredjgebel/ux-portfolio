@@ -1,4 +1,5 @@
-{% macro postListing(url, title, date, description, tags) %}
+{% from "./tag.njk" import tag %}
+{% macro postListing(url, title, date, description, tagLabels) %}
     <h3 class="mb-1">
         <a href="{{ url }}" class="outline-2 outline-primary-70">{{ title }}</a>
     </h3>
@@ -9,12 +10,11 @@
     </div>
     <p class="description mt-3 mb-5">{{ description }}</p>
     <div class="tags inline-flex gap-4">
-        {% for tag in tags %}
-            {% if (tag !== "post") and (tag !== "social posts") %}
-                <div class="tag bg-primary-10 px-3 rounded-sm">
-                    <span class="text-sm">{{ tag }}</span>
-                </div>
+        {% for label in tagLabels %}
+            {% if (label !== "post") %}
+                {{ tag(label) }}
             {% endif %}
         {% endfor %}
     </div>
+    <hr class="my-11 mx-8 border border-t-2 border-primary-30"/>
 {% endmacro %}

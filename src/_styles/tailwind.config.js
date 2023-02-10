@@ -64,7 +64,7 @@ module.exports = {
           css: {
             "--tw-prose-body": theme("colors.neutral[90]"),
             "--tw-prose-headings": theme("colors.neutral[90]"),
-            "--tw-prose-links": theme("colors.primary[70]"),
+            "--tw-prose-links": theme("colors.primary[60]"),
             "--tw-prose-bullets": theme("colors.primary[70]"),
             "--tw-prose-quote-borders": theme("colors.primary[10]"),
             a: {

@@ -1,12 +1,12 @@
 ---
-title: UX as an Independent Study
-description: I’ve always been inclined to design my own educational experiences. I took independent study courses in school...
+title: UX as an independent study
+description: My approach to building skill in UX methods
 layout: ../_includes/layouts/journal-post.njk
-tags: [post, ux, education]
+tags: [post, ux, education, long post]
 date: 2022-07-29
 ---
 
-# UX as an Independent Study
+# UX as an independent study
 
 <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 

@@ -1,8 +1,8 @@
 ---
 title: Career Q & A
-description: Like many people in UX, I’ve had experience in a handful of fields. My work has tended to center around people or technology...
+description: How my career experiences relate to UX
 layout: ../_includes/layouts/journal-post.njk
-tags: [post, career]
+tags: [post, career, long post]
 date: 2022-07-22
 ---
 

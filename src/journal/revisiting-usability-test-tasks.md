@@ -1,12 +1,12 @@
 ---
-title: Revisiting Usability Test Tasks
-description: As a part of an online course in a UX specialization, I conducted a usability test. I chose to test the search feature of...
+title: Revisiting usability test tasks
+description: Mistakes to avoid in usability testing
 layout: ../_includes/layouts/journal-post.njk
-tags: [post, ux, research, usability]
+tags: [post, ux, research, usability, long post]
 date: 2022-08-31
 ---
 
-# Revisiting Usability Test Tasks
+# Revisiting usability Test tasks
 
 <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
