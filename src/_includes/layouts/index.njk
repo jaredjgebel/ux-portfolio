@@ -10,7 +10,6 @@
         {% opengraph page.url, title, description, page.fileSlug %} <link rel="preload" href="../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="./style.css{% version %}"/> {% block head %}{% endblock %}
-        <script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
         <script defer src="./js/alpine.js{% version %}"></script>
         <style>
             [x-cloak] {
@@ -22,9 +21,6 @@
         <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
     </head>
     <body>
-        {# FOUC fix for Firefox #}
-        <script>
-            0</script>
         {% include "../_nav.njk" %}
         <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
             {% include "../_sidebar.njk" %}
