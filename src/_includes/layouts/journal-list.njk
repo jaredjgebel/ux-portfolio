@@ -1,38 +1,43 @@
 {% from "../components/icon.njk" import icon as icon %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>{{ title }}</title>
-        {% if description %}
-            <meta name="description" content="{{ description }}"/>
-        {% endif %}
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-        {% opengraph page.url, title, description, page.fileSlug %} <link rel="preload" href="../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="../style.css{% version %}"/> {% block head %}{% endblock %}
-        <script defer src="../js/alpine.js{% version %}"></script>
-        <style>
-            [x-cloak] {
-                display: none !important;
-            }
-        </style>
-        <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any">
-        <link rel="icon" href="../assets/favicons/favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="../assets/favicons/apple-touch-icon.png">
-    </head>
-    <body class="">
-        {% include "../_nav.njk" %}
-        <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
-            {% include "../_sidebar.njk" %}
-            <main class="grid-layout-row">
-                <div class="grid-layout-content">
-                    {% block content %}
-                        {{ content | safe }}
-                    {% endblock %}
-                </div>
-            </main>
-            {% include "../_footer.njk" %}
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{{ title }}</title>
+    {% if description %}
+      <meta name="description" content="{{ description }}"/>
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    {% opengraph page.url, title, description, page.fileSlug %} <link rel="preload" href="../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../style.css{% version %}"/> {% block head %}{% endblock %}
+    <script defer src="../js/alpine.js{% version %}"></script>
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+    <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/favicons/favicon.svg" type="image/svg+xml">
+    <link
+    rel="apple-touch-icon" href="../assets/favicons/apple-touch-icon.png">
+    {# Firefox FOUC fix? #}
+    <script>
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body class="">
+    {% include "../_nav.njk" %}
+    <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
+      {% include "../_sidebar.njk" %}
+      <main class="grid-layout-row">
+        <div class="grid-layout-content">
+          {% block content %}
+            {{ content | safe }}
+          {% endblock %}
         </div>
-    </body>
+      </main>
+      {% include "../_footer.njk" %}
+    </div>
+  </body>
 </html>
