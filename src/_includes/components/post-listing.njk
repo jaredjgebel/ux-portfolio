@@ -16,5 +16,9 @@
             {% endif %}
         {% endfor %}
     </div>
-    <hr class="my-11 mx-8 border border-t-2 border-primary-30"/>
+    {% if not (title === "Career Q & A") %}
+        <div class="my-11 flex justify-center">
+            {% include "../elements/_divider-dark.njk" %}
+        </div>
+    {% endif %}
 {% endmacro %}

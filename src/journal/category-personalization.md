@@ -6,7 +6,7 @@ layout: ../_includes/layouts/journal-post.njk
 tags: [post, feature breakdown, design, e-commerce, social posts]
 ---
 
-# Category personalization 
+# Category personalization
 
 <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
@@ -21,7 +21,7 @@ An image is associated with each category name. The interesting part is that eac
 <figcaption>In this case, celery.</figcaption>
 </figure>
 
-## What purpose could an customized product label serve?
+## What purpose could a customized product label serve?
 
 I'm conjecturing, but I would imagine the personalized image is there to make it easier and faster for users to find products. A customer will spend more money on items they're actually able to find. It may reduce the time it takes make a purchase, resulting in a more efficient shopping experience. 
 
@@ -31,4 +31,4 @@ What are the advantages of this feature? First, the user's memory is activated. 
 
 From my perspective, the primary disadvantage of the feature is the tiny image size - it's only 30 x 30 pixels. The small size is necessary to keep the image proportionate to the text and maximize the limited horizontal space. However, for anyone with limited vision, the image could very well appear as a blur. As someone without vision issues, it's already quite difficult to see.
 
-This is a fairly trivial example, but it does point to some novel uses of personalization. It makes me wonder how product labels, descriptions, and images could be customized as well.  It'll be interesting to see how personalization -is further incorporated into products.
+This is a fairly trivial example, but it does point to some novel uses of personalization. It makes me wonder how product labels, descriptions, and images could be customized as well.  It'll be interesting to see how personalization is further incorporated into products.

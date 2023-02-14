@@ -6,14 +6,13 @@ description: List of posts for Jared Gebel's UX journal/blog
 {% extends "../_includes/layouts/journal-list.njk" %}
 {% from "../_includes/components/icon.njk" import icon %}
 {% from "../_includes/components/post-listing.njk" import postListing %}
-{% from "../_includes/components/social-post-listing.njk" import socialPostListing %}
 {% from "../_includes/components/card.njk" import card as card %}
+{% from "../_includes/components/tag.njk" import tag as tag %}
 {% block content %}
   <a
     href="/"
-    class="group inline-flex flex-row itemis-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm
-      hover:text-primary-50 focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50
-      active:outline-primary-50">
+    class="group inline-flex flex-row items-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
+      focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
     {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
     <span class="relative top-[0.105rem]">Home</span>
   </a>
@@ -32,10 +31,30 @@ description: List of posts for Jared Gebel's UX journal/blog
         {{ postListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags) }}
       {% endif %}
       {% if tags | hasTag('social posts') %}
-        {{ socialPostListing(post.data.page.url, post.data.title, post.data.date, post.data.description, tags, postContent) }}
-      {# shortcode strips title and date from post using regex #}
-        {# {% socialPost postContent %} #}
+        <h3 class="mb-1">
+          <a href="{{ post.data.page.url }}" class="outline-2 outline-primary-70">{{ post.data.title }}</a>
+        </h3>
+        <div class="date">
+          <span class="text-sm leading-4">
+            <time datetime="{{ post.data.date | dateIso }}">{{ post.data.date | dateReadable }}</time>
+          </span>
+        </div>
+        <div class="journal-index-posts">
+          {% set fileName = ["src/_includes/markdown-partials/blog/", post.data.page.fileSlug, ".md"] | join %}
+          {% renderFile fileName %}
+          <div class="tags flex gap-4 mt-7">
+            {% for label in tags %}
+              {% if (label !== "post") and (label !== "social posts") %}
+                {{ tag(label) }}
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="my-11 flex justify-center">
+            {% include "../_includes/elements/_divider-dark.njk" %}
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
+    {% renderFile "src/_includes/markdown-partials/blog/category-personalization.md" %}
   {% endblock content %}
 </div>

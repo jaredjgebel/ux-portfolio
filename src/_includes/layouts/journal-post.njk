@@ -1,3 +1,4 @@
+{% from "../components/tag.njk" import tag as tag %}
 {% from "../components/icon.njk" import icon as icon %}
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +41,13 @@
                         {% block content %}
                             {{ content | safe }}
                         {% endblock %}
+                        <div class="tags flex gap-4 mt-7">
+                            {% for label in tags %}
+                                {% if (label !== "post") and (label !== "social posts") %}
+                                    {{ tag(label) }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
                     </article>
                 </div>
             </main>

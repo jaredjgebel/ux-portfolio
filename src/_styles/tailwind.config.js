@@ -96,6 +96,10 @@ module.exports = {
               "margin-left": "0px",
               "margin-right": "0px",
             },
+            figcaption: {
+              "font-family": "Bitter",
+              "color": "black"
+            }
           },
         },
       }),

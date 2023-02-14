@@ -1,15 +1,3 @@
----
-title: Revisiting usability test tasks
-description: Mistakes to avoid in usability testing
-layout: ../_includes/layouts/journal-post.njk
-tags: [post, ux, research, usability, long post]
-date: 2022-08-31
----
-
-# Revisiting usability test tasks
-
-<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-
 As a part of an online course in a UX specialization, I conducted a remote usability test. I chose to test the search feature of the flight booking website [Momondo.com](http://www.momondo.com). In this post, I’ll be comparing some general approaches to writing tasks for usability tests. I'll also describe how I would change the tasks if I were doing the assignment over again.
 
 ## Methods

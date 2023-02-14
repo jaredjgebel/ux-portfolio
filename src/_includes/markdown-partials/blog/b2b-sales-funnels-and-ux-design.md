@@ -1,0 +1,5 @@
+As much as I enjoy building interfaces, I often take a step back to examine user journeys. When evaluating a product at a broad level, it’s possible to map potential features to user pain points and identify what truly brings the most value to customers.
+
+If teams neglect the broader perspective, they risk stifling innovation and releasing a product that only offers marginal improvements over the competition.
+
+While I’m not the first person to understand this, I did want to set up the context for [this article](https://www.smashingmagazine.com/2023/01/b2b-sales-understand-role-ux-designers-better/), written by UX veteran Paul Boag (the “[weird uncle of web design](https://uibreakfast.com/257-white-hat-cro-with-paul-boag/)”). By comparing product adoption to a B2B sales funnel, Boag argues that UX designers should have the opportunity to assess experiences from a holistic perspective to ensure that digital and person-to-person touchpoints feel integrated. In both a sales funnel and a digital product, any gaps can negatively impact conversions and user satisfaction.

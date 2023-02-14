@@ -1,15 +1,3 @@
----
-title: Design patents
-description: Companies have the ability to own design elements
-date: 2022-08-09
-layout: ../_includes/layouts/journal-post.njk
-tags: [post, ux, interaction design, business of tech, social posts]
----
-
-# Design patents
-
-<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-
 I hadn't been introduced to the idea of interface design patents until I ran across [From Like Buttons to Message Bubbles: The UX Designs You Can’t Use](https://onezero.medium.com/ui-ux-patterns-you-literally-cannot-design-design-patents-from-tech-companies-21ae9643dc9e) by Christie Tang a few months back. While many patents are for specific elements in certain contexts, some are surprisingly generic. They're so inexpensive that some large companies are buying them up by the thousands.
 
 Patents are public, and while many of them will never be used, viewing them can offer a glimpse into the kinds of features key players in tech are considering for future release.

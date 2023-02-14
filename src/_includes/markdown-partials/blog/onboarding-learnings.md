@@ -1,15 +1,3 @@
----
-title: Onboarding learnings
-description: Short notes about onboarding from design, research, and business perspectives
-date: 2022-10-14
-layout: ../_includes/layouts/journal-post.njk
-tags: [post, ux, design, research, social posts]
----
-
-# Onboarding learnings
-
-<p><time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time></p>
-
 This week, I've been thinking about onboarding as part of a case study I'm working on. I've found some helpful resources, and I wanted to share a few takeaways:
 
 - Onboarding is important from a design perspective, but it's crucial from a business perspective. Generally, user retention falls dramatically after a couple of uses. Products need to quickly demonstrate value to bring potential customers to the next step of the acquisition funnel.

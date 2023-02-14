@@ -40,10 +40,10 @@ module.exports = function (eleventyConfig) {
     }
   );
 
-  eleventyConfig.addNunjucksShortcode("socialPost", function (htmlString) {
-    const stripBeginning = /(?<=time\>\<\/p\>)(\W|\w)+/;
+  eleventyConfig.addFilter("socialPost", function (htmlString) {
+    const stripBeginning = /(?<=<time\>)(\W|\w)+/;
     const result = stripBeginning.exec(htmlString);
-
+    console.log('htmlString', htmlString)
     return result && result[0];
   });
 

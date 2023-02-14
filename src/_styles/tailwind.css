@@ -95,6 +95,14 @@
   .journal-index-posts h2 {
     @apply sm-heading-4 lg:lg-heading-4 xl:xl-heading-4;
   }
+  
+  .hide-post-title h1 {
+    display: none;
+  }
+
+  .post-date {
+    display: none;
+  }
   /* grid layout styles */
   /* base grid layout for all pages, for breakpoints with sidebar (lg, xl, max) */
   .grid-layout-base {

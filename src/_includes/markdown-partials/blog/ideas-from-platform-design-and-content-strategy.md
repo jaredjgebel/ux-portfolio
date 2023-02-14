@@ -1,15 +1,3 @@
----
-title: Ideas from platform design & content strategy
-description: Mental models and concept models
-date: 2022-09-29
-layout: ../_includes/layouts/journal-post.njk
-tags: [post, content design, information architecture, social posts]
----
-
-# Ideas from platform design & content strategy
-
-<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-
 I stumbled across Elizabeth McGuane's talk, [Platform Design and Content Strategy](https://www.youtube.com/watch?v=KWd72abX9-A), early on in my exploration of UX. A couple of topics stuck with me:
 
 1. The framing of mental models vs. concept models:
