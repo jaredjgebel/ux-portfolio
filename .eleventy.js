@@ -31,7 +31,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode(
     "opengraph",
     function (url, title, description, slug) {
-      const imageSlug = slug === "" ? "index" : `${slug}`;
+      const pagesWithCustomImages = ["index", "ux-as-an-independent-study", "career-q-and-a", "revisiting-usability-test-tasks"];
+      
+    // console.log('slug', slug)
+      const imageSlug = pagesWithCustomImages.includes(slug) ? `${slug}`: "post";
       return `<meta property="og:url" content="https://www.jaredjgebel.com${url}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="${title}">

@@ -7,7 +7,12 @@
       <meta name="description" content="{{ description }}"/>
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    {% opengraph page.url, title, description, page.fileSlug %} <link rel="preload" href="../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:url" content="https://www.jaredjgebel.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jared Gebel, UX Designer">
+    <meta property="og:description" content="Personal website for Jared Gebel, UX Designer">
+    <meta property="og:image" content="/assets/open-graph/index.png">
+    <link rel="preload" href="../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./style.css{% version %}"/> {% block head %}{% endblock %}
     <script defer src="./js/alpine.js{% version %}"></script>
