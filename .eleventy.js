@@ -6,7 +6,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const svgContents = require("eleventy-plugin-svg-contents");
 const moment = require("moment");
 
-const md = markdownIt({ linkify: true, html: true });
+const md = markdownIt({ html: true });
 md.use(markdownItAttrs);
 md.use(markdownItAnchor);
 

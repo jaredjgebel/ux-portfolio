@@ -58,6 +58,7 @@ module.exports = {
       fontFamily: {
         sans: ["Prodigy Sans", "Adjusted Verdana Fallback", ...defaultTheme.fontFamily.sans],
         serif: ["Bitter", "Adjusted Georgia Fallback", ...defaultTheme.fontFamily.serif],
+        // monospace
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -71,6 +72,7 @@ module.exports = {
               "text-decoration": "none",
               "&:hover": {
                 color: theme("colors.primary[50]"),
+                "text-decoration": "underline"
               },
               "&:focus": {
                 "outline-style": "solid",
@@ -98,7 +100,17 @@ module.exports = {
             },
             figcaption: {
               "font-family": "Bitter",
-              "color": "black"
+              "color": "black",
+            },
+            code: {
+                "&::before": {
+                  content: "none !important"
+                },
+                "&::after": {
+                  content: "none !important"
+                },
+                // fontFamily: defaultTheme.
+                // "font-size": "100%%"
             }
           },
         },

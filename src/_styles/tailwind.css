@@ -91,6 +91,23 @@
 }
 
 @layer utilities {
+  .warning-callout {
+    @apply p-5 outline outline-orange-600 outline-2 rounded;
+  }
+
+  .warning-callout::before {
+    content: url("../../assets/svg/warning.svg");
+    @apply relative top-[6px] pr-3;
+  }
+
+  .warning-callout strong:first {
+    @apply px-2 relative left-[2px];
+  }
+
+  .warning-callout br {
+    @apply block mb-3;
+  }
+
   /* custom heading styles for journal index page */
   .journal-index-posts h2 {
     @apply sm-heading-4 lg:lg-heading-4 xl:xl-heading-4;
