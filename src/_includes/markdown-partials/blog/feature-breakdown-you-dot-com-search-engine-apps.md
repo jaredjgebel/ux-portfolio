@@ -82,7 +82,7 @@ Let's examine the pros and cons of the app features from the perspective of prod
 
 - **Lots of development work required**: Since the You.com team is creating most of the apps (so far), it has to be a lot of work to create and maintain apps for so many websites, web applications, and AI-tools
 - **Lack of incentive for sites to develop their own apps**: By keeping the user in one central location, websites could take a hit in page views. I think they're unlikely to put work into something that could harm their own business model.
-- **Intertia**: One consequence of novelty is that people may be inclined to stick with something they better know and understand
+- **Intertia**: One consequence of novelty is that people may be inclined to stick with something they better know and understand.
 
 ## Conclusion
 

@@ -58,7 +58,6 @@ module.exports = {
       fontFamily: {
         sans: ["Prodigy Sans", "Adjusted Verdana Fallback", ...defaultTheme.fontFamily.sans],
         serif: ["Bitter", "Adjusted Georgia Fallback", ...defaultTheme.fontFamily.serif],
-        // monospace
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -70,20 +69,26 @@ module.exports = {
             "--tw-prose-quote-borders": theme("colors.primary[10]"),
             a: {
               "text-decoration": "none",
+              "color": theme("colors.primary[60]"),
+              "border-radius": "4px",
+              "font-weight": "600",
               "&:hover": {
                 color: theme("colors.primary[50]"),
                 "text-decoration": "underline"
               },
               "&:focus": {
                 "outline-style": "solid",
-                "outline-color": theme("colors.primary[70]"),
+                "outline-color": theme("colors.primary[60]"),
                 "outline-offset": "2px",
+                "outline-width": "2px"
               },
               "&:active": {
                 color: theme("colors.primary[50]"),
                 "outline-style": "solid",
                 "outline-color": theme("colors.primary[50]"),
                 "outline-offset": "2px",
+                "outline-width": "2px",
+                "text-decoration": "underline"
               },
             },
             blockquote: {
@@ -109,8 +114,6 @@ module.exports = {
                 "&::after": {
                   content: "none !important"
                 },
-                // fontFamily: defaultTheme.
-                // "font-size": "100%%"
             }
           },
         },
