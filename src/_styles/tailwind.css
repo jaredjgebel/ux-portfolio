@@ -153,6 +153,10 @@
     xl:prose-h3:xl-heading-3 prose-h4:sm-heading-4 lg:prose-h4:lg-heading-4 xl:prose-h4:xl-heading-4 prose-p:sm-paragraph-long lg:prose-p:lg-paragraph-long xl:prose-p:xl-paragraph-long prose-strong:sm-paragraph-short-bold lg:prose-strong:lg-paragraph-short-bold xl:prose-strong:xl-paragraph-short-bold prose-em:italic;
   }
 
+  .prose-custom-fonts h3 a {
+    font-weight: 500;
+  }
+
   .prose-custom-lists {
     @apply prose:ul;
   }
