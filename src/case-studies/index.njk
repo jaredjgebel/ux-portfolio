@@ -36,8 +36,7 @@ description: UX design and product design case studies by Jared Gebel
                             height="1141"
                             srcset="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp 432w,
                                 ../../assets/images/case-studies/product-design/contract-summary-mockup.webp 2232w"
-                            sizes="(min-width: 3rem) 100%,
-                                                           (min-width: 43rem) 100%)">
+                            sizes="(min-width: 3rem) 100%, (min-width: 43rem) 100%)">
                             {% createHeading "2", "Overview", "true", ["col-span-full"] %}
                             {# Project context #}
                             <div class="overview-intro-section col-span-full md:col-span-4 mdlg:col-span-8">
@@ -60,13 +59,14 @@ description: UX design and product design case studies by Jared Gebel
                         </div>
                     </div>
                     {# Summary #}
-                    <div class="overview-section grid-layout-row text-neutral-0 bg-primary-70 lg:py-9">
-                        <div class="grid-layout-content">
-                            {% createHeading "3", "Summary", "false", ["col-span-full"] %}
-                            <p class="body-featured col-span-12 pt-4">
+                    <div class="overview-section grid-layout-row text-neutral-0 bg-primary-70 py-9">
+                        <div class="grid-layout-content gap-y-5">
+                            <h3 class="sm-heading-3 xl:xl-heading-3 col-span-full">Summary</h3>
+                            <p class="body-featured col-span-full md:col-span-6 mdlg:col-span-12 xl:col-span-8">
                                 Grain farmers need to sell their crops at high prices to make a profit.
                             </p>
-                            <p class="body-featured col-span-12 pt-5">
+                            {# grid-row-start 3 necessary to push paragraph to next grid row #}
+                            <p class="body-featured col-span-full row-start-3 md:col-span-6 mdlg:col-span-12 xl:col-span-8">
                                 Farmers engage in the local and national commodities markets to lock in or increase prices, but the process is complex
                                 and risky.
                             </p>
