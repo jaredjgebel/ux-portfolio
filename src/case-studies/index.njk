@@ -62,28 +62,28 @@ description: UX design and product design case studies by Jared Gebel
                     <div class="overview-section grid-layout-row text-neutral-0 bg-primary-70 py-9">
                         <div class="grid-layout-content gap-y-5">
                             <h3 class="sm-heading-3 xl:xl-heading-3 col-span-full">Summary</h3>
-                            <p class="body-featured col-span-full md:col-span-6 mdlg:col-span-12 xl:col-span-8">
+                            <p class="body-featured col-span-full md:col-span-6 mdlg:col-span-10 lg:col-span-8">
                                 Grain farmers need to sell their crops at high prices to make a profit.
                             </p>
-                            {# grid-row-start 3 necessary to push paragraph to next grid row #}
-                            <p class="body-featured col-span-full row-start-3 md:col-span-6 mdlg:col-span-12 xl:col-span-8">
+                            {# col-start-1 necessary to push paragraph to next grid row #}
+                            <p class="body-featured col-span-full col-start-1 md:col-span-6 mdlg:col-span-10 lg:col-start-1 lg:col-span-10">
                                 Farmers engage in the local and national commodities markets to lock in or increase prices, but the process is complex
                                 and risky.
                             </p>
                         </div>
                     </div>
                     {# Solution #}
-                    <div class="overview-section grid-layout-row text-neutral-0 bg-teal-900 lg:py-9">
-                        <div class="grid-layout-content">
-                            <div class="overview-solution-text col-span-10 flex flex-col gap-5">
-                                {% createHeading "3", "Solution", "false", [] %}
+                    <div class="overview-section grid-layout-row text-neutral-0 bg-teal-900 py-9">
+                        <div class="grid-layout-content gap-5">
+                            <div class="overview-solution-content col-span-full md:col-span-4 mdlg:col-span-10 flex flex-col gap-5">
+                                <h3 class="sm-heading-3 xl:xl-heading-3">Solution</h3>
                                 <p class="body-featured">
                                     I identified the needs and core behaviors of grain farmers when they sell their crops and hedge commodity derivatives.
                                 </p>
                                 <p class="body-featured">
                                     I developed features to improve grain farmers’ workflows:
                                 </p>
-                                <ul>
+                                <ul class="body-featured">
                                     <li>Current market prices</li>
                                     <li>A market alert system</li>
                                     <li>Saved market contracts</li>
@@ -91,9 +91,33 @@ description: UX design and product design case studies by Jared Gebel
                                     </li>
                                 </ul>
                             </div>
-                            <div class="overview-solution-image col-span-6">
-                                <img class="w-full" src="../assets/images/case-studies/product-design/market-watcher-solution.png" alt=""></div>
+                            <div class="overview-solution-image col-span-full md:col-span-4 mdlg:col-span-6 flex justify-center justify-">
+                                <img
+                                    class="w-full max-w-[320px]"
+                                    src="../../assets/images/case-studies/product-design/notification-panel.webp"
+                                    alt=""
+                                    loading="lazy"></div>
                             </div>
                         </div>
+                        {# <div class="grid-layout-content gap-y-5">
+                                                                                                                                                                                                                                                                                                                                                    <h3 class="sm-heading-3 xl:xl-heading-3 col-span-full md:col-span-4">Solution</h3>
+                                                                                                                                                                                                                                                                                                                                                    <p class="body-featured col-start-1 col-span-full md:col-span-4 mdlg:col-span-12 xl:col-span-8">
+                                                                                                                                                                                                                                                                                                                                                        I identified the needs and core behaviors of grain farmers when they sell their crops and hedge commodity derivatives.
+                                                                                                                                                                                                                                                                                                                                                    </p>
+                                                                                                                                                                                                                                                                                                                                                    <p class="body-featured col-span-full col-start-1 md:col-span-4 mdlg:col-span-12 xl:col-span-8">
+                                                                                                                                                                                                                                                                                                                                                        I developed features to improve grain farmers’ workflows:
+                                                                                                                                                                                                                                                                                                                                                    </p>
+                                                                                                                                                                                                                                                                                                                                                    <ul class="body-featured col-span-full col-start-1 md:col-span-4 mdlg:col-span-12 xl:col-span-8">
+                                                                                                                                                                                                                                                                                                                                                        <li>Current market prices</li>
+                                                                                                                                                                                                                                                                                                                                                        <li>A market alert system</li>
+                                                                                                                                                                                                                                                                                                                                                        <li>Saved market contracts</li>
+                                                                                                                                                                                                                                                                                                                                                        <li>Projection of potential revenue outcomes
+                                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                    <div class="overview-solution-image col-span-full md:col-span-4 md:row-start-1 md:row-span-4 md:col-start-5 flex
+                                                                                                                                                                                                                                                                                                                                                            justify-center">
+                                                                                                                                                                                                                                                                                                                                                        <img class="max-w-[320px]" src="../../assets/images/case-studies/product-design/notification-panel.webp" alt=""></div>
+                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                </div> #}
                     </main>
                 {% endblock content %}
