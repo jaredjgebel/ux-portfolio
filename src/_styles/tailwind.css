@@ -76,23 +76,23 @@
 
 /* fallback font for Prodigy Sans */
 @font-face {
-  font-family: 'Adjusted Verdana Fallback';
+  font-family: "Adjusted Verdana Fallback";
   src: local(Verdana);
   size-adjust: 93%;
   ascent-override: 107%;
-  descent-override: 52%;  
+  descent-override: 52%;
 }
 
 /* fallback font for Bitter */
 @font-face {
-  font-family: 'Adjusted Georgia Fallback';
+  font-family: "Adjusted Georgia Fallback";
   src: local(Georgia);
   size-adjust: 104%;
 }
 
 @layer utilities {
   .warning-callout {
-    @apply p-5 outline outline-orange-600 outline-2 rounded;
+    @apply rounded p-5 outline outline-2 outline-orange-600;
   }
 
   .warning-callout::before {
@@ -101,18 +101,18 @@
   }
 
   .warning-callout strong:first {
-    @apply px-2 relative left-[2px];
+    @apply relative left-[2px] px-2;
   }
 
   .warning-callout br {
-    @apply block mb-3;
+    @apply mb-3 block;
   }
 
   /* custom heading styles for journal index page */
   .journal-index-posts h2 {
     @apply sm-heading-4 lg:lg-heading-4 xl:xl-heading-4;
   }
-  
+
   .hide-post-title h1 {
     display: none;
   }
@@ -120,24 +120,91 @@
   .post-date {
     display: none;
   }
-  /* grid layout styles */
-  /* base grid layout for all pages, for breakpoints with sidebar (lg, xl, max) */
-  .grid-layout-base {
-    @apply lg:grid lg:grid-cols-[minmax(15px,_16px)_repeat(4,_64px)_minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
-    xl:grid-cols-[minmax(15px,_16px)_repeat(4,_80px)_minmax(0,_1fr)_repeat(12,80px)_minmax(0,_1fr)_minmax(0,_16px)]
-    max:grid-cols-[minmax(0,_24px)_repeat(4,_96px)_repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
-  }
 
-  /* grid layout for each content section */
+  /* SMALL BREAKPOINT */
   .grid-layout-row {
-    @apply grid grid-cols-[minmax(0,_1fr)_repeat(4,_minmax(60px,_120px))_minmax(0,_1fr)] md:grid-cols-[minmax(0,_1fr)_repeat(8,_80px)_minmax(0,_1fr)] lg:col-[span-14]
-    lg:col-start-6 lg:grid-cols-[minmax(0,_1fr)_repeat(12,_64px)_minmax(0,_1fr)_minmax(0,_16px)]
-    xl:grid-cols-[minmax(0,_1fr)_repeat(12,_80px)_minmax(0,_1fr)_minmax(0,_16px)] max:grid-cols-[repeat(12,96px)_minmax(0,_1fr)_minmax(0,_24px)];
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  /* grid layout for inner content in each row */
   .grid-layout-content {
-    @apply col-span-4 col-start-2 px-5 md:col-span-6 md:col-start-3 md:px-0 lg:col-span-8 lg:col-start-4 xl:col-span-8 xl:col-start-4 max:col-span-8 max:col-start-3;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+  }
+
+  /* MEDIUM BREAKPOINT */
+  @media (min-width: 43rem) {
+    .grid-layout-row {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .grid-layout-content {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: 1rem;
+    }
+  }
+
+  /* MEDIUM LARGE BREAKPOINT */
+  @media (min-width: 51rem) {
+    .grid-layout-row {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      column-gap: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .grid-layout-content {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      column-gap: 2rem;
+    }
+  }
+
+  /* LARGE & X-LARGE BREAKPOINT */
+  @media (min-width: 67rem) {
+    .grid-layout-base {
+      display: grid;
+      grid-template-columns: 16rem 1fr;
+      padding: 0;
+    }
+
+    .grid-layout-row {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      column-gap: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: unset;
+      padding-bottom: unset;
+    }
+
+    .grid-layout-content {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      column-gap: 2rem;
+    }
+  }
+
+  /* MAX BREAKPOINT */
+  @media (min-width: 100rem) {
+    .grid-layout-row {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
   }
 
   /* smaller top padding for paragraphs after h4's */

@@ -5,11 +5,12 @@ module.exports = {
   safelist: [],
   theme: {
     screens: {
-      sm: "320px",
-      md: "672px",
-      lg: "1056px",
-      xl: "1312px",
-      max: "1584px",
+      sm: "21rem",
+      md: "43rem",
+      mdlg: "51rem",
+      lg: "67rem",
+      xl: "83rem",
+      max: "100rem",
     },
     extend: {
       spacing: {
@@ -108,12 +109,12 @@ module.exports = {
               "color": "black",
             },
             code: {
-                "&::before": {
-                  content: "none !important"
-                },
-                "&::after": {
-                  content: "none !important"
-                },
+              "&::before": {
+                content: "none !important"
+              },
+              "&::after": {
+                content: "none !important"
+              },
             }
           },
         },
