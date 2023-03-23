@@ -6,6 +6,9 @@ const markdownItAnchor = require("markdown-it-anchor");
 const svgContents = require("eleventy-plugin-svg-contents");
 const moment = require("moment");
 
+// shortcodes
+const createHeading = require("./src/_shortcodes/createHeading");
+
 const md = markdownIt({ html: true });
 md.use(markdownItAttrs);
 md.use(markdownItAnchor);
@@ -28,13 +31,16 @@ module.exports = function (eleventyConfig) {
     return process.env.ELEVENTY_PRODUCTION ? "" : `?v=${now}`;
   });
 
+  eleventyConfig.addShortcode("createHeading", function (headingLevel, headingText, hasTopPadding, classes) {
+    return createHeading(headingLevel, headingText, hasTopPadding, classes);
+  });
+
   eleventyConfig.addNunjucksShortcode(
     "opengraph",
     function (url, title, description, slug) {
       const pagesWithCustomImages = ["index", "ux-as-an-independent-study", "career-q-and-a", "revisiting-usability-test-tasks"];
-      
-    // console.log('slug', slug)
-      const imageSlug = pagesWithCustomImages.includes(slug) ? `${slug}`: "post";
+
+      const imageSlug = pagesWithCustomImages.includes(slug) ? `${slug}` : "post";
       return `<meta property="og:url" content="https://www.jaredjgebel.com${url}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="${title}">
@@ -46,7 +52,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("socialPost", function (htmlString) {
     const stripBeginning = /(?<=<time\>)(\W|\w)+/;
     const result = stripBeginning.exec(htmlString);
-    console.log('htmlString', htmlString)
     return result && result[0];
   });
 
