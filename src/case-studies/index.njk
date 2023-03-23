@@ -1,0 +1,99 @@
+---
+title: Case studies
+description: UX design and product design case studies by Jared Gebel
+---
+
+{% extends "../../src/_includes/layouts/case-studies.njk" %}
+{% block content %}
+    <main>
+        {# Header #}
+        <header>
+            {# Hero and title #}
+            <div class="hero-image">
+                <img
+                    class="h-[320px] w-full object-cover" src="../assets/images/case-studies/product-design/aerial-harvest.jpg" alt="">
+                    {# Title  #}
+                    <div class="title grid-layout-row bg-teal-900 text-neutral-0">
+                        <div class="grid-layout-content pb-7 gap-y-4">
+                            <div class="col-span-full max:col-[_span_14]">
+                                {% createHeading "1", "Designing a product to help grain farmers increase revenue", "true", [] %}
+                            </div>
+                            <div class="col-span-full">
+                                <h2 class="subheading-sm">Market Watcher</h2>
+                                <h2 class="subheading-sm">Case Study</h2>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                {# Overview #}
+                <div class="overview-intro-sections grid-layout-row">
+                    <div class="grid-layout-content pt-6 pb-8">
+                        <img
+                            class="col-span-full w-full"
+                            src="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp"
+                            alt=""
+                            width="432"
+                            height="1141"
+                            srcset="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp 432w,
+                                ../../assets/images/case-studies/product-design/contract-summary-mockup.webp 2232w"
+                            sizes="(min-width: 3rem) 100%,
+                                                           (min-width: 43rem) 100%)">
+                            {% createHeading "2", "Overview", "true", ["col-span-full"] %}
+                            {# Project context #}
+                            <div class="overview-intro-section col-span-full md:col-span-4 mdlg:col-span-8">
+                                {% createHeading "3", "Project context", "false", [] %}
+                                <p class="pt-4">
+                                    Independently completed as a part of the UX Research and Design Specialization from the University of Michigan
+                                </p>
+                            </div>
+                            {# Highlighted methods #}
+                            <div class="overview-intro-section sm:col-span-full md:col-span-4 mdlg:col-span-8">
+                                {% createHeading "3", "Highlighted methods", "false", [] %}
+                                <ul class="pt-4">
+                                    <li>Product design</li>
+                                    <li>Feature development</li>
+                                    <li>User research</li>
+                                    <li>Secondary research
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {# Summary #}
+                    <div class="overview-section grid-layout-row text-neutral-0 bg-primary-70 lg:py-9">
+                        <div class="grid-layout-content">
+                            {% createHeading "3", "Summary", "false", ["col-span-full"] %}
+                            <p class="body-featured col-span-12 pt-4">
+                                Grain farmers need to sell their crops at high prices to make a profit.
+                            </p>
+                            <p class="body-featured col-span-12 pt-5">
+                                Farmers engage in the local and national commodities markets to lock in or increase prices, but the process is complex
+                                and risky.
+                            </p>
+                        </div>
+                    </div>
+                    {# Solution #}
+                    <div class="overview-section grid-layout-row text-neutral-0 bg-teal-900 lg:py-9">
+                        <div class="grid-layout-content">
+                            <div class="overview-solution-text col-span-10 flex flex-col gap-5">
+                                {% createHeading "3", "Solution", "false", [] %}
+                                <p class="body-featured">
+                                    I identified the needs and core behaviors of grain farmers when they sell their crops and hedge commodity derivatives.
+                                </p>
+                                <p class="body-featured">
+                                    I developed features to improve grain farmers’ workflows:
+                                </p>
+                                <ul>
+                                    <li>Current market prices</li>
+                                    <li>A market alert system</li>
+                                    <li>Saved market contracts</li>
+                                    <li>Projection of potential revenue outcomes
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="overview-solution-image col-span-6">
+                                <img class="w-full" src="../assets/images/case-studies/product-design/market-watcher-solution.png" alt=""></div>
+                            </div>
+                        </div>
+                    </main>
+                {% endblock content %}

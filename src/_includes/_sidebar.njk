@@ -1,8 +1,5 @@
 {% import "./components/sidebar-nav-item.njk" as navbaritem %}
-<nav
-    id="sidebar"
-    class="hidden lg:row-start-1 lg:row-end-4 lg:col-span-5 lg:grid lg:grid-cols-8 lg:pt-10 lg:sticky lg:top-0 max-h-screen
-        overflow-y-auto bg-primary-70">
+<nav id="sidebar" class="hidden lg:grid lg:pt-10 lg:sticky lg:top-0 w-[256px] h-screen overflow-y-auto bg-primary-70">
     <ul id="sidebar-nav" class="col-start-2 col-span-6">
         {% for item in sidebarItems %}
             {% if item.type === 'menulabel' %}

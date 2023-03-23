@@ -54,7 +54,7 @@ module.exports = {
           80: "#323231",
           90: "#191918",
           100: "#000000",
-        },
+        }
       },
       fontFamily: {
         sans: ["Prodigy Sans", "Adjusted Verdana Fallback", ...defaultTheme.fontFamily.sans],
