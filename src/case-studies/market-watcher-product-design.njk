@@ -1,0 +1,70 @@
+---
+title: Case studies
+description: UX design and product design case studies by Jared Gebel
+---
+
+{% extends "../../src/_includes/layouts/case-studies.njk" %}
+{% block content %}
+    <main>
+        {# Header #}
+        <header>
+            {# Hero and title #}
+            <div class="hero-image">
+                <img
+                    class="h-[320px] xl:h-[400px] w-full object-cover"
+                    src="../../assets/images/case-studies/product-design/aerial-harvest.webp"
+                    alt="">
+                    {# Title  #}
+                    <div class="title grid-layout-row bg-teal-900 text-neutral-0">
+                        <div class="grid-layout-content pb-7 gap-y-4">
+                            <div class="col-span-full max:col-[_span_14]">
+                                {% createHeading "1", "Designing a product to help grain farmers increase revenue", "true", [] %}
+                            </div>
+                            <div class="col-span-full">
+                                <h2 class="sm-subheading-small">Market Watcher</h2>
+                                <h2 class="sm-subheading-small">Case Study</h2>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                {# Overview #}
+                <div class="overview-intro-sections grid-layout-row">
+                    <div
+                        class="grid-layout-content pt-6 pb-8">
+                        {# Hero image #}
+                        <img
+                            class="w-full col-span-full xl:col-start-3 xl:col-span-12"
+                            src="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp"
+                            alt=""
+                            width="432"
+                            height="1141"
+                            srcset="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp 432w,
+                                ../../assets/images/case-studies/product-design/contract-summary-mockup.webp 2232w"
+                            sizes="(min-width: 3rem) 100%, (min-width: 43rem) 100%)">
+                            {% createHeading "2", "Overview", "true", ["col-span-full"] %}
+                            {# Project context #}
+                            <div class="overview-intro-section col-span-full md:col-span-4 mdlg:col-span-8">
+                                {% createHeading "3", "Project context", "false", [] %}
+                                <p class="pt-4 sm-paragraph-long xl:xl-paragraph">
+                                    Independently completed as a part of the UX Research and Design Specialization from the University of Michigan
+                                </p>
+                            </div>
+                            {# Highlighted methods #}
+                            <div class="overview-intro-section sm:col-span-full md:col-span-4 mdlg:col-span-8">
+                                {% createHeading "3", "Highlighted methods", "false", [] %}
+                                <ul class="pt-4 sm-paragraph-long xl:xl-paragraph pl-8">
+                                    <li class="list-disc marker:text-primary-70 list-outside">Product design</li>
+                                    <li class="list-disc marker:text-primary-70 list-outside">Feature development</li>
+                                    <li class="list-disc marker:text-primary-70 list-outside">User research</li>
+                                    <li class="list-disc marker:text-primary-70 list-outside">Secondary research
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {# Summary #}
+                    {% include "../_includes/case-studies/_product-design-summary.njk"%}
+                    {# Solution #}
+                    {% include "../_includes/case-studies/_product-design-solution.njk"%}
+                </main>
+            {% endblock content %}
