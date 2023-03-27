@@ -1,0 +1,12 @@
+{% macro tocItem(text, level, href) %}
+    {% if level === "1" %}
+        <li class="level-one">
+            <a href="{{ href }}" class="sm-heading-4 xl:xl-heading-4">{{ text }}</a>
+        </li>
+    {% endif %}
+    {% if level === "2" %}
+        <li class="level-two">
+            <a href="{{ href }}" class="sm-paragraph-short xl:xl-paragraph-short leading-tight">{{ text }}</a>
+        </li>
+    {% endif %}
+{% endmacro %}
