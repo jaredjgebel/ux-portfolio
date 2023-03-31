@@ -1,12 +1,12 @@
 {% macro tocItem(text, level, href) %}
     {% if level === "1" %}
         <li class="level-one">
-            <a href="{{ href }}" class="sm-heading-4 xl:xl-heading-4">{{ text }}</a>
+            <a href="{{ href }}" class="sm-heading-4 xl:xl-heading-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current active:outline active:outline-2 active:outline-offset-4 active:outline-current active:underline hover:underline rounded-sm">{{ text }}</a>
         </li>
     {% endif %}
     {% if level === "2" %}
         <li class="level-two">
-            <a href="{{ href }}" class="sm-paragraph-short xl:xl-paragraph-short leading-tight">{{ text }}</a>
+            <a href="{{ href }}" class="sm-paragraph-short xl:xl-paragraph-short leading-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current active:outline active:outline-2 active:outline-offset-4 active:outline-current active:underline hover:underline rounded-sm">{{ text }}</a>
         </li>
     {% endif %}
 {% endmacro %}

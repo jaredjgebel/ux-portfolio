@@ -76,8 +76,9 @@ description: UX design and product design case studies by Jared Gebel
                                 first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
                             {% renderFile "src/_includes/case-studies/_product-design.md" %}
                         </div>
-                        <div class="hidden mdlg:flex mdlg:col-span-5">
-                            <nav class="case-study-table-of-contents w-full h-min bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
+                        {# Table of contents #}
+                        <div class="hidden mdlg:flex mdlg:col-span-5 items-start">
+                            <nav class="case-study-table-of-contents w-full h-min sticky top-7 bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
                                 <ul class="flex flex-col ">
                                     {{ tocItem("Overview", "1", "#overview") }}
                                     {{ tocItem("The business problem", "1", "#the-business-problem") }}

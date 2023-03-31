@@ -1,4 +1,4 @@
-## The business problem
+## The business problem {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ### Being a successful farmer requires thinking like a stock trader
 
@@ -6,7 +6,7 @@ Grain farming may seem idyllic, but a number of **risk factors** threaten a farm
 
 <!-- Corn 23 Prices -->
 
-<figure class="inline-flex flex-col items-center w-full">
+<figure class="inline-flex flex-col items-center w-full my-4">
     <picture>
         <source srcset="../../assets/images/case-studies/product-design/corn-23-prices.webp" media="(min-width:43rem)" />
         <img src="../../assets/images/case-studies/product-design/corn-23-prices-sm.webp" alt="Chart of corn prices, showing high of $6.75 and low of $5.46" width="100%" height="auto" />
@@ -23,7 +23,7 @@ In order to reduce risk and maximize revenue, savvy farmers use a variety of str
 
 Using these strategies requires the responsiveness and sensibility of a stock trader.
 
-## The Market Watcher solution
+## The Market Watcher solution {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ## Features to help farmers increase revenue and mitigate price risk
 
@@ -65,7 +65,7 @@ My application aims to improve upon farmers’ existing methods for dealing with
 - Reducing mental overhead of decision-making by making more data available
 - Easily accessing functionality on-the-go
 
-## Grain processors
+## Grain processors {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ### Engaging of the other side of the marketplace: grain processors
 
