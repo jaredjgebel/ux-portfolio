@@ -29,6 +29,8 @@ Using these strategies requires the responsiveness and sensibility of a stock tr
 
 My application aims to improve upon farmers’ existing methods for dealing with the markets. The tasks required to handle grain marketing fall into two general groups: monitoring market prices and evaluating potential contracts.
 
+<div class="feature-section border-solid border-l-4 border-rose-900 px-5">
+
 ### Monitoring market prices
 
 #### How farmers currently monitor market prices
@@ -37,13 +39,17 @@ My application aims to improve upon farmers’ existing methods for dealing with
 
 #### How monitoring market prices could be more efficiently completed
 
-- An alert system to send users notifications about relevant changes in grain prices
+- An **alert system** to send users notifications about relevant changes in grain prices
 
 #### Benefits of a market alert system
 
 - Security of knowing that market opportunities aren’t slipping by
 - Saved time and energy
 - Easier to get the specific information they’re looking for
+
+</div>
+
+<div class="feature-section border-solid border-l-4 border-lime-900 px-5">
 
 ### Evaluating potential contracts
 
@@ -65,6 +71,8 @@ My application aims to improve upon farmers’ existing methods for dealing with
 - Reducing mental overhead of decision-making by making more data available
 - Easily accessing functionality on-the-go
 
+</div>
+
 ## Grain processors {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ### Engaging of the other side of the marketplace: grain processors
@@ -79,7 +87,7 @@ Grain processors take the physical commodity from farmers and transport it into 
 
 Grain buyers directly facilitate transitions with local farmers. In their current process, they must **constantly communicate** with farmers to buy grain on contract and coordinate logistics.
 
-Grain buyers could use Market Watcher to **send farmers details about their contracts** electronically. This function would greatly **reduce the amount of necessary communication**. Meanwhile, it would also\*\* **save farmers the **burden of data entry\*\*, which would be one of the biggest barriers to product adoption.
+Grain buyers could use Market Watcher to **send farmers details about their contracts** electronically. This function would greatly **reduce the amount of necessary communication**. Meanwhile, it would also **save farmers the burden of data entry**, which would be one of the biggest barriers to product adoption.
 
 ### Promoting contract offerings
 
@@ -91,25 +99,17 @@ Designing for processors ultimately fell outside the scope of this case study. H
 
 Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of farmers and grain buyers, I thought of additional features that facilitate the grain exchange process.
 
-**For more on Market Watcher’s design**
+To explore the specifics of the design {.sm-heading-4 .xl:xl-heading-4 .mb-2}
 
-Case study about designing for the use case of making a decision about committing to a contract (link)
+[Figma file with all views and user flows](https://www.figma.com/file/Tjw04NNIDyaZpHf6ITOOMC/Commodities-Application?node-id=64%3A31382&t=PWaEQUY4qPaATaP3-1) {.mt-0}
 
-**For more about how research influenced my designs**
+Footnotes {.sm-heading-4 .xl:xl-heading-4 .mb-2}
 
-Case study about researching a complex domain and applying findings (link)
+1. 278 acres, as of 2016. [Trends in Production Practices and Costs of the U.S. Corn Sector, USDA](https://www.ers.usda.gov/webdocs/publications/101722/err-294.pdf?v=2482.5). {.mt-0}
 
-**To explore the specifics of the design**
+Attributions {.sm-heading-4 .xl:xl-heading-4 .mb-2}
 
-Figma file with all views and user flows
-
-**Footnotes**
-
-1. 278 acres, as of 2016. [Trends in Production Practices and Costs of the U.S. Corn Sector, USDA](https://www.ers.usda.gov/webdocs/publications/101722/err-294.pdf?v=2482.5).
-
-**Attributions**
-
-Images:
+Images: {.mt-0}
 
 - Photo by[ Taylor Siebert](https://unsplash.com/@taylorsiebert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/collections/L51m_W9i3WQ/case-study/d3420e971a3ed31bd5173d5ea5e8e306?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 - [Photo](https://www.pexels.com/photo/stock-exchange-board-210607/) by Pixabay from Pexels
