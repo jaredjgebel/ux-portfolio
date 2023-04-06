@@ -1,3 +1,9 @@
-## All roads lead to UX
+## My experience
 
-My past experiences working directly with people, studying behavior, and building tech all come together on my path to UX work.
+My design work is informed by:
+
+- Building web development projects
+- Working in nonprofits and customer service
+- Learning psychology and anthropology
+
+<!-- accordion?? -->

@@ -220,6 +220,12 @@
     }
   }
 
+  /* GRID COL LAYOUT */
+  .grid-col-layout {
+    @apply col-span-full md:col-span-6 md:col-start-2 mdlg:col-span-12 mdlg:col-start-3
+    lg:col-span-12 lg:col-start-2;
+  }
+
   /* smaller top padding for paragraphs after h4's */
   .paragraph-padding-small {
     @apply pt-4;
@@ -240,9 +246,9 @@
     @apply prose:ul;
   }
 
-  .prose-custom-layout {
+  /* .prose-custom-layout {
     @apply xl:pr-11 max:pr-48;
-  }
+  } */
 
   .header-right-margin h1,
   .header-right-margin h2,

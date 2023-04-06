@@ -32,10 +32,11 @@
   </head>
   <body>
     {% include "../_nav.njk" %}
-    <div class="grid-layout-base flex flex-col gap-10 md:gap-11 lg:gap-0 bg-neutral-10">
+    <div class="grid-layout-base bg-neutral-10">
       {% include "../_sidebar.njk" %}
-      <div>
-        {% include "../_header.njk" %}
+      <div
+        class="">
+        {# {% include "../_header.njk" %} #}
         {% block content %}
           {{ content | safe }}
         {% endblock %}
