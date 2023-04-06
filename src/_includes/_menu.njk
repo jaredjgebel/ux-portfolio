@@ -1,5 +1,4 @@
 {% import "./components/menu-item.njk" as menuitem %}
-{% from "./components/icon.njk" import icon as icon %}
 <div
     id="menu"
     class="fixed top-0 left-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto z-10"
@@ -14,11 +13,9 @@
             class="flex items-center p-3 rounded-sm group focus:outline-neutral-0 focus:outline focus:outline-1"
             @click="isToggled = !isToggled"
             aria-labelledby="close-menu-button-label">
-            {{ icon("small", "close", "stroke-0 fill-neutral-10
-                        group-hover:fill-neutral-0 group-focus:fill-neutral-0") }}
             <span
                 id="close-menu-button-label"
-                class="pl-3 text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0 relative top-[0.11rem]">
+                class="text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0 relative top-[0.11rem]">
                 Close</span>
         </button>
     </div>

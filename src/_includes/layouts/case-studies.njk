@@ -29,11 +29,12 @@
     </head>
     <body>
         {% include "../_nav.njk" %}
-        <div class="grid-layout-base bg-neutral-10">
+        <div class="grid-layout-base bg-neutral-10 pb-7">
             {% include "../_sidebar.njk" %}
             {% block content %}
                 {{ content | safe }}
             {% endblock %}
         </div>
     </body>
+    {% include "../_footer.njk" %}
 </html>

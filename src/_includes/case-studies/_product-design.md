@@ -35,7 +35,7 @@ Using these strategies requires the responsiveness and sensibility of a stock tr
 </div>
 </div>
 
-## The Market Watcher solution {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3 .pt-7 .mdlg:pt-0 .clear-right}
+## The Market Watcher solution {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3 .pt-7 .mdlg:pt-0 .clear-right .max:pt-9}
 
 ## Features to help farmers increase revenue and mitigate price risk
 

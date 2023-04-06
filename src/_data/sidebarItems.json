@@ -7,17 +7,12 @@
     "text": "Background",
     "link": "/#all-roads-lead-to-ux"
   },
-  {
-    "type": "menulabel",
-    "text": "Skills",
-    "link": "/#the-ux-skills-ive-acquired"
-  },
-  {
-    "type": "menulabel",
-    "text": "Strengths",
-    "link": "/#my-unique-strengths"
-  },
   { "type": "sectionlabel", "text": "Writing" },
+  {
+    "type": "menulabel",
+    "text": "Case Studies",
+    "link": "/case-studies"
+  },
   { "type": "menulabel", "text": "Journal", "link": "/journal" },
   {
     "type": "menulabel",

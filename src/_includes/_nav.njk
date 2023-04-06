@@ -1,4 +1,3 @@
-{% from "./components/icon.njk" import icon as icon %}
 <div
     x-data="{ isToggled: false }"
     @resize.debounce.100.window="isToggled = (window.innerWidth < 1056) ? isToggled : false">
@@ -11,7 +10,6 @@
                 class="flex items-center gap-3 p-3 rounded-sm group focus:outline-neutral-0 focus:outline focus:outline-1"
                 @click="isToggled = !isToggled"
                 aria-labelledby="open-menu-button-label">
-                {{ icon("small", "hamburger-menu", "stroke-neutral-10 stroke-2 group-hover:stroke-neutral-0 group-focus:stroke-neutral-0") }}
                 <span
                     id="open-menu-button-label"
                     class="text-neutral-10 group-hover:text-neutral-0 group-focus:text-neutral-0 relative top-[0.11rem]">Menu</span>

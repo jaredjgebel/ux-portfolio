@@ -1,18 +1,20 @@
 {% from "../_includes/components/icon.njk" import icon as icon %}
 {% from "../_includes/components/card.njk" import card as card %}
-<div class="cards-and-title flex flex-col w-full gap-7 lg:gap-8 xl:gap-9">
-  <div class="title flex flex-col gap-1">
-    <h2 class="sm-heading-2 xl:xl-heading-2">Recent posts</h2>
-    <a
-      href="/journal"
-      class="group inline-flex flex-row items-center w-fit px-3 py-2 ml-[-5px] text-primary-70 rounded-sm hover:text-primary-50
-        focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
-      <span>View all posts</span>
-      {{ icon("small", "arrow-right", "fill-primary-70 group-hover:fill-primary-50") }}
-    </a>
-  </div>
-  <div class="cards flex flex-col gap-6 md:gap-5 w-fit">
-    {{ card("Revisiting Usability Test Tasks", "Mistakes to avoid in usability testing", "iteration", "fill-neutral-10", "bg-primary-60", "/journal/revisiting-usability-test-tasks") }}
-    {{ card("UX as an Independent Study", "My approach to building skill in UX methods", "evaluation", "fill-neutral-10", "bg-primary-90", "/journal/ux-as-an-independent-study") }}
+<div class="grid-layout-content">
+  <div class="cards-and-title col-span-full flex flex-col w-full gap-7 lg:gap-8 xl:gap-9">
+    <div class="title flex flex-col gap-1">
+      <h2 class="sm-heading-2 xl:xl-heading-2">Recent posts</h2>
+      <a
+        href="/journal"
+        class="group inline-flex flex-row items-center w-fit px-3 py-2 ml-[-5px] text-primary-70 rounded-sm hover:text-primary-50
+          focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+        <span>View all posts</span>
+        {{ icon("small", "arrow-right", "fill-primary-70 group-hover:fill-primary-50") }}
+      </a>
+    </div>
+    <div class="cards flex flex-col gap-6 md:gap-5 w-fit">
+      {{ card("Revisiting Usability Test Tasks", "Mistakes to avoid in usability testing", "iteration", "fill-neutral-10", "bg-primary-60", "/journal/revisiting-usability-test-tasks") }}
+      {{ card("UX as an Independent Study", "My approach to building skill in UX methods", "evaluation", "fill-neutral-10", "bg-primary-90", "/journal/ux-as-an-independent-study") }}
+    </div>
   </div>
 </div>

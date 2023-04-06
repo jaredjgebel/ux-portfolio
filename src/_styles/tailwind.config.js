@@ -119,6 +119,9 @@ module.exports = {
           },
         },
       }),
+      gridColumn: {
+        "span-14": "span 14 / span 14",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],

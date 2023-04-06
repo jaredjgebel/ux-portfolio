@@ -1,6 +1,5 @@
 {% macro label(text, link) %}
-    <a href="{{ link }}" class="flex focus:outline focus:outline-1 focus:outline-primary-30 focus-visible:outline focus-visible:outline-1
-                                                                                    focus-visible:outline-primary-30">
+    <a href="{{ link }}" class="flex focus:outline focus:outline-1 focus:outline-primary-30 focus-visible:outline focus-visible:outline-1 focus-visible:outline-primary-30">
         <li class="flex flex-col flex-grow justify-center h-9 pl-5 hover:bg-primary-40 active:bg-primary-60 text-neutral-10
                 sm-menu-item">
             {{ text }}
@@ -8,7 +7,7 @@
     </a>
 {% endmacro %}
 {% macro sectionLabel(text) %}
-    <li class="flex flex-col justify-center h-9 pl-5 bg-[#00293C] text-neutral-40 sm-heading-sidebar">
+    <li class="flex flex-col justify-center h-7 pl-5 pt-4 mt-4 bg-primary-70 text-neutral-10 sm-heading-sidebar">
         {{ text }}
     </li>
 {% endmacro %}
