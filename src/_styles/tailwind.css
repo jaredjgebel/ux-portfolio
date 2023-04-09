@@ -246,10 +246,6 @@
     @apply prose:ul;
   }
 
-  /* .prose-custom-layout {
-    @apply xl:pr-11 max:pr-48;
-  } */
-
   .header-right-margin h1,
   .header-right-margin h2,
   .header-right-margin h3,

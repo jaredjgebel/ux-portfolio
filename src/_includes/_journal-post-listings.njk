@@ -1,0 +1,48 @@
+{% from "../_includes/components/icon.njk" import icon as icon %}
+{% from "../_includes/components/tag.njk" import tag as tag %}
+<div class="grid-layout-row">
+    <div class="cards-and-title grid-col-layout w-full">
+        <div class="title flex flex-col">
+            <h2 class="mb-7 sm-heading-2 xl:xl-heading-2">Recent posts</h2>
+        </div>
+        <div class="post-listings flex flex-col gap-7 mt-5 prose prose-custom-fonts prose-p:mb-2 prose-h3:my-0">
+            <div class="flex flex-col gap-3 pl-5 border-l-4 border-l-yellow-500">
+                <h3>
+                    <a href="/journal/feature-breakdown-you-dot-com-search-engine-apps">Feature breakdown: You.com search engine
+                        <em>apps</em>
+                    </a>
+                </h3>
+                <p>
+                    Examining the pros and cons of features embedded in search result feeds
+                </p>
+                <div class="tags flex flex-row flex-wrap gap-2">
+                    {{ tag("feature breakdown", "light") }}
+                    {{ tag("ux design", "light") }}
+                    {{ tag ("product design", "light") }}
+                    {{ tag ("ai", "light") }}
+                </div>
+            </div>
+            <div class="flex flex-col gap-3 pl-5 border-l-4 border-l-emerald-600">
+                <h3>
+                    <a href="/journal/category-personalization" class="href">Category personalization</a>
+                </h3>
+                <p>
+                    Why something even as small as a category label might be personalized
+                </p>
+                <div class="tags flex flex-row flex-wrap gap-2">
+                    {{ tag("feature breakdown", "light") }}
+                    {{ tag ("product design", "light") }}
+                    {{ tag ("e-commerce", "light") }}
+                </div>
+            </div>
+        </div>
+        <a
+            href="/journal"
+            class="group inline-flex flex-row items-center w-fit px-3 py-2 mt-6 ml-[-5px] text-primary-70 rounded-sm
+                hover:text-primary-50 focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50
+                active:outline-primary-50">
+            <span>View all</span>
+            {{ icon("small", "arrow-right", "fill-primary-70 group-hover:fill-primary-50") }}
+        </a>
+    </div>
+</div>

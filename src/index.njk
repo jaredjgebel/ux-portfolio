@@ -5,15 +5,12 @@ description: Personal website for Jared Gebel, UX Designer and Researcher
 
 {% extends "./_includes/layouts/index.njk" %}
 {% block content %}
-  <main
-    class="flex flex-col gap-12 md:gap-12 xl:gap-13 mb-10 md:mb-12 xl:mb-13">
-    {# <div class="grid-layout-content flex flex-col gap-10 md:gap-12  lg:my-12 xl:gap-13"> #}
+  <main class="flex flex-col gap-12 md:gap-12 xl:gap-13 mb-10 md:mb-12 xl:mb-13">
     {% include "./_includes/_header.njk" %}
     {% include "./_includes/_approach.njk" %}
-    {# </div> #}
     {% include "./_includes/_background.njk" %}
-    {# {% include "./_includes/_pages.njk" %} #}
-    {% include "./_includes/_cards.njk" %}
+    {% include "./_includes/_case-study-listings.njk" %}
+    {% include "./_includes/_journal-post-listings.njk" %}
     {% include "./_includes/_contact.njk" %}
   </main>
 {% endblock %}

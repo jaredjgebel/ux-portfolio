@@ -1,0 +1,13 @@
+{% from "./components/card.njk" import card as card %}
+<div class="case-study-listings grid-layout-row">
+    <div class="grid-col-layout">
+        <h2 class="case-study-listings-title mb-7 sm-heading-2 xl:xl-heading-2 relative z-10">
+            Case studies
+        </h2>
+        <div class="flex flex-wrap gap-7 mt-5">
+            {{ card("Designing a product to help grain farmers increase revenue", "User flows and decision making while helping grain farmers maximize profits", "/case-studies/market-watcher-product-design") }}
+            {{ card("Workflow walkthrough: some more words here, probably", "Using design to optimize decision-making in the commodities markets", "/case-studies/market-watcher-product-design") }}
+        </div>
+    </div>
+</div>
+{# <div class="grid-col-layout prose prose-custom-fonts prose-p:mb-2 prose-h3:my-0"> #}

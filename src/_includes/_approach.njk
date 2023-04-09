@@ -1,8 +1,6 @@
-{# exception for front page: h2 uses h1 styling #}
-<div class="approach grid-layout-row prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin
-    first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items prose-h2:mt-0 prose-h2:mb-7 md:pr-11
-    lg:pr-10">
-  <div class="grid-col-layout">
-    {% renderFile "./src/_includes/markdown-partials/_approach.md" %}
-  </div>
+<div class="approach grid-layout-row">
+    <div class="grid-col-layout prose prose-custom-fonts unordered-list-items prose-h2:mt-0 prose-h2:mb-7 prose-h2:relative
+            prose-h2:z-10">
+        {% renderFile "./src/_includes/markdown-partials/_approach.md" %}
+    </div>
 </div>
