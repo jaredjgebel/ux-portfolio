@@ -23,7 +23,7 @@ In order to reduce risk and maximize revenue, savvy farmers use a variety of str
 <img class="md:my-0 md:h-full md:object-cover"
     src="../../assets/images/case-studies/product-design/prices-screen.webp" alt="" />
 
-</div> 
+</div>
 <div>
 
 - Selling grain to local processors before harvest on a **forward contract** when grain prices are high {.mt-0}
@@ -53,6 +53,13 @@ My application aims to improve upon farmers’ existing methods for dealing with
 
 - An **alert system** to send users notifications about relevant changes in grain prices
 
+<!-- Notification -->
+
+<div class="w-[16rem] h-[13.5rem]">
+<img class="md:my-0"
+    src="../../assets/images/case-studies/product-design/notification-sidebar.webp" alt="" width="512px" height="434px" />
+</div>
+
 #### Benefits of a market alert system
 
 - Security of knowing that market opportunities aren’t slipping by
@@ -74,8 +81,33 @@ My application aims to improve upon farmers’ existing methods for dealing with
 #### How evaluating potential contracts could be more efficiently completed
 
 - A system that collects information on signed contracts and projects possible revenue outcomes, including:
-  - Overall revenue statistics for the season
-  - A spreadsheet-like interface to compare how different contract specs would affect overall revenue
+
+Overall **revenue statistics** for the season
+
+  <figure class="inline-flex flex-col items-center w-full my-0">
+      <picture>
+          <source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-xl.webp" media="(min-width:67rem)" width="608px" height="464px" />
+<source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md-lg.webp" media="(min-width:51rem)" width="434px" height="471px" />
+<source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md.webp" media="(min-width:43rem)" width="544px" height="471px" />
+
+<img src="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-sm.webp" alt="" width="256px" height="486px" />
+</picture>
+
+  </figure>
+
+A **spreadsheet-like interface** to compare how different contract specs would affect overall revenue
+
+<!-- Projected contracts Table -->
+  <figure class="inline-flex flex-col items-center w-full my-0">
+      <picture>
+          <source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-xl.webp" media="(min-width:83rem)" width="608px" height="329px" />
+<source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md-lg.webp" media="(min-width:51rem)" width="434px" height="262px" />
+<source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md.webp" media="(min-width:43rem)" width="544px" height="544px" />
+
+  <img src="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-sm.webp" alt="" width="256px" height="256px" />
+      </picture>
+      
+  </figure>
 
 #### Benefits of making contract statistics visible
 
@@ -91,9 +123,14 @@ My application aims to improve upon farmers’ existing methods for dealing with
 
 Grain processors take the physical commodity from farmers and transport it into the supply chain. During my research, I learned that there could be **advantages to considering grain buyers as a secondary user group**. To that end, I interviewed an employee at a processor to understand user needs and business needs from the other side of the marketplace.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<div class="flex flex-col items-center md:block">
+<!-- Prices Screen -->
+<div class="max-w-[320px] md:float-left md:w-52 md:mr-5">
+<img class="md:my-0 md:h-full md:object-cover"
+    src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
 
-![alt_text](images/image2.jpg "image_tooltip")
+</div>
+</div>
 
 ### Freeing up grain buyers
 

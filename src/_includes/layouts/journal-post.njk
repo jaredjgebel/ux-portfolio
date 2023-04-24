@@ -31,31 +31,35 @@
     {% include "../_nav.njk" %}
     <div class="grid-layout-base flex flex-col bg-neutral-10">
       {% include "../_sidebar.njk" %}
-      <main class="grid-layout-row mb-10 xl:mb-12">
-        <div class="grid-layout-content flex flex-col pt-6 gap-10 xl:gap-12">
-          <a
-            href="/journal"
-            class="group inline-flex flex-row items-center w-fit p-3 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
-              focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
-            {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
-            <span class="relative top-[0.105rem]">All posts</span>
-          </a>
-          <article class="prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin first-paragraph-margin
-              italic-in-heading ordered-list-items unordered-list-items">
-            {% block content %}
-              {{ content | safe }}
-            {% endblock %}
-            <div class="tags flex gap-4 mt-7">
-              {% for label in tags %}
-                {% if (label !== "post") and (label !== "social posts") %}
-                  {{ tag(label) }}
-                {% endif %}
-              {% endfor %}
+      <main>
+        <div class="grid-layout-row my-10 xl:mb-12">
+          <div class="grid-layout-content">
+            <div class="grid-col-layout">
+              <a
+                href="/journal"
+                class="group inline-flex flex-row items-center w-fit p-3 ml-[-12px] mb-6 text-primary-70 rounded-sm hover:text-primary-50
+                  focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+                {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
+                <span class="relative top-[0.105rem]">All posts</span>
+              </a>
+              <article class="prose prose-custom-fonts first-header-no-margin first-paragraph-margin italic-in-heading ordered-list-items
+                  unordered-list-items">
+                {% block content %}
+                  {{ content | safe }}
+                {% endblock %}
+                <div class="tags flex gap-4 mt-7">
+                  {% for label in tags %}
+                    {% if (label !== "post") and (label !== "social posts") %}
+                      {{ tag(label, "light") }}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
         </div>
+        {% include "../_footer.njk" %}
       </main>
-      {% include "../_footer.njk" %}
     </div>
   </body>
 </html>

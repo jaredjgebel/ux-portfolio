@@ -34,9 +34,7 @@
         {% include "../_nav.njk" %}
         <div class="grid-layout-base bg-neutral-10">
             {% include "../_sidebar.njk" %}
-            <div
-                class="">
-                {# {% include "../_header.njk" %} #}
+            <div class="">
                 {% block content %}
                     {{ content | safe }}
                 {% endblock %}
