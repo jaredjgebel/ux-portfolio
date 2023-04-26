@@ -1,0 +1,10 @@
+{% from "./icon.njk" import icon as icon %}
+{% macro ghostButton(label) %}
+    <a
+        href="/"
+        class="group inline-flex flex-row items-center w-fit p-3 mt-6 ml-[-12px] text-primary-70 rounded-sm hover:text-primary-50
+            focus:outline focus:outline-2 focus:outline-primary-70 focus:outline- active:text-primary-50 active:outline-primary-50">
+        {{ icon("small", "arrow-left", "fill-primary-70 group-hover:fill-primary-50") }}
+        <span class="relative top-[0.105rem]">{{ label }}</span>
+    </a>
+{% endmacro %}

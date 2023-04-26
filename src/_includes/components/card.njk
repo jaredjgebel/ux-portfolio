@@ -1,44 +1,43 @@
 {% from "./icon.njk" import icon as icon %}
 {% from "./tag.njk" import tag as tag %}
-{% macro card(title, subtitle, link) %}
-  {# Breakpoint: small #}
-  <a href="{{ link }}" class="w-[calc(50%_-_2rem)] min-w-[14rem] grow">
-    <div class="card h-[30rem] w-full bg-neutral-0 shadow-md rounded-md hover:mix-blend-multiply focus:outline focus:outline-2
-        focus:outline-primary-80 active:outline active:outline-2 active:outline-primary-80">
-      <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
-        <img
-          class="w-full h-full object-cover my-0 rounded-t-lg"
-          src="/assets/images/case-studies/design-flow/candlestick-chart.webp"/>
-        <div class="absolute top-4 right-4">
-          {{ tag("product design", "dark") }}
+{% macro card(title, subtitle, link, disabled, imagePath) %}
+  {% set imagePathString = ["/assets/images", imagePath] | join %}
+  {% if disabled %}
+    <div class="w-[calc(50%_-_2rem)] min-w-[14rem] grow">
+      <div class="card h-[30rem] w-full bg-neutral-0 shadow-md rounded-md grayscale">
+        <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
+          <img class="w-full h-full object-cover my-0 rounded-t-lg" src={{ imagePathString }}/>
+          <div class="absolute top-4 right-4">
+            {{ tag("coming soon!", "dark") }}
+          </div>
         </div>
-      </div>
-      <div class="card-information flex flex-col items-end p-4 h-1/2">
-        <div class="card-text flex flex-col justify-between flex-grow">
-          <h3 class="sm-heading-3 xl:xl-heading-4 my-0">{{ title }}</h3>
-          <p class="subtitle sm-paragraph-short xl:xl-paragraph-short my-0 text-neutral-80">{{ subtitle }}</p>
+        <div class="card-information flex flex-col items-end p-4 h-1/2">
+          <div class="card-text flex flex-col justify-between flex-grow">
+            <h3 class="sm-heading-3 xl:xl-heading-4 my-0">{{ title }}</h3>
+            <p class="subtitle sm-paragraph-short xl:xl-paragraph-short my-0 text-neutral-80">{{ subtitle }}</p>
+          </div>
+          {{ icon("small", "arrow-right", "flex-grow-0 fill-neutral-90") }}
         </div>
-        {{ icon("small", "arrow-right", "flex-grow-0 fill-neutral-90") }}
       </div>
     </div>
-  </a>
-  {# Breakpoint: medium and up #}
-  <a href="{{ link }}" class="hidden">
-    <div class="card flex flex-row bg-neutral-0 shadow-md w-full lg:w-[512px] xl:w-[640px] xl:h-[128px] max:h-36 max:w-[784px]
-        rounded-md hover:mix-blend-multiply focus:outline focus:outline-2 focus:outline-primary-80 active:outline
-        active:outline-2 active:outline-primary-80">
-      <div
-        class="icon-area flex items-center justify-center rounded-l-md w-1/4">
-        {# {{ icon("medium", iconName, iconClasses) }} #}
-        photo
-      </div>
-      <div class="card-information flex flex-col w-3/4 py-5 px-4 xl:px-5">
-        <div class="card-text flex flex-col grow justify-between">
-          <h3 class="sm-heading-3 xl:xl-heading-4 mt-0">{{ title }}</h3>
-          <p class="subtitle sm-paragraph-short xl:xl-paragraph-short mb-0 text-neutral-80">{{ subtitle }}</p>
+  {% else %}
+    <a href="{{ link }}" class="w-[calc(50%_-_2rem)] min-w-[14rem] grow">
+      <div class="card h-[30rem] w-full bg-neutral-0 shadow-md rounded-md hover:mix-blend-multiply focus:outline focus:outline-2
+          focus:outline-primary-80 active:outline active:outline-2 active:outline-primary-80">
+        <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
+          <img class="w-full h-full object-cover my-0 rounded-t-lg" src={{ imagePathString }}/>
+          <div class="absolute top-4 right-4">
+            {{ tag("product design", "dark") }}
+          </div>
         </div>
-        {{ icon("small", "arrow-right", "flex-grow-0 self-end fill-neutral-90") }}
+        <div class="card-information flex flex-col items-end p-4 h-1/2">
+          <div class="card-text flex flex-col justify-between flex-grow">
+            <h3 class="sm-heading-3 xl:xl-heading-4 my-0">{{ title }}</h3>
+            <p class="subtitle sm-paragraph-short xl:xl-paragraph-short my-0 text-neutral-80">{{ subtitle }}</p>
+          </div>
+          {{ icon("small", "arrow-right", "flex-grow-0 fill-neutral-90") }}
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
+  {% endif %}
 {% endmacro %}
