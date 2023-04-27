@@ -2,16 +2,16 @@
 {% from "./components/icon.njk" import icon as icon %}
 <div
     id="menu"
-    class="fixed top-0 left-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto z-50"
+    class="fixed top-0 right-0 h-screen w-screen max-w-[20rem] md:w-[20rem] pb-6 bg-primary-70 overflow-y-auto z-50"
     x-cloak="x-cloak"
     x-show="isToggled"
     x-transition
     @click.away="isToggled = false"
     @keydown.escape="isToggled = false">
-    <div id="menu-header" class="h-9 flex pl-3 items-center">
+    <div id="menu-header" class="flex pr-3 py-3 items-center justify-end">
         <button
             id="close-menu-button"
-            class="flex items-center p-3 rounded-sm group focus:outline-neutral-0 focus:outline focus:outline-1"
+            class="flex items-center p-4 rounded group focus:outline-neutral-0 focus:outline focus:outline-1"
             @click="isToggled = !isToggled"
             aria-labelledby="close-menu-button-label">
             {{ icon("small", "close", "stroke-0 fill-neutral-10

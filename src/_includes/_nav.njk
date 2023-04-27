@@ -1,14 +1,12 @@
 {% from "./components/icon.njk" import icon as icon %}
 <div
+    class="fixed top-3 right-3 z-50"
     x-data="{ isToggled: false }"
     @resize.debounce.100.window="isToggled = (window.innerWidth < 1056) ? isToggled : false">
     <nav class="lg:hidden">
-        <div
-            id="top-nav-bar"
-            class="flex items-center bg-primary-70 h-9 pl-3 shadow-primary-70"
-            @keydown.escape="isToggled = false">
+        <div id="top-nav-bar" class="flex items-center justify-end h-9 shadow-primary-70" @keydown.escape="isToggled = false">
             <button
-                class="flex items-center gap-3 p-3 rounded-sm group focus:outline-neutral-0 focus:outline focus:outline-1"
+                class="flex items-center gap-3 p-4 bg-primary-70 rounded group focus:outline-neutral-0 focus:outline focus:outline-1"
                 @click="isToggled = !isToggled"
                 aria-labelledby="open-menu-button-label">
                 {{ icon("small", "hamburger-menu", "stroke-neutral-10 stroke-2 group-hover:stroke-neutral-0 group-focus:stroke-neutral-0") }}
