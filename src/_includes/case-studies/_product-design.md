@@ -1,6 +1,6 @@
 ## The business problem {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-### Being a successful farmer requires thinking like a stock trader
+### Being a successful farmer requires thinking like a stock trader {.mt-2}
 
 Grain farming may seem idyllic, but a number of **risk factors** threaten a farm's livelihood every growing season. One factor is the **volatility of grain prices**.
 
@@ -148,17 +148,15 @@ Designing for processors ultimately fell outside the scope of this case study. H
 
 Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of farmers and grain buyers, I thought of additional features that facilitate the grain exchange process.
 
-To explore the specifics of the design {.sm-heading-4 .xl:xl-heading-4 .mb-2}
+### To explore the specifics of the design
 
 [Figma file with all views and user flows](https://www.figma.com/file/Tjw04NNIDyaZpHf6ITOOMC/Commodities-Application?node-id=64%3A31382&t=PWaEQUY4qPaATaP3-1) {.mt-0}
 
-Footnotes {.sm-heading-4 .xl:xl-heading-4 .mb-2}
+### Footnotes
 
 1. 278 acres, as of 2016. [Trends in Production Practices and Costs of the U.S. Corn Sector, USDA](https://www.ers.usda.gov/webdocs/publications/101722/err-294.pdf?v=2482.5). {.mt-0}
 
-Attributions {.sm-heading-4 .xl:xl-heading-4 .mb-2}
-
-Images: {.mt-0}
+### Attributions
 
 - Photo by [Taylor Siebert](https://unsplash.com/@taylorsiebert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/L51m_W9i3WQ/case-study/d3420e971a3ed31bd5173d5ea5e8e306?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 - [Photo](https://www.pexels.com/photo/stock-exchange-board-210607/) by Pixabay from Pexels

@@ -257,6 +257,10 @@
     @apply mb-0;
   }
 
+  .first-h2-no-margin h2 {
+    @apply mt-0;
+  }
+
   .first-paragraph-margin h1 + p {
     @apply mt-5 mb-9;
   }

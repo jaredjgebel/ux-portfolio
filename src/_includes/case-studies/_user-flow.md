@@ -1,36 +1,10 @@
-# User flow walkthrough: Using design to optimize decision-making in the commodities markets
+The business problem {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-##
+## Selling grain in an unstable market
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+Each year, grain farmers must **sell their crops to local processors** at the highest possible price. That’s a challenge, because the **commodities markets are volatile**.
 
-![alt_text](images/image1.png "image_tooltip")
-Overview
-
-### Project context
-
-Independently completed as a part of the UX Research and Design Specialization from the University of Michigan
-
-### Highlighted methods
-
-- User interviews
-- UX design
-- UI design
-- User flows
-
-### Summary
-
-Grain farmers **must consider many factors when deciding to sell their crops on contract**. Through user research, I uncovered these factors and examined them from a **business and usability perspective**. While walking through the user flow, I illustrate how Market Watcher assists in evaluating a potential sale by **surfacing necessary information** and **reducing points of friction**.
-
-### Solution
-
-I designed features for grain farmers to [track market prices](/case-studies/market-watcher-user-flow/#monitoring-market-prices) and evaluate potential revenue outcomes.To address usability constraints, I reduced the need for data entry by **saving as much state as possible between views** in the user flow.
-
-## Business problem: selling grain in an unstable market
-
-Each year, grain farmers must **sell their crops to local processors** at the highest possible price. That’s a challenge, because the** commodities markets are volatile**.
-
-Farmers** use market strategies to reduce the risk** that a season’s revenue won’t cover the cost of growing. \
+Farmers **use market strategies to reduce the risk** that a season’s revenue won’t cover the cost of growing.
 
 These strategies include:
 
@@ -76,7 +50,7 @@ Based on my research, I wanted to be mindful of key **constraints**:
 - The median age of U.S. farmers is significantly higher than that of the general population
 - The application should be usable in a variety of contexts - in the field, at home, or at a second job
 
-Since this user base is** familiar with a complex domain but limited in technical experience**, I had to **balance competing needs for powerful functionality and a simple interface**.
+Since this user base is **familiar with a complex domain but limited in technical experience**, I had to **balance competing needs for powerful functionality and a simple interface**.
 
 &lt;callout>
 
@@ -88,7 +62,9 @@ Given these constraints, I wanted my design to:
 
 &lt;/callout>
 
-## The user flow: Evaluating prospective sales contracts
+The user flow {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
+
+## Evaluating prospective sales contracts
 
 ### Why make a user flow?
 
@@ -214,9 +190,7 @@ If you’d like a closer look at my design, feel free to [take a look at the Fig
 
 [Email me](mailto:jaredjgebel@gmail.com) to connect or ask questions.
 
-**Attributions**
-
-Images
+### Attributions
 
 - Photo by[ Maxim Hopman](https://unsplash.com/@nampoh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/s/photos/stock-market?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 - Photo by [Tobi from Pexels](https://www.pexels.com/photo/man-wearing-black-denim-jacket-in-driver-s-seat-620332/)
