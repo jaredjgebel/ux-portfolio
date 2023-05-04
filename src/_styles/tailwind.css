@@ -257,7 +257,7 @@
     @apply mb-0;
   }
 
-  .first-h2-no-margin h2 {
+  .first-h2-no-margin p.sm-subheading-small + h2 {
     @apply mt-0;
   }
 

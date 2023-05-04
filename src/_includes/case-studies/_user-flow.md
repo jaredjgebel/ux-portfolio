@@ -1,4 +1,4 @@
-The business problem {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
+The business problem {#the-business-problem .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ## Selling grain in an unstable market
 
@@ -21,9 +21,14 @@ While on the road for his second job, he heard on the radio that corn prices had
 
 Market opportunities vanish quickly. But to make a final decision, he needed to review the farm's financial metrics for the season.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<div class="flex flex-col-reverse items-center md:block">
+<!-- Man in Truck -->
+<div class="max-w-[18rem] md:float-right md:ml-5">
+<img class="md:my-0 md:h-full md:object-cover"
+    src="../../assets/images/case-studies/user-flow/man-in-truck.webp" alt="" />
 
-![alt_text](images/image2.jpg "image_tooltip")
+</div>
+</div>
 
 He had no choice but to:
 
@@ -62,7 +67,7 @@ Given these constraints, I wanted my design to:
 
 &lt;/callout>
 
-The user flow {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
+The user flow {#the-user-flow .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ## Evaluating prospective sales contracts
 
@@ -78,27 +83,19 @@ While I could have jumped straight into designing the interface, I wrote out the
 
 This flow follows one of my personas, the Forward Contractor, as he considers whether or not to sell a portion of his grain. The flow assumes that the Forward Contractor has set up the following market alert:
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<div class="inline-flex flex-col items-center w-full my-4">
+   <img class="my-0 max-w-md" src="../../assets/images/case-studies/user-flow/add-market-alert.webp" alt="" width="100%" height="auto" />
+</div>
 
-![alt_text](images/image3.png "image_tooltip")
-
-The steps of the flow are:
-
-1. Receive notification
-2. View contract information
-3. Evaluate revenue metrics for the entire season
-4. Evaluate revenue and charges for an individual contract
-5. Receive notification
+### 1. Receive notification
 
 The Forward Contractor receives a notification about a price alert.
 
-###
+<div class="inline-flex flex-col items-center w-full my-4">
+   <img class="my-0 max-w-md" src="../../assets/images/case-studies/user-flow/notification-annotated.webp" alt="" width="100%" height="auto" />
+</div>
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
-
-##### Features to note
+#### Features to note {#features-to-note-1}
 
 1. **View contract**
    - Select to get more information on the contract
@@ -107,15 +104,15 @@ The Forward Contractor receives a notification about a price alert.
 
 The Forward Contractor is interested in selling based on where the market is at, but wants to compare prices with other processors. He selects **View contract**.
 
-#### 2. View contract information
+### 2. View contract information
 
 In this view of local prices, the Forward Contractor can compare contract prices at nearby locations.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<div class="inline-flex flex-col items-center w-full my-4">
+   <img class="my-0" src="../../assets/images/case-studies/user-flow/evaluate-contract-tablet-2.webp" alt="" width="100%" height="auto" />
+</div>
 
-![alt_text](images/image5.png "image_tooltip")
-
-##### Features to note
+#### Features to note {#features-to-note-2}
 
 1. **Immediate relevant context**
    - The user is directed to the **expanded table row** with more information about the contract specified in the notification
@@ -130,21 +127,35 @@ In this view of local prices, the Forward Contractor can compare contract prices
 
 Before making a final decision, the Forward Contractor wants to see how this would affect his overall seasonal revenue and revenue per acre. To do this, he selects **Add to projections**.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<video controls autoplay>
+  <source src="/assets/video/cash-bids-contract-projection-transition-webm.mp4" type="video/webm" />
+  <source src="/assets/video/cash-bids-contract-projection-transition.mp4" type="video/mp4" />
+  <p>
+    Your browser doesn't support HTML video. Here is a
+    <a href="/assets/video/cash-bids-contract-projection-transition.mp4">link to the video</a> instead.
+  </p>
+</video>
 
-![alt_text](images/image6.gif "image_tooltip")
-
-#### 3. Evaluate revenue metrics for the season
+### 3. Evaluate revenue metrics for the season
 
 The Contract Projections view allows the Forward Contractor to **immediately see how the farm’s revenue metrics would change by selling at the current contract price**.
 
-##### The Forward Contractor can view the **financial effect of committing to contracts at different prices**. He can even see how different combinations of contracts would affect the farm’s net revenue.
+<video controls autoplay>
+  <source src="/assets/video/contract-projections-animation-webm.mp4" type="video/webm" />
+  <source src="/assets/video/contract-projections-animation.mp4" type="video/mp4" />
+  <p>
+    Your browser doesn't support HTML video. Here is a
+    <a href="/assets/video/contract-projections-animation.mp4">link to the video</a> instead.
+  </p>
+</video>
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+The Forward Contractor can view the **financial effect of committing to contracts at different prices**. He can even see how different combinations of contracts would affect the farm’s net revenue.
 
-![alt_text](images/image7.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+   <img class="my-0" src="../../assets/images/case-studies/user-flow/evaluate-contract-tablet-3.webp" alt="" width="100%" height="auto" />
+</div>
 
-##### Features to note
+#### Features to note {#features-to-note-3}
 
 1. **Contract list**
    - Lists the saved potential contracts that can be added to the Projected Summary
@@ -159,15 +170,24 @@ In this case, the Forward Contractor would see that selling 10,000 bushels at 6.
 
 Finally, let’s say the Forward Contractor wants to see how costs would affect an individual contract and selects **Review and edit**.
 
-#### 4. Evaluate revenue and charges for an individual contract
+### 4. Evaluate revenue and charges for an individual contract
+
+<video controls autoplay>
+  <source src="/assets/video/individual-contract-projection-animation-webm.mp4" type="video/webm" />
+  <source src="/assets/video/individual-contract-projection-animation.mp4" type="video/mp4" />
+  <p>
+    Your browser doesn't support HTML video. Here is a
+    <a href="/assets/video/individual-contract-projection-animation.mp4">link to the video</a> instead.
+  </p>
+</video>
 
 In this view, the Forward Contractor can edit processor charges to see how revenue changes for the selected contract.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<div class="inline-flex flex-col items-center w-full my-4">
+   <img class="my-0" src="../../assets/images/case-studies/user-flow/evaluate-contract-tablet-4.webp" alt="" width="100%" height="auto" />
+</div>
 
-![alt_text](images/image8.png "image_tooltip")
-
-##### Features to note
+#### Features to note {#features-to-note-4}
 
 1. **Net revenue**
    - As each input is edited, the net revenue, gross revenue, and charges are automatically updated
@@ -175,10 +195,6 @@ In this view, the Forward Contractor can edit processor charges to see how reven
    - Each input affects the section subtotal. In this case, the net drying rate and drying charge with both change when the moisture level, moisture requirement, or drying rate are updated
 3. **Input toggle**
    - Since not every section will be relevant to every farmer, sections can be toggled on and off. For example, some farmers will have local processors transport grain, but many farmers handle delivery themselves
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image9.gif "image_tooltip")
 
 In the end, the Forward Contractor decides to sell 10,000 bushels at the current price, accepting that this is an acceptable level of revenue for this portion of his harvest.
 

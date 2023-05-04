@@ -1,5 +1,5 @@
 ---
-title: User flow walkthrough
+title: "Market Watcher: User flow walkthrough"
 description: Using design to optimize decision-making in the commodities markets
 tags: case study
 ---
@@ -13,9 +13,10 @@ tags: case study
             {# Hero and title #}
             <div class="hero-image">
                 <img
-                    class="h-[320px] xl:h-[400px] w-full object-cover"
-                    src="../../assets/images/case-studies/product-design/aerial-harvest.webp"
-                    alt="">
+                    class="h-[320px] xl:h-[400px] w-full object-cover object-top"
+                    src="../../assets/images/case-studies/user-flow/cornfield.webp"
+                    alt=""
+                    loading="lazy">
                     {# Title  #}
                     <div class="title grid-layout-row bg-teal-900 text-neutral-0">
                         <div class="grid-layout-content pb-7 gap-y-4">
@@ -31,18 +32,12 @@ tags: case study
                 </header>
                 {# Overview #}
                 <div id="overview" class="overview-intro-sections grid-layout-row">
-                    <div class="grid-layout-content pt-6 pb-8">
-                        {# Hero image #}
-                        <!-- Contract Summary Mockup -->
-                            <figure class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex justify-center"> <picture>
-                                <source
-                                    srcset="../../assets/images/case-studies/product-design/contract-summary-mockup.webp"
-                                    media="(min-width:43rem)"/>
-                                <img
-                                    src="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp"
-                                    alt=""
-                                    width="100%"
-                                    height="auto"/>
+                    <div
+                        class="grid-layout-content pt-6 pb-8">
+                        <!-- Projected Contracts Mockup -->
+                        <figure class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex justify-center">
+                            <picture>
+                                <img src="../../assets/images/case-studies/user-flow/mockup-chrome.webp" alt="" width="100%" height="auto"/>
                             </picture>
                         </figure>
                         {% createHeading "2", "Overview", "true", ["col-span-full"] %}
@@ -79,18 +74,23 @@ tags: case study
                         </div>
                         {# Table of contents #}
                         <div class="hidden mdlg:flex mdlg:col-span-5 items-start">
-                            <nav class="case-study-table-of-contents w-full h-min sticky top-7 bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
-                                <ul class="flex flex-col">
-                                    {{ tocItem("Overview", "1", "#overview") }}
-                                    {{ tocItem("The business problem", "1", "#the-business-problem") }}
-                                    {{ tocItem("The Market Watcher solution", "1", "#the-market-watcher-solution") }}
-                                    {{ tocItem("Monitoring market prices", "2", "#monitoring-market-prices") }}
-                                    {{ tocItem("Evaluating potential contracts", "2", "#evaluating-potential-contracts") }}
-                                    {{ tocItem("Grain processors", "1", "#grain-processors") }}
-                                    {{ tocItem("Freeing up grain buyers", "2", "#freeing-up-grain-buyers") }}
-                                    {{ tocItem("Promoting contract offerings", "2", "#promoting-contract-offerings") }}
-                                    {{ tocItem("Conclusion", "1", "#conclusion") }}
-                                </ul>
+                            <nav class="case-study-table-of-contents w-full sticky top-7 bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
+                                <div class="grid grid-rows-[1fr] max-h-[calc(100vh_-_6rem)]">
+                                    <ul class="flex flex-col overflow-y-auto h-full ">
+                                        {{ tocItem("Overview", "1", "#overview") }}
+                                        {{ tocItem("Selling grain in an unstable market", "1", "#selling-grain-in-an-unstable-market") }}
+                                        {{ tocItem("The process of making market decisions is both urgent and complex", "1", "#the-process-of-making-market-decisions-is-both-urgent-and-complex") }}
+                                        {{ tocItem("Reducing friction for farmers with beginner-level computer skills", "1", "#reducing-friction-for-farmers-with-beginner-level-computer-skills") }}
+                                        {{ tocItem("Evaluating prospective sales contracts", "1", "#evaluating-prospective-sales-contracts") }}
+                                        {{ tocItem("Why make a user flow?", "1", "#why-make-a-user-flow%3F") }}
+                                        {{ tocItem("Stepping through the user flow", "1", "#stepping-through-the-user-flow") }}
+                                        {{ tocItem("1. Receive notification", "2", "#1.-receive-notification") }}
+                                        {{ tocItem("2. View contract information", "2", "#2.-view-contract-information") }}
+                                        {{ tocItem("3. Evaluate revenue metrics for the season", "2", "#3.-evaluate-revenue-metrics-for-the-season") }}
+                                        {{ tocItem("4. Evaluate revenue and charges for an individual contract", "2", "#4.-evaluate-revenue-and-charges-for-an-individual-contract") }}
+                                        {{ tocItem("Conclusion", "1", "#conclusion") }}
+                                    </ul>
+                                </div>
                             </nav>
                         </div>
                     </div>
