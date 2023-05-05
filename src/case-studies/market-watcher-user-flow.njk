@@ -36,11 +36,9 @@ tags: case study
                     <div
                         class="grid-layout-content pt-6 pb-8">
                         <!-- Projected Contracts Mockup -->
-                        <figure class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex justify-center">
-                            <picture>
-                                <img src="../../assets/images/case-studies/user-flow/mockup-chrome.webp" alt="" width="100%" height="auto"/>
-                            </picture>
-                        </figure>
+                        <div class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex flex-col items-center">
+                            {% lightbox "case-studies/user-flow/mockup-chrome" %}
+                        </div>
                         {% createHeading "2", "Overview", "true", ["col-span-full"] %}
                         {# Project context #}
                         <div class="overview-intro-section col-span-full md:col-span-4 mdlg:col-span-8">
@@ -69,8 +67,8 @@ tags: case study
                 {# Case study body content #}
                 <div class="grid-layout-row py-7">
                     <div class="grid-layout-content">
-                        <div class="col-span-full mdlg:col-span-11 prose max-w-none prose-custom-fonts prose-custom-layout first-h2-no-margin
-                                first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
+                        <div class="col-span-full mdlg:col-span-11 prose max-w-none prose-custom-fonts prose-figcaption:mt-0 prose-custom-layout
+                                first-h2-no-margin first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
                             {% renderFile "src/_includes/case-studies/_user-flow.md" %}
                         </div>
                         {# Table of contents #}

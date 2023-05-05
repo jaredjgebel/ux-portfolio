@@ -109,7 +109,7 @@ The Forward Contractor is interested in selling based on where the market is at,
 In this view of local prices, the Forward Contractor can compare contract prices at nearby locations.
 
 <div class="inline-flex flex-col items-center w-full my-4">
-   <img class="my-0" src="../../assets/images/case-studies/user-flow/evaluate-contract-tablet-2.webp" alt="" width="100%" height="auto" />
+{% lightbox "case-studies/user-flow/evaluate-contract-tablet-2" %}
 </div>
 
 #### Features to note {#features-to-note-2}
@@ -152,7 +152,8 @@ The Contract Projections view allows the Forward Contractor to **immediately see
 The Forward Contractor can view the **financial effect of committing to contracts at different prices**. He can even see how different combinations of contracts would affect the farm’s net revenue.
 
 <div class="inline-flex flex-col items-center w-full my-4">
-{% lightbox "evaluate-contract-tablet-3" %}
+{% lightbox "case-studies/user-flow/evaluate-contract-tablet-3" %}
+
 </div>
 
 #### Features to note {#features-to-note-3}
@@ -184,7 +185,7 @@ Finally, let’s say the Forward Contractor wants to see how costs would affect 
 In this view, the Forward Contractor can edit processor charges to see how revenue changes for the selected contract.
 
 <div class="inline-flex flex-col items-center w-full my-4">
-   <img class="my-0" src="../../assets/images/case-studies/user-flow/evaluate-contract-tablet-4.webp" alt="" width="100%" height="auto" />
+{% lightbox "case-studies/user-flow/evaluate-contract-tablet-4" %}
 </div>
 
 #### Features to note {#features-to-note-4}
