@@ -128,7 +128,7 @@ In this view of local prices, the Forward Contractor can compare contract prices
 Before making a final decision, the Forward Contractor wants to see how this would affect his overall seasonal revenue and revenue per acre. To do this, he selects **Add to projections**.
 
 <video controls autoplay>
-  <source src="/assets/video/cash-bids-contract-projection-transition-webm.mp4" type="video/webm" />
+  <source src="/assets/video/cash-bids-contract-projection-transition.mp4" type="video/webm" />
   <source src="/assets/video/cash-bids-contract-projection-transition.mp4" type="video/mp4" />
   <p>
     Your browser doesn't support HTML video. Here is a
@@ -141,7 +141,7 @@ Before making a final decision, the Forward Contractor wants to see how this wou
 The Contract Projections view allows the Forward Contractor to **immediately see how the farm’s revenue metrics would change by selling at the current contract price**.
 
 <video controls autoplay>
-  <source src="/assets/video/contract-projections-animation-webm.mp4" type="video/webm" />
+  <source src="/assets/video/contract-projections-animation.mp4" type="video/webm" />
   <source src="/assets/video/contract-projections-animation.mp4" type="video/mp4" />
   <p>
     Your browser doesn't support HTML video. Here is a
@@ -152,7 +152,7 @@ The Contract Projections view allows the Forward Contractor to **immediately see
 The Forward Contractor can view the **financial effect of committing to contracts at different prices**. He can even see how different combinations of contracts would affect the farm’s net revenue.
 
 <div class="inline-flex flex-col items-center w-full my-4">
-   <img class="my-0" src="../../assets/images/case-studies/user-flow/evaluate-contract-tablet-3.webp" alt="" width="100%" height="auto" />
+{% lightbox "evaluate-contract-tablet-3" %}
 </div>
 
 #### Features to note {#features-to-note-3}
@@ -173,7 +173,7 @@ Finally, let’s say the Forward Contractor wants to see how costs would affect 
 ### 4. Evaluate revenue and charges for an individual contract
 
 <video controls autoplay>
-  <source src="/assets/video/individual-contract-projection-animation-webm.mp4" type="video/webm" />
+  <source src="/assets/video/individual-contract-projection-animation.mp4" type="video/webm" />
   <source src="/assets/video/individual-contract-projection-animation.mp4" type="video/mp4" />
   <p>
     Your browser doesn't support HTML video. Here is a
