@@ -91,6 +91,20 @@ module.exports = function (eleventyConfig) {
 </script>`
   });
 
+  eleventyConfig.addPairedShortcode("callout", function (content) {
+    return `<div class="callout max-w-prose bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
+    ${content} 
+   </div>`
+  });
+
+  eleventyConfig.addPairedShortcode("featuredSection", function (content, bgColor) {
+    return `<div class="overview-section grid-layout-row text-neutral-0 ${bgColor}">
+      <div class="col-span-full py-10 flex flex-col max-w-prose gap-6">
+        ${content}
+      </div>
+    </div>`
+  });
+
   eleventyConfig.addFilter("socialPost", function (htmlString) {
     const stripBeginning = /(?<=<time\>)(\W|\w)+/;
     const result = stripBeginning.exec(htmlString);

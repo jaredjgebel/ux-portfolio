@@ -41,11 +41,11 @@ He had no choice but to:
 
 Even in these less-than-ideal circumstances, this process could be simplified with technology.
 
-&lt;callout>
+{% callout %}
 
-By making it easier to access and analyze market information, grain farmers could increase their profits by making more informed and timely decisions.
+By making it easier to analyze market information, grain farmers could increase their profits by making more informed and timely decisions.
 
-&lt;/callout>
+{% endcallout %}
 
 ## Reducing friction for farmers with beginner-level computer skills
 
@@ -55,9 +55,11 @@ Based on my research, I wanted to be mindful of key **constraints**:
 - The median age of U.S. farmers is significantly higher than that of the general population
 - The application should be usable in a variety of contexts - in the field, at home, or at a second job
 
-Since this user base is **familiar with a complex domain but limited in technical experience**, I had to **balance competing needs for powerful functionality and a simple interface**.
+{% callout %}
 
-&lt;callout>
+Since this user base is familiar with a complex domain but limited in technical experience, I had to balance competing needs for powerful functionality and a simple interface.
+
+{% endcallout %}
 
 Given these constraints, I wanted my design to:
 

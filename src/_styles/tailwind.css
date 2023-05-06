@@ -242,6 +242,10 @@
     font-weight: 500;
   }
 
+  .prose-custom-fonts .callout p {
+    @apply sm-body-featured xl:xl-body-featured;
+  }
+
   .prose-custom-lists {
     @apply prose:ul;
   }
@@ -470,8 +474,8 @@
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
-    letter-spacing: -0.2px;
+    line-height: 1.5;
+    letter-spacing: normal;
   }
   .sm-nav-link-footer-hover {
     font-family: "Prodigy Sans";

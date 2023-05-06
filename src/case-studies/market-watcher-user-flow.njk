@@ -8,91 +8,91 @@ tags: case study
 {% from "../../src/_includes/components/toc-item.njk" import tocItem %}
 {% from "../../src/_includes/components/icon.njk" import icon %}
 {% block content %}
-    <main>
-        {# Header #}
-        <header>
-            {# Hero and title #}
-            <div class="hero-image">
-                <img
-                    class="h-[320px] xl:h-[400px] w-full object-cover object-top"
-                    src="../../assets/images/case-studies/user-flow/cornfield.webp"
-                    alt=""
-                    loading="lazy">
-                    {# Title  #}
-                    <div class="title grid-layout-row bg-teal-900 text-neutral-0">
-                        <div class="grid-layout-content pb-7 gap-y-4">
-                            <div class="col-span-full max:col-[_span_14]">
-                                {% createHeading "1", "User flow walkthrough: Using design to optimize decision-making in the commodities markets", "true", [] %}
-                            </div>
-                            <div class="col-span-full">
-                                <h2 class="sm-subheading-small">Market Watcher</h2>
-                                <h2 class="sm-subheading-small">Case Study</h2>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                {# Overview #}
-                <div id="overview" class="overview-intro-sections grid-layout-row">
-                    <div
-                        class="grid-layout-content pt-6 pb-8">
-                        <!-- Projected Contracts Mockup -->
-                        <div class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex flex-col items-center">
-                            {% lightbox "case-studies/user-flow/mockup-chrome" %}
-                        </div>
-                        {% createHeading "2", "Overview", "true", ["col-span-full"] %}
-                        {# Project context #}
-                        <div class="overview-intro-section col-span-full md:col-span-4 mdlg:col-span-8">
-                            {% createHeading "3", "Project context", "false", [] %}
-                            <p class="pt-4 sm-paragraph-long xl:xl-paragraph">
-                                Independently completed as a part of the UX Research and Design Specialization from the University of Michigan
-                            </p>
-                        </div>
-                        {# Highlighted methods #}
-                        <div class="overview-intro-section sm:col-span-full md:col-span-4 mdlg:col-span-8">
-                            {% createHeading "3", "Highlighted methods", "false", [] %}
-                            <ul class="pt-4 sm-paragraph-long xl:xl-paragraph pl-8">
-                                <li class="list-disc marker:text-primary-70 list-outside">User flows</li>
-                                <li class="list-disc marker:text-primary-70 list-outside">UX design</li>
-                                <li class="list-disc marker:text-primary-70 list-outside">UI design</li>
-                                <li class="list-disc marker:text-primary-70 list-outside">User interviews
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+  <main>
+    {# Header #}
+    <header>
+      {# Hero and title #}
+      <div class="hero-image">
+        <img
+          class="h-[320px] xl:h-[400px] w-full object-cover object-top"
+          src="../../assets/images/case-studies/user-flow/cornfield.webp"
+          alt=""
+          loading="lazy">
+          {# Title  #}
+          <div class="title grid-layout-row bg-teal-900 text-neutral-0">
+            <div class="grid-layout-content pb-7 gap-y-4">
+              <div class="col-span-full max:col-[_span_14]">
+                {% createHeading "1", "User flow walkthrough: Using design to optimize decision-making in the commodities markets", "true", [] %}
+              </div>
+              <div class="col-span-full">
+                <h2 class="sm-subheading-small">Market Watcher</h2>
+                <h2 class="sm-subheading-small">Case Study</h2>
+              </div>
+            </div>
+          </div>
+        </header>
+        {# Overview #}
+        <div id="overview" class="overview-intro-sections grid-layout-row">
+          <div
+            class="grid-layout-content pt-6 pb-8">
+            <!-- Projected Contracts Mockup -->
+            <div class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex flex-col items-center">
+              {% lightbox "case-studies/user-flow/mockup-chrome" %}
+            </div>
+            {% createHeading "2", "Overview", "true", ["col-span-full"] %}
+            {# Project context #}
+            <div class="overview-intro-section col-span-full md:col-span-4 mdlg:col-span-8">
+              {% createHeading "3", "Project context", "false", [] %}
+              <p class="pt-4 sm-paragraph-long xl:xl-paragraph">
+                Independently completed as a part of the UX Research and Design Specialization from the University of Michigan
+              </p>
+            </div>
+            {# Highlighted methods #}
+            <div class="overview-intro-section sm:col-span-full md:col-span-4 mdlg:col-span-8">
+              {% createHeading "3", "Highlighted methods", "false", [] %}
+              <ul class="pt-4 sm-paragraph-long xl:xl-paragraph pl-8">
+                <li class="list-disc marker:text-primary-70 list-outside">User flows</li>
+                <li class="list-disc marker:text-primary-70 list-outside">UX design</li>
+                <li class="list-disc marker:text-primary-70 list-outside">UI design</li>
+                <li class="list-disc marker:text-primary-70 list-outside">User interviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {# Summary #}
+        {% include "../_includes/case-studies/_user-flow-summary.njk" %}
+        {# Solution #}
+        {% include "../_includes/case-studies/_user-flow-solution.njk" %}
+        {# Case study body content #}
+        <div class="grid-layout-row py-7">
+          <div class="grid-layout-content">
+            <div class="col-span-full mdlg:col-span-11 prose max-w-none prose-custom-fonts prose-figcaption:mt-0 prose-custom-layout
+                first-h2-no-margin first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
+              {% renderFile "src/_includes/case-studies/_user-flow.md" %}
+            </div>
+            {# Table of contents #}
+            <div class="hidden mdlg:flex mdlg:col-span-5 items-start">
+              <nav class="case-study-table-of-contents w-full sticky mdlg:top-11 lg:top-7 bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
+                <div class="grid grid-rows-[1fr] mdlg:max-h-[calc(100vh_-_9rem)] lg:max-h-[calc(100vh_-_6rem)]">
+                  <ul class="flex flex-col overflow-y-auto h-full ">
+                    {{ tocItem("Overview", "1", "#overview") }}
+                    {{ tocItem("Selling grain in an unstable market", "1", "#selling-grain-in-an-unstable-market") }}
+                    {{ tocItem("The process of making market decisions is both urgent and complex", "1", "#the-process-of-making-market-decisions-is-both-urgent-and-complex") }}
+                    {{ tocItem("Reducing friction for farmers with beginner-level computer skills", "1", "#reducing-friction-for-farmers-with-beginner-level-computer-skills") }}
+                    {{ tocItem("Evaluating prospective sales contracts", "1", "#evaluating-prospective-sales-contracts") }}
+                    {{ tocItem("Why make a user flow?", "1", "#why-make-a-user-flow%3F") }}
+                    {{ tocItem("Stepping through the user flow", "1", "#stepping-through-the-user-flow") }}
+                    {{ tocItem("1. Receive notification", "2", "#1.-receive-notification") }}
+                    {{ tocItem("2. View contract information", "2", "#2.-view-contract-information") }}
+                    {{ tocItem("3. Evaluate revenue metrics for the season", "2", "#3.-evaluate-revenue-metrics-for-the-season") }}
+                    {{ tocItem("4. Evaluate revenue and charges for an individual contract", "2", "#4.-evaluate-revenue-and-charges-for-an-individual-contract") }}
+                    {{ tocItem("Conclusion", "1", "#conclusion") }}
+                  </ul>
                 </div>
-                {# Summary #}
-                {% include "../_includes/case-studies/_user-flow-summary.njk" %}
-                {# Solution #}
-                {% include "../_includes/case-studies/_user-flow-solution.njk" %}
-                {# Case study body content #}
-                <div class="grid-layout-row py-7">
-                    <div class="grid-layout-content">
-                        <div class="col-span-full mdlg:col-span-11 prose max-w-none prose-custom-fonts prose-figcaption:mt-0 prose-custom-layout
-                                first-h2-no-margin first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
-                            {% renderFile "src/_includes/case-studies/_user-flow.md" %}
-                        </div>
-                        {# Table of contents #}
-                        <div class="hidden mdlg:flex mdlg:col-span-5 items-start">
-                            <nav class="case-study-table-of-contents w-full sticky top-7 bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
-                                <div class="grid grid-rows-[1fr] max-h-[calc(100vh_-_6rem)]">
-                                    <ul class="flex flex-col overflow-y-auto h-full ">
-                                        {{ tocItem("Overview", "1", "#overview") }}
-                                        {{ tocItem("Selling grain in an unstable market", "1", "#selling-grain-in-an-unstable-market") }}
-                                        {{ tocItem("The process of making market decisions is both urgent and complex", "1", "#the-process-of-making-market-decisions-is-both-urgent-and-complex") }}
-                                        {{ tocItem("Reducing friction for farmers with beginner-level computer skills", "1", "#reducing-friction-for-farmers-with-beginner-level-computer-skills") }}
-                                        {{ tocItem("Evaluating prospective sales contracts", "1", "#evaluating-prospective-sales-contracts") }}
-                                        {{ tocItem("Why make a user flow?", "1", "#why-make-a-user-flow%3F") }}
-                                        {{ tocItem("Stepping through the user flow", "1", "#stepping-through-the-user-flow") }}
-                                        {{ tocItem("1. Receive notification", "2", "#1.-receive-notification") }}
-                                        {{ tocItem("2. View contract information", "2", "#2.-view-contract-information") }}
-                                        {{ tocItem("3. Evaluate revenue metrics for the season", "2", "#3.-evaluate-revenue-metrics-for-the-season") }}
-                                        {{ tocItem("4. Evaluate revenue and charges for an individual contract", "2", "#4.-evaluate-revenue-and-charges-for-an-individual-contract") }}
-                                        {{ tocItem("Conclusion", "1", "#conclusion") }}
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        {% endblock content %}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </main>
+    {% endblock content %}
