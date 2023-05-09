@@ -117,7 +117,7 @@ A **spreadsheet-like interface** to compare how different contract specs would a
 
 </div>
 
-## Grain processors {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
+## Grain processors {.lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ### Engaging of the other side of the marketplace: grain processors
 
