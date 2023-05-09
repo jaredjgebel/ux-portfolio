@@ -7,11 +7,13 @@ description: UX and product design case studies by Jared Gebel
 {% from "../_includes/components/button-ghost.njk" import ghostButton %}
 {% from "../_includes/components/card.njk" import card as card %}
 {% block content %}
-    <div class="grid-col-layout">
-        {{ ghostButton("Home") }}
-        <div class="prose prose-custom-fonts prose- py-10 xl:py-12">
-            <h1 class="sm-heading-1 xl:xl-heading-1">Case studies</h1>
-            {% include "../_includes/_cards-case-studies.njk" %}
+    <div class="grid-layout-row">
+        <div class="grid-col-layout">
+            {{ ghostButton("Home") }}
+            <div class="prose prose-custom-fonts prose- py-10 xl:py-12">
+                <h1 class="sm-heading-1 xl:xl-heading-1">Case studies</h1>
+                {% include "../_includes/_cards-case-studies.njk" %}
+            </div>
         </div>
     </div>
 {% endblock content %}
