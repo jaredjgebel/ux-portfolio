@@ -4,11 +4,6 @@
         <h2 class="case-study-listings-title mb-7 sm-heading-2 xl:xl-heading-2 relative z-10">
             Case studies
         </h2>
-        <div class="flex flex-wrap gap-7 mt-5">
-            <div class="flex flex-wrap gap-7 mt-5">
-                {{ card("Designing a product to help grain farmers increase revenue", "Product decisions that enable grain farmers to maximize profits", "/case-studies/market-watcher-product-design", false, "/case-studies/product-design/candlestick-chart.webp") }}
-                {{ card("User flow walkthrough", "Using design to optimize decision-making in the commodities markets", "/case-studies/market-watcher-product-design", true, "/case-studies/design-flow/soybean-plant.webp") }}
-            </div>
-        </div>
+        {% include "./_cards-case-studies.njk"%}
     </div>
 </div>

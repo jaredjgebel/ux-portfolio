@@ -1,6 +1,6 @@
 ---
 title: Case studies
-description: UX design and product design case studies by Jared Gebel
+description: UX and product design case studies by Jared Gebel
 ---
 
 {% extends "../../src/_includes/layouts/journal-list.njk" %}
@@ -11,10 +11,7 @@ description: UX design and product design case studies by Jared Gebel
         {{ ghostButton("Home") }}
         <div class="prose prose-custom-fonts prose- py-10 xl:py-12">
             <h1 class="sm-heading-1 xl:xl-heading-1">Case studies</h1>
-            <div class="flex flex-wrap gap-7 mt-5">
-                {{ card("Designing a product to help grain farmers increase revenue", "Product decisions that enable grain farmers to maximize profits", "/case-studies/market-watcher-product-design", false, "/case-studies/product-design/candlestick-chart.webp") }}
-                {{ card("User flow walkthrough", "Using design to optimize decision-making in the commodities markets", "/case-studies/market-watcher-product-design", true, "/case-studies/design-flow/soybean-plant.webp") }}
-            </div>
+            {% include "../_includes/_cards-case-studies.njk" %}
         </div>
     </div>
 {% endblock content %}

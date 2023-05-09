@@ -1,4 +1,4 @@
-The business problem {#the-business-problem .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
+The business problem {#the-business-problem .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3 }
 
 ## Selling grain in an unstable market
 
@@ -67,9 +67,7 @@ Given these constraints, I wanted my design to:
 2. Favor redundancy and explicitness over brevity
 3. Make transitions as effortless as possible
 
-&lt;/callout>
-
-The user flow {#the-user-flow .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
+The user flow {#the-user-flow .lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
 ## Evaluating prospective sales contracts
 

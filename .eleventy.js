@@ -92,7 +92,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPairedShortcode("callout", function (content) {
-    return `<div class="callout max-w-prose bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
+    return `<div class="callout max-w-prose bg-primary-50 rounded-lg text-neutral-0 px-6 py-4">
     ${content} 
    </div>`
   });
@@ -104,6 +104,18 @@ module.exports = function (eleventyConfig) {
       </div>
     </div>`
   });
+
+  eleventyConfig.addPairedShortcode("tableOfContents", function (content, borderColor) {
+    return `<div class="hidden mdlg:flex mdlg:col-span-5 items-start">
+    <nav class="case-study-table-of-contents w-full sticky mdlg:top-11 lg:top-7 border-l-4 border-l-${borderColor}">
+        <div class="grid grid-rows-[1fr] mdlg:max-h-[calc(100vh_-_9rem)] lg:max-h-[calc(100vh_-_6rem)]">
+            <ul class="flex flex-col overflow-y-auto h-full ">
+                ${content}
+            </ul>
+        </div>
+    </nav>
+</div>`
+  })
 
   eleventyConfig.addFilter("socialPost", function (htmlString) {
     const stripBeginning = /(?<=<time\>)(\W|\w)+/;

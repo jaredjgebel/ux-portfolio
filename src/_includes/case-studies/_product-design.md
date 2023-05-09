@@ -35,9 +35,9 @@ Using these strategies requires the responsiveness and sensibility of a stock tr
 </div>
 </div>
 
-## The Market Watcher solution {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3 .pt-7 .mdlg:pt-0 .clear-right .max:pt-9}
+## The Market Watcher solution {.lead .sm-subheading-small xl:.xl-subheading-sm .text-neutral-80 .mb-3 .clear-right }
 
-## Features to help farmers increase revenue and mitigate price risk
+## Features to increase revenue and mitigate price risk
 
 My application aims to improve upon farmers’ existing methods for dealing with the markets. The tasks required to handle grain marketing fall into two general groups: monitoring market prices and evaluating potential contracts.
 

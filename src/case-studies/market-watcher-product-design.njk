@@ -1,5 +1,5 @@
 ---
-title: "Market Watcher: Implementing a workflow to help grain farmers improve market decisions and increase profits"
+title: Product strategy to maximize farm revenue
 description: UX design and product design case study by Jared Gebel
 tags: case study
 ---
@@ -20,7 +20,7 @@ tags: case study
                     <div class="title grid-layout-row bg-teal-900 text-neutral-0">
                         <div class="grid-layout-content pb-7 gap-y-4">
                             <div class="col-span-full max:col-[_span_14]">
-                                {% createHeading "1", "Designing a product to help grain farmers increase revenue", "true", [] %}
+                                {% createHeading "1", title, "true", [] %}
                             </div>
                             <div class="col-span-full">
                                 <h2 class="sm-subheading-small">Market Watcher</h2>
@@ -34,7 +34,7 @@ tags: case study
                     <div class="grid-layout-content pt-6 pb-8">
                         {# Hero image #}
                         <!-- Contract Summary Mockup -->
-                            <figure class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex justify-center"> <picture>
+                            <figure class="prose w-full col-span-full xl:col-start-3 xl:col-span-12 flex justify-center"> <picture>
                                 <source
                                     srcset="../../assets/images/case-studies/product-design/contract-summary-mockup.webp"
                                     media="(min-width:43rem)"/>
@@ -71,28 +71,24 @@ tags: case study
                 {# Solution #}
                 {% include "../_includes/case-studies/_product-design-solution.njk" %}
                 {# Case study body content #}
-                <div class="grid-layout-row py-7">
+                <div class="grid-layout-row py-10">
                     <div class="grid-layout-content">
-                        <div class="col-span-full mdlg:col-span-11 prose max-w-none prose-custom-fonts prose-custom-layout first-header-no-margin
-                                first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
+                        <div class="col-span-full mdlg:col-span-11 prose max-w-none prose-custom-fonts prose-custom-layout prose-lead:mt-10
+                                first-header-no-margin first-paragraph-margin italic-in-heading ordered-list-items unordered-list-items">
                             {% renderFile "src/_includes/case-studies/_product-design.md" %}
                         </div>
                         {# Table of contents #}
-                        <div class="hidden mdlg:flex mdlg:col-span-5 items-start">
-                            <nav class="case-study-table-of-contents w-full h-min sticky top-7 bg-primary-50 rounded-lg text-neutral-0 px-5 py-4">
-                                <ul class="flex flex-col">
-                                    {{ tocItem("Overview", "1", "#overview") }}
-                                    {{ tocItem("The business problem", "1", "#the-business-problem") }}
-                                    {{ tocItem("The Market Watcher solution", "1", "#the-market-watcher-solution") }}
-                                    {{ tocItem("Monitoring market prices", "2", "#monitoring-market-prices") }}
-                                    {{ tocItem("Evaluating potential contracts", "2", "#evaluating-potential-contracts") }}
-                                    {{ tocItem("Grain processors", "1", "#grain-processors") }}
-                                    {{ tocItem("Freeing up grain buyers", "2", "#freeing-up-grain-buyers") }}
-                                    {{ tocItem("Promoting contract offerings", "2", "#promoting-contract-offerings") }}
-                                    {{ tocItem("Conclusion", "1", "#conclusion") }}
-                                </ul>
-                            </nav>
-                        </div>
+                        {% tableOfContents "teal-900" %}
+                        {{ tocItem("Overview", "1", "#overview") }}
+                        {{ tocItem("The business problem", "1", "#the-business-problem") }}
+                        {{ tocItem("The Market Watcher solution", "1", "#the-market-watcher-solution") }}
+                        {{ tocItem("Monitoring market prices", "2", "#monitoring-market-prices") }}
+                        {{ tocItem("Evaluating potential contracts", "2", "#evaluating-potential-contracts") }}
+                        {{ tocItem("Grain processors", "1", "#grain-processors") }}
+                        {{ tocItem("Freeing up grain buyers", "2", "#freeing-up-grain-buyers") }}
+                        {{ tocItem("Promoting contract offerings", "2", "#promoting-contract-offerings") }}
+                        {{ tocItem("Conclusion", "1", "#conclusion") }}
+                        {% endtableOfContents %}
                     </div>
                 </div>
             </main>

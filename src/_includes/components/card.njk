@@ -1,6 +1,6 @@
 {% from "./icon.njk" import icon as icon %}
 {% from "./tag.njk" import tag as tag %}
-{% macro card(title, subtitle, link, disabled, imagePath) %}
+{% macro card(title, subtitle, link, disabled, imagePath, tags) %}
   {% set imagePathString = ["/assets/images", imagePath] | join %}
   {% if disabled %}
     <div class="w-[calc(50%_-_2rem)] min-w-[14rem] grow">
@@ -8,7 +8,10 @@
         <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
           <img class="w-full h-full object-cover my-0 rounded-t-lg" src={{ imagePathString }}/>
           <div class="absolute top-4 right-4">
-            {{ tag("coming soon!", "dark") }}
+            {% for tagLabel in tags %}
+              {{ tag(tagLabel, "dark") }}
+            {% endfor %}
+            {# {{ tag("coming soon!", "dark") }} #}
           </div>
         </div>
         <div class="card-information flex flex-col items-end p-4 h-1/2">
@@ -26,8 +29,10 @@
           focus:outline-primary-80 active:outline active:outline-2 active:outline-primary-80">
         <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
           <img class="w-full h-full object-cover my-0 rounded-t-lg" src={{ imagePathString }}/>
-          <div class="absolute top-4 right-4">
-            {{ tag("product design", "dark") }}
+          <div class="absolute top-4 right-4 flex flex-col gap-2">
+            {% for tagLabel in tags %}
+              {{ tag(tagLabel, "dark") }}
+            {% endfor %}
           </div>
         </div>
         <div class="card-information flex flex-col items-end p-4 h-1/2">
