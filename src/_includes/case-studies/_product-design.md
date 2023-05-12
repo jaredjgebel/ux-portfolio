@@ -15,7 +15,7 @@ Grain farming may seem idyllic, but a number of **risk factors** threaten a farm
 
 For an average-sized corn farm<sup>1</sup>, the difference in selling at the 2022 market high of $6.75 and low of $5.46 is **$61,920**. For a small business, that gap in revenue could be the **difference between making a profit or taking a loss**.
 
-In order to reduce risk and maximize revenue, savvy farmers use a variety of strategies to increase the selling price of their grain, including:
+In order to reduce risk and maximize revenue, savvy farmers use a variety of strategies, including:
 
 <div class="flex flex-col-reverse items-center md:block">
 <!-- Prices Screen -->
@@ -27,7 +27,7 @@ In order to reduce risk and maximize revenue, savvy farmers use a variety of str
 <div>
 
 - Selling grain to local processors before harvest on a **forward contract** when grain prices are high {.mt-0}
-- Using hedging strategies by buying and selling derivatives, primarily **futures** and **options**, from the national commodities exchange ([CME Group](https://www.cmegroup.com/)) {.mb-0}
+- Using hedging strategies by buying and selling **futures** and **options** from the national commodities exchange ([CME Group](https://www.cmegroup.com/)) {.mb-0}
   {.mt-0 .mb-0}
 
 Using these strategies requires the responsiveness and sensibility of a stock trader.
@@ -37,7 +37,7 @@ Using these strategies requires the responsiveness and sensibility of a stock tr
 
 ## The Market Watcher solution {.lead .sm-subheading-small xl:.xl-subheading-sm .text-neutral-80 .mb-3 .clear-right }
 
-## Features to increase revenue and mitigate price risk
+## Increasing revenue and mitigating price risk
 
 My application aims to improve upon farmers’ existing methods for dealing with the markets. The tasks required to handle grain marketing fall into two general groups: monitoring market prices and evaluating potential contracts.
 
@@ -45,13 +45,15 @@ My application aims to improve upon farmers’ existing methods for dealing with
 
 ### Monitoring market prices
 
+Farmers must closely watch the markets to see if they can sell their crop ahead of harvest when prices are high.
+
 #### How farmers currently monitor market prices
 
 - Checking market-related websites, radio stations, and TV channels several times per day
 
 #### How monitoring market prices could be more efficiently completed
 
-- An **alert system** to send users notifications about relevant changes in grain prices
+An **alert system** to send users notifications about changes in grain prices
 
 <!-- Notification -->
 
@@ -63,20 +65,21 @@ My application aims to improve upon farmers’ existing methods for dealing with
 #### Benefits of a market alert system
 
 - Security of knowing that market opportunities aren’t slipping by
-- Saved time and energy
-- Easier to get the specific information they’re looking for
+- Saved time and energy to get the specific information they need
 
 </div>
 
-<div class="feature-section border-solid border-l-4 border-lime-900 px-5">
+<div class="feature-section border-solid border-l-4 border-lime-900 px-5 mt-8">
 
 ### Evaluating potential contracts
 
+A crucial decision point is whether or not to sell when prices spike.
+
 #### How farmers currently evaluate potential contracts
 
-- Looking up previous sales contracts and revenue statistics
-  - Spreadsheets, calling grain buyers, using pencil and paper
-- Deciding to sell based on what information is front of them or just in their head
+- Retrieving active sales contracts and revenue statistics
+  - Calling grain buyers or using pencil and paper
+- Deciding to sell based on what information is in front of them or what they can remember
 
 #### How evaluating potential contracts could be more efficiently completed
 
@@ -84,27 +87,27 @@ My application aims to improve upon farmers’ existing methods for dealing with
 
 Overall **revenue statistics** for the season
 
-  <figure class="inline-flex flex-col items-center w-full my-0">
+  <figure class="inline-flex flex-col w-full my-0">
       <picture>
           <source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-xl.webp" media="(min-width:67rem)" width="608px" height="464px" />
 <source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md-lg.webp" media="(min-width:51rem)" width="434px" height="471px" />
 <source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md.webp" media="(min-width:43rem)" width="544px" height="471px" />
 
-<img src="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-sm.webp" alt="" width="256px" height="486px" />
+<img src="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-sm.webp" alt="" class="my-0" width="256px" height="486px" />
 </picture>
 
   </figure>
 
 A **spreadsheet-like interface** to compare how different contract specs would affect overall revenue
 
-<!-- Projected contracts Table -->
-  <figure class="inline-flex flex-col items-center w-full my-0">
+<!-- Projected contracts table -->
+  <figure class="inline-flex flex-col w-full my-0">
       <picture>
           <source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-xl.webp" media="(min-width:83rem)" width="608px" height="329px" />
 <source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md-lg.webp" media="(min-width:51rem)" width="434px" height="262px" />
 <source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md.webp" media="(min-width:43rem)" width="544px" height="544px" />
 
-  <img src="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-sm.webp" alt="" width="256px" height="256px" />
+  <img src="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-sm.webp" alt="" class="my-0" width="256px" height="256px" />
       </picture>
       
   </figure>
@@ -126,7 +129,7 @@ Grain processors take the physical commodity from farmers and transport it into 
 <div class="flex flex-col items-center md:block">
 <!-- Prices Screen -->
 <div class="max-w-[320px] md:float-left md:w-52 md:mr-5">
-<img class="md:my-0 md:h-full md:object-cover"
+<img class="md:mb-0 md:mt-[1.125rem] xl:mt-[2.125rem] md:h-full md:object-cover"
     src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
 
 </div>
@@ -146,7 +149,7 @@ Designing for processors ultimately fell outside the scope of this case study. H
 
 ## Conclusion
 
-Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of farmers and grain buyers, I thought of additional features that facilitate the grain exchange process.
+Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of farmers and grain buyers, I developed additional features to **incentivize application usage on both sides of the marketplace**.
 
 ### To explore the specifics of the design
 
