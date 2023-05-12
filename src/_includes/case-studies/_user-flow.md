@@ -13,13 +13,13 @@ These strategies include:
 
 The **decision to commit to a sales contract is a critical moment** of the growing season. A single trade could gain (or cost) a farm thousands of dollars in revenue.
 
-## The process of making market decisions is both urgent and complex
+## Making urgent and complex market decisions
 
-During an interview, a grain farmer told a story that illustrates the difficulties inherent in choosing to commit to a contract.
+During an interview, a grain farmer told a story that illustrates the difficulties of choosing to commit to a contract.
 
 While on the road for his second job, he heard on the radio that corn prices had risen - a lot. He wanted to sell his crop ahead of time on a **forward contract** to lock in a price.
 
-Market opportunities vanish quickly. But to make a final decision, he needed to review the farm's financial metrics for the season.
+Market opportunities vanish quickly. But to make a final decision, he **needed to review the farm's financial metrics** for the season.
 
 <div class="flex flex-col-reverse items-center md:block">
 <!-- Man in Truck -->
@@ -39,7 +39,7 @@ He had no choice but to:
 5. Evaluate the data to make a decision about signing a contract for the current price
 6. Call the grain buyer at his local processor to sell
 
-Even in these less-than-ideal circumstances, this process could be simplified with technology.
+Even in these less-than-ideal circumstances, this process could be simplified.
 
 {% callout %}
 
@@ -63,9 +63,9 @@ Since this user base is familiar with a complex domain but limited in technical 
 
 Given these constraints, I wanted my design to:
 
-1. Limit required data entry
-2. Favor redundancy and explicitness over brevity
-3. Make transitions as effortless as possible
+1. **Limit required data entry**
+2. **Favor redundancy and explicitness over brevity**
+3. **Make transitions as effortless as possible**
 
 The user flow {#the-user-flow .lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
@@ -125,7 +125,7 @@ In this view of local prices, the Forward Contractor can compare contract prices
 5. **Add to projections**
    - Adding the contract to projections allows the farmer to examine a deeper level of data before making a decision
 
-Before making a final decision, the Forward Contractor wants to see how this would affect his overall seasonal revenue and revenue per acre. To do this, he selects **Add to projections**.
+Before making a final decision, the Forward Contractor wants to see how this sale would affect his overall seasonal revenue and revenue per acre. To do this, he selects **Add to projections**.
 
 <video controls autoplay>
   <source src="/assets/video/cash-bids-contract-projection-transition.mp4" type="video/webm" />
@@ -195,15 +195,17 @@ In this view, the Forward Contractor can edit processor charges to see how reven
 2. **Input**
    - Each input affects the section subtotal. In this case, the net drying rate and drying charge with both change when the moisture level, moisture requirement, or drying rate are updated
 3. **Input toggle**
-   - Since not every section will be relevant to every farmer, sections can be toggled on and off. For example, some farmers will have local processors transport grain, but many farmers handle delivery themselves
+   - Since not every section will be relevant to every farmer, sections can be toggled on and off. For example, some farmers will have processors transport grain for them, but many farmers handle delivery themselves
 
 In the end, the Forward Contractor decides to sell 10,000 bushels at the current price, accepting that this is an acceptable level of revenue for this portion of his harvest.
 
 ## Conclusion
 
-Market Watcher brings together each part of the decision-making process. Consolidating the data in one place makes it easier for grain farmers to analyze the decision. By transferring the information between contexts, the farmer is able to play around with possible revenue scenarios with ease.
+Market Watcher **brings together each part of the decision-making process**. Consolidating the data in one place makes it easier for grain farmers to analyze the decision. By transferring the information between contexts, the farmer is able to play around with possible revenue scenarios with ease.
 
-If you’d like a closer look at my design, feel free to [take a look at the Figma file](https://www.figma.com/file/Tjw04NNIDyaZpHf6ITOOMC/Commodities-Application?node-id=222%3A134887).
+### To explore the specifics of the design
+
+[Figma file with all views and user flows](https://www.figma.com/file/Tjw04NNIDyaZpHf6ITOOMC/Commodities-Application?node-id=64%3A31382&t=PWaEQUY4qPaATaP3-1) {.mt-0}
 
 [Email me](mailto:jaredjgebel@gmail.com) to connect or ask questions.
 
