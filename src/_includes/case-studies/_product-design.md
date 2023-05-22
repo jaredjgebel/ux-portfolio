@@ -121,7 +121,7 @@ A **spreadsheet-like interface** to compare how different contract specs would a
 
 ## Grain processors {.lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-### Engaging of the other side of the marketplace
+### Engaging the other side of the marketplace
 
 Grain processors buy and collect grain from farmers, transporting it into the supply chain.
 
@@ -137,38 +137,34 @@ I realized that within the broader business context, grain processors could and 
     src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
 </div>
 
-<!-- <div class="flex flex-col items-center md:block">
-<div class="max-w-[320px] md:float-left md:w-52 md:mr-5">
-<img class="md:mb-0 md:mt-[1.125rem] xl:mt-[2.125rem] md:h-[90%] md:object-cover"
-    src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
-
-</div>
-</div> -->
-
 To explore this idea further, I interviewed an employee from a processor to learn about their specific needs.
 
 From a product design standpoint, I was intrigued by the opportunity to outline additional features that would offer business advantages to processors.
 
 These advantages include:
 
-### Sending contract specs directly to farmers {.mt-10}
+### Sending contract specs directly to farmers
 
-Employees at grain processors must **constantly communicate** with farmers in order to buy grain and coordinate logistics. Market Watcher could ease this problem by sending farmers details about their contracts through the app.
+Employees at grain processors must **constantly communicate** with farmers in order to buy grain and remind farmers of contract details. Market Watcher could ease this problem by sending farmers details about their contracts through the app.
 
 This feature would:
 
 - Reduce redundant communication between farmers and employees
 - Save farmers the burden of data entry, one of the biggest barriers to product adoption
 
+### Facilitating grain sales
+
+By reducing context switching, farmers could quickly go from deciding to make a sale to committing to a contract. This could result in higher overall sales for the processor.
+
 ### Promoting contract offerings
 
-Processors offer many kinds of contracts to farmers, many of which boost revenue potential for the processor. Market Watcher could be a medium to **strategically promote contracts** to farmers. In contract projections, it could even be a way to **demonstrate exactly how certain contracts boost farmers’ revenue**.
+Processors offer many kinds of contracts to farmers, many of which boost revenue potential for the processor. Market Watcher could be a medium to strategically promote contracts to farmers. In the contract projections feature, it could even be a way to **demonstrate exactly how certain contracts boost farmers’ revenue**.
 
 On a product roadmap, my highest priority would be developing features to grant these benefits to processors.
 
 ## Conclusion {.lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-### Prioritizing multiple players in a business context
+### Prioritizing multiple players in a marketplace
 
 Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of grain farmers and processors, I developed additional features to **incentivize application usage on both sides of the marketplace**.
 
