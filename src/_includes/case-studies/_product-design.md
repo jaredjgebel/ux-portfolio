@@ -1,6 +1,6 @@
 ## The business problem {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-### Being a successful farmer requires thinking like a stock trader {.mt-2}
+### Being a successful farmer requires thinking like a stock trader {.mt-2 .sm-heading-2 xl:xl-heading-2}
 
 Grain farming may seem idyllic, but a number of **risk factors** threaten a farm's livelihood every growing season. One factor is the **volatility of grain prices**.
 
@@ -17,8 +17,8 @@ For an average-sized corn farm<sup>1</sup>, the difference in selling at the 202
 
 In order to reduce risk and maximize revenue, savvy farmers use a variety of strategies, including:
 
-<div class="flex flex-col-reverse items-center md:block">
 <!-- Prices Screen -->
+<div class="flex flex-col-reverse items-center md:block">
 <div class="max-w-[320px] md:float-right md:w-52 md:ml-5">
 <img class="md:my-0 md:h-full md:object-cover"
     src="../../assets/images/case-studies/product-design/prices-screen.webp" alt="" />
@@ -109,7 +109,6 @@ A **spreadsheet-like interface** to compare how different contract specs would a
 
   <img src="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-sm.webp" alt="" class="my-0" width="256px" height="256px" />
       </picture>
-      
   </figure>
 
 #### Benefits of making contract statistics visible
@@ -122,34 +121,56 @@ A **spreadsheet-like interface** to compare how different contract specs would a
 
 ## Grain processors {.lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-### Engaging of the other side of the marketplace: grain processors
+### Engaging of the other side of the marketplace
 
-Grain processors take the physical commodity from farmers and transport it into the supply chain. During my research, I learned that there could be **advantages to considering grain buyers as a secondary user group**. To that end, I interviewed an employee at a processor to understand user needs and business needs from the other side of the marketplace.
+Grain processors buy and collect grain from farmers, transporting it into the supply chain.
 
-<div class="flex flex-col items-center md:block">
-<!-- Prices Screen -->
+While testing the feature to save contracts in the app, a farmer asked me a question: "Why don't grain processors send the contracts directly to us?"
+
+{% callout %}
+I realized that within the broader business context, grain processors could and _should_ be incentivized to use Market Watcher.
+{% endcallout %}
+
+<!-- Grain elevator -->
+<div class="flex flex-col items-center">
+<img class="h-auto max-h-[320px] w-auto"
+    src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
+</div>
+
+<!-- <div class="flex flex-col items-center md:block">
 <div class="max-w-[320px] md:float-left md:w-52 md:mr-5">
-<img class="md:mb-0 md:mt-[1.125rem] xl:mt-[2.125rem] md:h-full md:object-cover"
+<img class="md:mb-0 md:mt-[1.125rem] xl:mt-[2.125rem] md:h-[90%] md:object-cover"
     src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
 
 </div>
-</div>
+</div> -->
 
-### Freeing up grain buyers
+To explore this idea further, I interviewed an employee from a processor to learn about their specific needs.
 
-Grain buyers directly facilitate transitions with local farmers. In their current process, they must **constantly communicate** with farmers to buy grain on contract and coordinate logistics.
+From a product design standpoint, I was intrigued by the opportunity to outline additional features that would offer business advantages to processors.
 
-Grain buyers could use Market Watcher to **send farmers details about their contracts** electronically. This function would greatly **reduce the amount of necessary communication**. Meanwhile, it would also **save farmers the burden of data entry**, which would be one of the biggest barriers to product adoption.
+These advantages include:
+
+### Sending contract specs directly to farmers {.mt-10}
+
+Employees at grain processors must **constantly communicate** with farmers in order to buy grain and coordinate logistics. Market Watcher could ease this problem by sending farmers details about their contracts through the app.
+
+This feature would:
+
+- Reduce redundant communication between farmers and employees
+- Save farmers the burden of data entry, one of the biggest barriers to product adoption
 
 ### Promoting contract offerings
 
-Processors offer many kinds of contracts to farmers. Market Watcher could be a medium to promote different types of contracts. In the contract projection feature, it could even be a way to **demonstrate exactly how certain contracts boost farmers’ revenue**.
+Processors offer many kinds of contracts to farmers, many of which boost revenue potential for the processor. Market Watcher could be a medium to **strategically promote contracts** to farmers. In contract projections, it could even be a way to **demonstrate exactly how certain contracts boost farmers’ revenue**.
 
-Designing for processors ultimately fell outside the scope of this case study. However, my next priority would be developing the processor side of the interface.
+On a product roadmap, my highest priority would be developing features to grant these benefits to processors.
 
-## Conclusion
+## Conclusion {.lead .sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of farmers and grain buyers, I developed additional features to **incentivize application usage on both sides of the marketplace**.
+### Prioritizing multiple players in a business context
+
+Through my research, I identified the **features that add the most value** to grain farmers’ market strategy. By examining the roles of grain farmers and processors, I developed additional features to **incentivize application usage on both sides of the marketplace**.
 
 ### To explore the specifics of the design
 
