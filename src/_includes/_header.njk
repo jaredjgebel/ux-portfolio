@@ -1,16 +1,32 @@
 <header class="hero-header grid-layout-row bg-primary-80">
   <div class="col-span-full md:col-start-2 md:col-span-6 mdlg:col-start-3 mdlg:col-span-12 lg:col-start-2 lg:col-span-14
-      text-neutral-10 h-[24rem] xl:h-[32rem] flex">
+      text-neutral-10 h-[24rem] xl:h-[32rem] flex flex-wrap">
     <div
       id="title-and-subtitle"
-      class="flex flex-col md:flex-row gap-10 md:gap-7 mdlg:gap-9 justify-center md:items-center md:justify-start">
+      class="flex flex-col md:flex-row gap-[33%] md:gap-7 mdlg:gap-9 justify-center md:items-center md:justify-start">
       <h1 class="sm-heading-display xl:xl-heading-display md:w-min">Jared Gebel</h1>
       <div id="divider" class="hidden md:block w-full h-2 md:w-2 md:h-[11rem] xl:h-[14rem] bg-neutral-10 md:mx-0"></div>
-      <div class="subheadings flex flex-col gap-1 md:gap-2">
-        <h2 class="sm-subheading-small xl:xl-subheading-small">UX Design</h2>
+      <div class="subheadings flex flex-col gap-1 md:gap-2 pt-[0.625rem]">
+        <h2 class="sm-subheading-small xl:xl-subheading-small">UX Design &</h2>
         <h2 class="sm-subheading-small xl:xl-subheading-small">Product Design</h2>
-        <h2 class="sm-subheading-small xl:xl-subheading-small">Front-End Web Development</h2>
       </div>
     </div>
+
+        {# <div id="title-and-subtitle" class="flex flex-row flex-wrap md:flex-row gap-10 md:gap-7 mdlg:gap-9 justify-center md:items-center md:justify-start">
+      <h1 class="sm-heading-display xl:xl-heading-display w-min basis-[30rem]">Jared Gebel</h1>
+    <div id="divider" class="hidden md:block w-full h-2 md:w-2 md:h-[11rem] xl:h-[14rem] bg-neutral-10 md:mx-0"></div>
+      <div class="subheadings flex flex-col gap-1 md:gap-2 basis-[30rem]">
+        <h2 class="sm-subheading-small xl:xl-subheading-small">UX Design &</h2>
+        <h2 class="sm-subheading-small xl:xl-subheading-small">Product Design</h2>
+      </div>
+    </div> #}
+
+    {# <h1 class="border-2 border-neutral-200 basis-[30rem]">Jared Gebel</h1> #}
+    
+    {# <div class="block w-full h-2 md:w-2 md:h-[11rem] xl:h-[14rem] bg-neutral-10 md:mx-0 border-2 border-red-800"></div> #}
+     {# <h2 class="border-2 border-neutral-200">UX Design & Product Design</h2> #}
   </div>
+  
 </header>
+{# when viewport is above 480, show h1, divider, and subheadings side-by-side #}
+{# when viewport is below 480, show h1, divider, and subheadings in columns #}
