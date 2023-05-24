@@ -1,6 +1,6 @@
 ## The business problem {.sm-subheading-small .xl-subheading-sm .text-neutral-80 .mb-3}
 
-### Being a successful farmer requires thinking like a stock trader {.mt-2 .sm-heading-2 xl:xl-heading-2}
+### Being a successful farmer requires thinking like a stock trader {.mt-2 .sm-heading-2 .xl:xl-heading-2}
 
 Grain farming may seem idyllic, but a number of **risk factors** threaten a farm's livelihood every growing season. One factor is the **volatility of grain prices**.
 
@@ -37,32 +37,32 @@ Using these strategies requires the responsiveness and sensibility of a stock tr
 
 ## The Market Watcher solution {.lead .sm-subheading-small xl:.xl-subheading-sm .text-neutral-80 .mb-3 .clear-right }
 
-## Increasing revenue and mitigating price risk
+### Increasing revenue and mitigating price risk {.mt-2 .sm-heading-2 .xl:xl-heading-2}
 
 My application aims to improve upon farmers’ existing methods for dealing with the markets. The tasks required to handle grain marketing fall into two general groups: monitoring market prices and evaluating potential contracts.
 
 <div class="feature-section border-solid border-l-4 border-rose-900 px-5 md:mt-7">
 
-### Monitoring market prices
+#### Monitoring market prices {.sm-heading-3 .xl:xl-heading-3}
 
 Farmers must closely watch the markets to see if they can sell their crop ahead of harvest when prices are high.
 
-#### How farmers currently monitor market prices
+##### How farmers currently monitor market prices {.sm-heading-4 .xl:xl-heading-4}
 
 - Checking market-related websites, radio stations, and TV channels several times per day
 
-#### How monitoring market prices could be more efficiently completed
+##### How monitoring market prices could be more efficiently completed {.sm-heading-4 .xl:xl-heading-4}
 
 An **alert system** to send users notifications about changes in grain prices
 
 <!-- Notification -->
 
-<div class="w-[16rem] h-[13.5rem]">
-<img class="md:my-0"
+<div class="w-[16rem] h-[13.5rem] mb-6">
+<img class="md:mt-0 mb-4"
     src="../../assets/images/case-studies/product-design/notification-sidebar.webp" alt="" width="512px" height="434px" />
 </div>
 
-#### Benefits of a market alert system
+##### Benefits of a market alert system {.sm-heading-4 .xl:xl-heading-4}
 
 - Security of knowing that market opportunities aren’t slipping by
 - Saved time and energy to get the specific information they need
@@ -71,17 +71,17 @@ An **alert system** to send users notifications about changes in grain prices
 
 <div class="feature-section border-solid border-l-4 border-lime-900 px-5 mt-8">
 
-### Evaluating potential contracts
+#### Evaluating potential contracts {.sm-heading-3 .xl:xl-heading-3}
 
 A crucial decision point is whether or not to sell when prices spike.
 
-#### How farmers currently evaluate potential contracts
+##### How farmers currently evaluate potential contracts {.sm-heading-4 .xl:xl-heading-4}
 
 - Retrieving active sales contracts and revenue statistics
   - Calling grain buyers or using pencil and paper
 - Deciding to sell based on what information is in front of them or what they can remember
 
-#### How evaluating potential contracts could be more efficiently completed
+##### How evaluating potential contracts could be more efficiently completed {.sm-heading-4 .xl:xl-heading-4}
 
 - A system that collects information on signed contracts and projects possible revenue outcomes, including:
 
@@ -111,7 +111,7 @@ A **spreadsheet-like interface** to compare how different contract specs would a
       </picture>
   </figure>
 
-#### Benefits of making contract statistics visible
+##### Benefits of making contract statistics visible {.sm-heading-4 .xl:xl-heading-4}
 
 - Being able to see the direct effects of changes in contract prices on overall revenue
 - Reducing mental overhead of decision-making by making more data available
@@ -153,6 +153,13 @@ This feature would:
 - Save farmers the burden of data entry, one of the biggest barriers to product adoption
 
 ### Facilitating grain sales
+
+<figure class="inline-flex flex-col items-center w-full my-4">
+    <picture>
+        <img class="my-0" src="../../assets/images/case-studies/product-design/cash-bids-prominent-CTA-button.webp" alt="" width="100%" height="auto" />
+    </picture>
+    <figcaption>Highlighted "sell now" button is easily accessible in the Cash Bids view</figcaption>
+</figure>
 
 By reducing context switching, farmers could quickly go from deciding to make a sale to committing to a contract. This could result in higher overall sales for the processor.
 
