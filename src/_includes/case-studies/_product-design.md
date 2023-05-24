@@ -7,8 +7,8 @@ Grain farming may seem idyllic, but a number of **risk factors** threaten a farm
 <!-- Corn 23 Prices -->
 <figure class="inline-flex flex-col items-center w-full my-4">
     <picture>
-        <source srcset="../../assets/images/case-studies/product-design/corn-23-prices.webp" media="(min-width:43rem)" />
-        <img class="my-0" src="../../assets/images/case-studies/product-design/corn-23-prices-sm.webp" alt="Chart of corn prices, showing high of $6.75 and low of $5.46" width="100%" height="auto" />
+        <source srcset="../../assets/images/case-studies/product-design/corn-23-prices.webp" media="(min-width:43rem)" width=1859 height=993 />
+        <img class="my-0" src="../../assets/images/case-studies/product-design/corn-23-prices-sm.webp" alt="Chart of corn prices, showing high of $6.75 and low of $5.46" width="514" height="508" loading="lazy" />
     </picture>
     <figcaption>Price per bushel of December '23 corn futures over one year, courtesy of barchart.com</figcaption>
 </figure>
@@ -21,7 +21,7 @@ In order to reduce risk and maximize revenue, savvy farmers use a variety of str
 <div class="flex flex-col-reverse items-center md:block">
 <div class="max-w-[320px] md:float-right md:w-52 md:ml-5">
 <img class="md:my-0 md:h-full md:object-cover"
-    src="../../assets/images/case-studies/product-design/prices-screen.webp" alt="" />
+    src="../../assets/images/case-studies/product-design/prices-screen.webp" alt="" width="400" height="400" loading="lazy"  />
 
 </div>
 <div>
@@ -59,7 +59,7 @@ An **alert system** to send users notifications about changes in grain prices
 
 <div class="w-[16rem] h-[13.5rem] mb-6">
 <img class="md:mt-0 mb-4"
-    src="../../assets/images/case-studies/product-design/notification-sidebar.webp" alt="" width="512px" height="434px" />
+    src="../../assets/images/case-studies/product-design/notification-sidebar.webp" alt="" width="512px" height="434px" loading="lazy"  />
 </div>
 
 ##### Benefits of a market alert system {.sm-heading-4 .xl:xl-heading-4}
@@ -89,11 +89,11 @@ Overall **revenue statistics** for the season
 
   <figure class="inline-flex flex-col w-full my-0">
       <picture>
-          <source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-xl.webp" media="(min-width:67rem)" width="608px" height="464px" />
-<source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md-lg.webp" media="(min-width:51rem)" width="434px" height="471px" />
-<source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md.webp" media="(min-width:43rem)" width="544px" height="471px" />
+          <source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-xl.webp" media="(min-width:67rem)" width="608px" height="464px" loading="lazy" />
+<source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md-lg.webp" media="(min-width:51rem)" width="434px" height="471px" loading="lazy" />
+<source srcset="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-md.webp" media="(min-width:43rem)" width="544px" height="471px" loading="lazy" />
 
-<img src="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-sm.webp" alt="" class="my-0" width="256px" height="486px" />
+<img src="../../assets/images/case-studies/product-design/projected-summary-table/projected-summary-sm.webp" alt="" class="my-0" width="256px" height="486px" loading="lazy"  />
 </picture>
 
   </figure>
@@ -103,11 +103,11 @@ A **spreadsheet-like interface** to compare how different contract specs would a
 <!-- Projected contracts table -->
   <figure class="inline-flex flex-col w-full my-0">
       <picture>
-          <source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-xl.webp" media="(min-width:83rem)" width="608px" height="329px" />
-<source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md-lg.webp" media="(min-width:51rem)" width="434px" height="262px" />
-<source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md.webp" media="(min-width:43rem)" width="544px" height="544px" />
+          <source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-xl.webp" media="(min-width:83rem)" width="608px" height="329px" loading="lazy" />
+<source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md-lg.webp" media="(min-width:51rem)" width="434px" height="262px" loading="lazy" />
+<source srcset="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-md.webp" media="(min-width:43rem)" width="544px" height="544px" loading="lazy" />
 
-  <img src="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-sm.webp" alt="" class="my-0" width="256px" height="256px" />
+  <img src="../../assets/images/case-studies/product-design/projected-contracts-table/projected-contracts-table-sm.webp" alt="" class="my-0" width="256px" height="256px" loading="lazy"  />
       </picture>
   </figure>
 
@@ -134,7 +134,7 @@ I realized that within the broader business context, grain processors could and 
 <!-- Grain elevator -->
 <div class="flex flex-col items-center">
 <img class="h-auto max-h-[320px] w-auto"
-    src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" />
+    src="../../assets/images/case-studies/product-design/grain-elevator.webp" alt="" width="293" height="320" loading="lazy"  />
 </div>
 
 To explore this idea further, I interviewed an employee from a processor to learn about their specific needs.
@@ -156,7 +156,7 @@ This feature would:
 
 <figure class="inline-flex flex-col items-center w-full my-4">
     <picture>
-        <img class="my-0" src="../../assets/images/case-studies/product-design/cash-bids-prominent-CTA-button.webp" alt="" width="100%" height="auto" />
+        <img class="my-0" src="../../assets/images/case-studies/product-design/cash-bids-prominent-CTA-button.webp" alt="" width="1470" height="581" loading="lazy" />
     </picture>
     <figcaption>Highlighted "sell now" button is easily accessible in the Cash Bids view</figcaption>
 </figure>
