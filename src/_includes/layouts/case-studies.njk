@@ -2,47 +2,46 @@
 {% from "../components/icon.njk" import icon as icon %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>{{ title }}</title>
-        {% if description %}
-            <meta name="description" content="{{ description }}"/>
-        {% endif %}
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-            {% opengraph page.url, title, description, page.fileSlug %}
-        <script type="module" async src="https://cdn.ampproject.org/bento.mjs"></script>
-        <script nomodule src="https://cdn.ampproject.org/bento.js"></script>
-        <script type="module" async src="https://cdn.ampproject.org/v0/bento-lightbox-1.0.mjs"></script>
-        <script nomodule async src="https://cdn.ampproject.org/v0/bento-lightbox-1.0.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.ampproject.org/v0/bento-lightbox-1.0.css">
-        <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
-        <script defer src="../../js/alpine.js{% version %}"></script>
-        <style>
-            [x-cloak] {
-                display: none !important;
-            }
-        </style>
-        <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
-        <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
-        <link
-        rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
-        {# Firefox FOUC fix? #}
-        <script>
-            let FF_FOUC_FIX;
-        </script>
-    </head>
-    <body>
-        {% include "../_nav.njk" %}
-        <div class="grid-layout-base bg-neutral-10">
-            {% include "../_sidebar.njk" %}
-            <div>
-                {% block content %}
-                    {{ content | safe }}
-                {% endblock %}
-                {% include "../_footer.njk" %}
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{{ title }}</title>
+    {% if description %}
+      <meta name="description" content="{{ description }}"/>
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+      {% opengraph page.url, title, description, page.fileSlug %}
+    <script type="module" async src="https://cdn.ampproject.org/bento.mjs"></script>
+    <script nomodule src="https://cdn.ampproject.org/bento.js"></script>
+    <script type="module" async src="https://cdn.ampproject.org/v0/bento-lightbox-1.0.mjs"></script>
+    <script nomodule async src="https://cdn.ampproject.org/v0/bento-lightbox-1.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.ampproject.org/v0/bento-lightbox-1.0.css">
+    <link rel="preload" href="../../assets/woff2/ProdigySans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../assets/woff2/ProdigySans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../style.css{% version %}"/> {% block head %}{% endblock %}
+    <script defer src="../../js/alpine.js{% version %}"></script>
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+    <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png"> {% tachyon %}
+    {# Firefox FOUC fix? #}
+    <script>
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body>
+    {% include "../_nav.njk" %}
+    <div class="grid-layout-base bg-neutral-10">
+      {% include "../_sidebar.njk" %}
+      <div>
+        {% block content %}
+          {{ content | safe }}
+        {% endblock %}
+        {% include "../_footer.njk" %}
+      </div>
+    </div>
+  </body>
 </html>

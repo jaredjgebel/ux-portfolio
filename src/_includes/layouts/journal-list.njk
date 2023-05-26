@@ -19,8 +19,7 @@
     </style>
     <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any">
     <link rel="icon" href="../assets/favicons/favicon.svg" type="image/svg+xml">
-    <link
-    rel="apple-touch-icon" href="../assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="../assets/favicons/apple-touch-icon.png"> {% tachyon %}
     {# Firefox FOUC fix? #}
     <script>
       let FF_FOUC_FIX;
@@ -39,19 +38,19 @@
     </div>
   </body>
   {# <body class="">
-              {% include "../_nav.njk" %}
-              <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
-                {% include "../_sidebar.njk" %}
-                <div>
-                  <div class="grid-layout-row">
-                    <div class="grid-layout-content">
-                      {% block content %}
-                        {{ content | safe }}
-                      {% endblock %}
+                  {% include "../_nav.njk" %}
+                  <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
+                    {% include "../_sidebar.njk" %}
+                    <div>
+                      <div class="grid-layout-row">
+                        <div class="grid-layout-content">
+                          {% block content %}
+                            {{ content | safe }}
+                          {% endblock %}
+                        </div>
+                      </div>
+                      {% include "../_footer.njk" %}
                     </div>
                   </div>
-                  {% include "../_footer.njk" %}
-                </div>
-              </div>
-            </body> #}
+                </body> #}
 </html>
