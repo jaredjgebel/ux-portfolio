@@ -165,8 +165,8 @@ I’m exploring Miro solo, but I’m anticipating using it for collaborative des
 
 I can definitely see the utility in Zeplin as a source of truth for design. I used a plugin to generate Tailwind CSS classes for my custom text styles, which saved a lot of manual labor. It automatically generates optimized assets and can save spacing tokens, which are not yet available in Figma.
 
-#### Visual Studio Code and Github
+#### Visual Studio Code and GitHub
 
-While building web development projects, I frequently use Github and Visual Studio Code. I’m used to editing, navigating, and versioning code, and I hope those skills have a bit of utility in my work as a UX designer.
+While building web development projects, I frequently use GitHub and Visual Studio Code. I’m used to editing, navigating, and versioning code, and I hope those skills have a bit of utility in my work as a UX designer.
 
 This list is just the beginning of my UX journey, and I’m looking forward to learning more.
