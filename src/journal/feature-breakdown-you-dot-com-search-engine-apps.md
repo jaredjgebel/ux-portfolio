@@ -5,21 +5,22 @@ date: 2023-02-27
 layout: ../_includes/layouts/journal-post.njk
 tags: [post, feature breakdown, ux design, product design, ai, social posts]
 ---
+
 # Feature breakdown: You.com search engine _apps_
 
 <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
 
-With the [recent news from Microsoft and Google](https://www.theguardian.com/technology/2023/feb/21/techscape-google-bard-microsoft-big-ai-search), the integration of AI into search engines has generated a lot of discussion. I recently discovered [You.com](you.com), a search engine startup with several AI-oriented products. Their flagship product is a **search engine for software developers**.
+With the [recent news from Microsoft and Google](https://www.theguardian.com/technology/2023/feb/21/techscape-google-bard-microsoft-big-ai-search), the integration of AI into search engines has generated a lot of discussion. I recently discovered [You.com](https://you.com/), a search engine startup with several AI-oriented products. Their flagship product is a **search engine for software developers**.
 
 One thing that stood out to me was how additional functionality is integrated into the search results. In this post, I'll be describing You.com's _apps_ feature and thinking through some of the UX and product design implications.
 
 ## What exactly are _apps_ on You.com?
 
-_Apps_ are components that can display search results or generate content directly in the results feed. At first, I thought the name _app_ referred to web apps, but **these _apps_ have separate functionality and have been built by the You.com team**.  
+_Apps_ are components that can display search results or generate content directly in the results feed. At first, I thought the name _app_ referred to web apps, but **these _apps_ have separate functionality and have been built by the You.com team**.
 
 ### Site structure
 
-When first looking at the results feed, you'll notice that the list of results can be scrolled through on both vertical and horizontal axes.  At first glance, the horizontal list of cards appears to be quite similar to Google's featured links.  
+When first looking at the results feed, you'll notice that the list of results can be scrolled through on both vertical and horizontal axes. At first glance, the horizontal list of cards appears to be quite similar to Google's featured links.
 
 <figure>
 <img src="../../assets/images/you-search/google-search-banana-bread.webp" alt="Google search results for query 'banana bread recipe'" width="auto" height="auto">
@@ -61,7 +62,7 @@ _Apps_ won't show up if they're not relevant to your search. Thankfully, my "ban
 
 ## _Apps_ from a user perspective
 
-**A caveat for this section** <br> This isn't a criticism of the You.com product team. I'm not privy to all of the factors that affect business and product strategy decisions. However, all product features have pros and cons, and it's useful to consider what those might be as a **thought experiment**. {.warning-callout} 
+**A caveat for this section** <br> This isn't a criticism of the You.com product team. I'm not privy to all of the factors that affect business and product strategy decisions. However, all product features have pros and cons, and it's useful to consider what those might be as a **thought experiment**. {.warning-callout}
 
 Keeping in mind that the target audience for You.com is software developers, a few pros and cons for _apps_ come to mind.
 
@@ -83,7 +84,7 @@ Let's examine the pros and cons of the _app_ features from the perspective of pr
 
 ### Pros for the product
 
-- **Centrality**: A *lot* of functionality is included, increasing the likelihood that a user will stay on the site longer.
+- **Centrality**: A _lot_ of functionality is included, increasing the likelihood that a user will stay on the site longer.
 - **Appealing to target audience**: When the Stack Overflow and YouCode _apps_ are visibly embedded within search results, it's easy to see their utility.
 - **Fresh and exciting**: It's been some time since search engines have seen true innovation, and _apps_ feel like a preview of what's coming.
 - **Leaves the door open to add more functionality**: _Apps_ are currently based around websites or AI tools, but it's easy to envision more kinds of tools entering this space (something like a [Todoist](https://todoist.com/home) widget comes to mind).
