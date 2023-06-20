@@ -96,16 +96,17 @@ module.exports = function (eleventyConfig) {
   </script>`
   });
 
-  eleventyConfig.addShortcode("lightbox", function (imagePath) {
+  eleventyConfig.addShortcode("lightbox", function (imagePath, width, height, alt) {
     const imagePathWithoutSlashes = imagePath.replace(/\//g, "-");
 
     return `<img
     id="open-button-${imagePathWithoutSlashes}"
     class="my-0 cursor-zoom-in"
     src="../../assets/images/${imagePath}.webp"
-    alt=""
-    width="100%"
-    height="auto"/>
+    alt=${alt ? alt : `""`}
+    width=${width ? width : "100%"}
+    height=${height ? height : "auto"}
+    >
     <figcaption class="sm-paragraph-long xl:xl-paragraph">Click or press to enlarge.</figcaption>
 <bento-lightbox id="my-lightbox-${imagePathWithoutSlashes}" scrollable>
 <button id="close-button-${imagePathWithoutSlashes}" class="flex items-center m-3 p-4 rounded bg-primary-70 group focus:outline-neutral-0 focus:outline focus:outline-1" aria-labelledby="close-button-${imagePathWithoutSlashes}">
@@ -116,9 +117,9 @@ module.exports = function (eleventyConfig) {
     <img
         class="my-0"
         src="../../assets/images/${imagePath}.webp"
-        alt=""
-        width="auto"
-        height="100%"/>
+        alt=${alt ? alt : `""`}
+        width=${width ? width : "100%"}
+        height=${height ? height : "auto"}>
 
     <style>
         bento-lightbox {
