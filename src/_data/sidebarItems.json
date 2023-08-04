@@ -14,11 +14,6 @@
     "link": "/case-studies"
   },
   { "type": "menulabel", "text": "Journal", "link": "/journal" },
-  {
-    "type": "menulabel",
-    "text": "Career Q & A",
-    "link": "/journal/career-q-and-a"
-  },
   { "type": "sectionlabel", "text": "Contact" },
   {
     "type": "menulabel",
