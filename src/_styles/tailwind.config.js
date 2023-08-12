@@ -54,7 +54,8 @@ module.exports = {
           80: "#323231",
           90: "#191918",
           100: "#000000",
-        }
+        },
+        richBrown: 'hsl(var(--color-rich-brown) / 90%)'
       },
       fontFamily: {
         sans: ["Prodigy Sans", "Adjusted Verdana Fallback", ...defaultTheme.fontFamily.sans],

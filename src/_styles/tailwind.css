@@ -90,6 +90,12 @@
   size-adjust: 104%;
 }
 
+@layer base {
+  :root {
+    --color-rich-brown: 28deg 67% 18%;
+  }
+}
+
 @layer utilities {
   .warning-callout {
     @apply rounded p-5 outline outline-2 outline-orange-600;
@@ -247,10 +253,6 @@
 
   .prose-custom-fonts .callout p {
     @apply sm-body-featured xl:xl-body-featured;
-  }
-
-  .prose-custom-lists {
-    @apply prose:ul;
   }
 
   .header-right-margin h1,

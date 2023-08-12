@@ -147,7 +147,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("featuredSection", function (content, bgColor) {
     return `<div class="overview-section grid-layout-row text-neutral-0 ${bgColor}">
-      <div class="col-span-full py-10 flex flex-col prose-xl max-w-prose prose-p:my-0 prose-h3:my-0 gap-6">
+      <div class="col-span-full py-10 flex flex-col prose-xl prose-custom-fonts max-w-prose prose-h3:mt-0 prose-p:sm-body-featured prose-p:mb-3 prose-p:last-of-type:mb-0 prose-strong:font-semibold sm:prose-strong:prose-xl sm:prose-strong:leading-5 prose-li:list-disc-marker:text-neutral-10 prose-li:list-outside">
         ${content}
       </div>
     </div>`
