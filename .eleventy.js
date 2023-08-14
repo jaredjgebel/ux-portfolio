@@ -8,6 +8,7 @@ const moment = require("moment");
 
 // shortcodes
 const createHeading = require("./src/_shortcodes/createHeading");
+const accordion = require('./src/_shortcodes/accordion');
 
 const md = markdownIt({ html: true });
 md.use(markdownItAttrs);
@@ -163,6 +164,34 @@ module.exports = function (eleventyConfig) {
         </div>
     </nav>
 </div>`
+  })
+
+  eleventyConfig.addShortcode("accordion", function (headingLevel, accordionLabel) {
+    const accordionsData =
+    {
+      "sources": [
+        {
+          "heading": "USDA (U.S. Department of Agriculture) reports",
+          "content": "As an entire branch of the federal government, the USDA provides a wealth of government-sponsored data on farming. A demographic census of farmers and a report on trading behaviors were crucial in informing my perspective.",
+        },
+        {
+          "heading": "University agriculture departments",
+          "content": "Ag extension offices educate farmers in business-related manners. I learned a lot from seeing everything that goes into farming as a business. References like sample contracts and budgets improved the immediate practicality of my design.",
+        },
+        {
+          "heading": "CME Group’s educational resources",
+          "content": "As the national commodities exchange, CME Group benefits when farmers participate in the derivatives markets (futures and options), so it’s advantageous for them to provide accurate information on hedging strategies.",
+        }
+      ],
+      "personas": [
+        {
+          "heading": "The Part-Time Farmer",
+          "content": `<li class="pl-3">Sells crop upon delivery during harvest</li><li>Majority of farmers fall under this category, but they have much smaller farms</li>`
+        }
+      ]
+    }
+
+    return accordion(headingLevel, accordionsData[accordionLabel]);
   })
 
   eleventyConfig.addFilter("socialPost", function (htmlString) {

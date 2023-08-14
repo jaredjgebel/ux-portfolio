@@ -6,19 +6,7 @@ As a regulated and subsidized industry, there is a substantial amount of data on
 
 My sources included:
 
-1. USDA (U.S. Department of Agriculture) reports
-
-As an entire branch of the federal government, the USDA provides a wealth of government-sponsored data on farming. A demographic census of farmers and a report on trading behaviors were crucial in informing my perspective.
-
-2. University agriculture departments
-
-Ag extension offices educate farmers in business-related manners. I learned a lot from seeing everything that goes into farming as a business. References like sample contracts and budgets improved the immediate practicality of my design.
-
-3. CME Group’s educational resources
-
-As the national commodities exchange, CME Group benefits when farmers participate in the derivatives markets (futures and options), so it’s advantageous for them to provide accurate information on hedging strategies.
-
-—
+{% accordion "4" "sources" %}
 
 ### User research
 
@@ -169,3 +157,5 @@ This screen encourages farmers to sign up for a market alert. With knowledge of 
 The process illustrated here exemplifies my approach to research and design: extending the value proposition by substantively understanding a problem area and integrating that knowledge into my designs. In this case, I needed to have a thorough understanding of the user and business perspectives to simplify farmers’ workflows.
 
 The more work it is for a user to successfully integrate a product into their business, the higher the potential reward from using said product has to be. With the specific use case and target user, even though the potential for additional profits was high, it was important to take every opportunity to reduce the effort for farmers to get started and see the value in the product.
+
+{% accordion "5" "personas" %}
