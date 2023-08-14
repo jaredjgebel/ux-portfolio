@@ -21,7 +21,7 @@ function accordion(headingLevel, accordionData) {
           setActiveAccordion(id) { 
               this.activeAccordion = (this.activeAccordion == id) ? '' : id 
           } 
-      }" class="relative w-full mx-auto overflow-hidden text-sm font-normal bg-white border border-neutral-10 divide-y divide-neutral-10 rounded-md">${innerHTML}</div>
+      }" class="relative max-w-lg xl:max-w-xl overflow-hidden text-sm font-normal bg-white border border-neutral-10 divide-y divide-neutral-10 rounded-md">${innerHTML}</div>
     `;
   }
 

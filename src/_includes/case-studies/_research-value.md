@@ -19,7 +19,7 @@ I interviewed grain farmers, focusing on how they check the markets, their marke
 Through observations, I learned about their technical literacy, the format in which they expect to see the information, and general pain points around using technology.
 
 \*\*\* \
-CTA link: [My interview protocol](https://docs.google.com/document/d/1bgfEe1HIbp1eq2GIZKgShCSli1iOXSMcC3CKQY8APm8/edit) \
+CTA link: [My interview protocol](https://docs.google.com/document/d/1bgfEe1HIbp1eq2GIZKgShCSli1iOXSMcC3CKQY8APm8/edit)
 
 ---
 
@@ -73,30 +73,17 @@ As I describe in my [product design case study](https://www.jaredjgebel.com/case
 
 ### Shaping my design process
 
-Personas have gotten a reputation as a weak design artifact, primarily because often more based in assumptions than research. I felt comfortable using personas because I had solid data on the kinds of behavior my target group engages in.
+#### Personas
+
+Personas have gotten a reputation as a weak design artifact, primarily because they're often more based in assumptions than research. I felt comfortable using personas because I had solid data on the kinds of behavior my target group engages in.
 
 To that end, I emphasized the market strategies that the personas engaged in, emphasizing how they might interact with the application over personal characteristics.
 
-#### Personas
-
-The Part-Time Farmer
-
-- Sells crop upon delivery during harvest
-- Majority of farmers fall under this category, but they have much smaller farms
-
-The Forward Contractor
-
-- Sells crops to local processors ahead of harvest on contract
-- Pays close attention to market prices throughout the season and how prices vary among different local processors
-
-The Derivatives Hedger
-
-- Uses hedging strategies to optimize prices
-- Has a sophisticated understanding of the interplay of the markets and a higher risk tolerance
+{% accordion "4" "personas" %}
 
 CTA link: [The complete Market Watcher personas](https://docs.google.com/document/d/1XJsz47POAVJER1EOj32qGjbZtVwix7nO84YmfVRbYY0/edit)
 
-The grounded nature of the personas made me feel more comfortable making them a central part of the design process by including jobs-to-be-done style user stories that directly translated into user flows.
+Because the personas were based on reputable sources, I was more comfortable making them a central part of the design process. To that end, I wrote jobs-to-be-done style user stories for each persona that directly translated into user flows.
 
 ### Creating a simple interface for a complex product
 
@@ -157,5 +144,3 @@ This screen encourages farmers to sign up for a market alert. With knowledge of 
 The process illustrated here exemplifies my approach to research and design: extending the value proposition by substantively understanding a problem area and integrating that knowledge into my designs. In this case, I needed to have a thorough understanding of the user and business perspectives to simplify farmers’ workflows.
 
 The more work it is for a user to successfully integrate a product into their business, the higher the potential reward from using said product has to be. With the specific use case and target user, even though the potential for additional profits was high, it was important to take every opportunity to reduce the effort for farmers to get started and see the value in the product.
-
-{% accordion "5" "personas" %}
