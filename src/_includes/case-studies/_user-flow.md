@@ -44,7 +44,7 @@ He had no choice but to:
 Even in these less-than-ideal circumstances, this process could be
 simplified.
 
-{% callout %}
+{% callout "bg-primary-50" %}
 
 By making it easier to analyze market information, grain farmers could
 increase their profits by making more informed and timely decisions.
@@ -62,7 +62,7 @@ workflow:
 - Farmers check market prices in a variety of contexts - in the field,
   at home, or at a second job
 
-{% callout %}
+{% callout "bg-primary-50" %}
 
 Farmers are familiar with their domain but have limited technical
 expertise.

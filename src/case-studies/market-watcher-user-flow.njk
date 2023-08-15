@@ -60,9 +60,9 @@ tags: case study
                     </div>
                 </div>
                 {# Summary #}
-                {% include "../_includes/case-studies/_user-flow-summary.njk" %}
+                {% renderFile "src/_includes/case-studies/_user-flow-summary.md" %}
                 {# Solution #}
-                {% include "../_includes/case-studies/_user-flow-solution.njk" %}
+                {% renderFile "src/_includes/case-studies/_user-flow-solution.md" %}
                 {# Case study body content #}
                 <div class="grid-layout-row py-10">
                     <div class="grid-layout-content">
@@ -82,7 +82,6 @@ tags: case study
                         {{ tocItem("1. Receive notification", "2", "#1.-receive-notification") }}
                         {{ tocItem("2. View contract information", "2", "#2.-view-contract-information") }}
                         {{ tocItem("3. Evaluate revenue metrics for the season", "2", "#3.-evaluate-revenue-metrics-for-the-season") }}
-                        {{ tocItem("4. Evaluate revenue and charges for an individual contract", "2", "#4.-evaluate-revenue-and-charges-for-an-individual-contract") }}
                         {{ tocItem("Conclusion", "1", "#conclusion") }}
                         {% endtableOfContents %}
                     </div>

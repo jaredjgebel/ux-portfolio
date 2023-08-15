@@ -127,7 +127,7 @@ Grain processors buy and collect grain from farmers, transporting it into the su
 
 While testing the feature to save contracts in the app, a farmer asked me a question: "Why don't grain processors send the contracts directly to us?"
 
-{% callout %}
+{% callout "bg-primary-50" %}
 I realized that within the broader business context, grain processors could and _should_ be incentivized to use Market Watcher.
 {% endcallout %}
 

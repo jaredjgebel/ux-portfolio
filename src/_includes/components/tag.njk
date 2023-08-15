@@ -1,10 +1,10 @@
 {% macro tag(label, background) %}
     {% if background === "light" %}
-        <div class="tag bg-neutral-10 border border-primary-30 px-3 rounded-sm">
+        <div class="tag bg-neutral-10 border border-primary-30 px-3 rounded-sm text-center">
             <span class="text-sm font-normal leading-[0.875rem]">{{ label }}</span>
         </div>
     {% elif background === "dark" %}
-        <div class="tag bg-primary-50 px-3 rounded-sm">
+        <div class="tag bg-primary-50 px-3 rounded-sm text-center">
             <span class="text-sm font-normal leading-[0.875rem] text-neutral-0">{{ label }}</span>
         </div>
     {% endif %}

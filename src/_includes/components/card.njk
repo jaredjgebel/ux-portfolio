@@ -7,7 +7,7 @@
       <div class="card h-[30rem] w-full bg-neutral-0 shadow-md rounded-md grayscale">
         <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
           <img class="w-full h-full object-cover my-0 rounded-t-lg" src={{ imagePathString }}/>
-          <div class="absolute top-4 right-4">
+          <div class="absolute top-4 left-4">
             {% for tagLabel in tags %}
               {{ tag(tagLabel, "dark") }}
             {% endfor %}
@@ -28,7 +28,7 @@
           focus:outline-primary-80 active:outline active:outline-2 active:outline-primary-80">
         <div class="flex flex-col items-center justify-center relative icon-area rounded-t-md h-1/2">
           <img class="w-full h-full object-cover my-0 rounded-t-lg" src={{ imagePathString }}/>
-          <div class="absolute top-4 right-4 flex flex-col gap-2">
+          <div class="absolute top-4 left-4 flex flex-col gap-2">
             {% for tagLabel in tags %}
               {{ tag(tagLabel, "dark") }}
             {% endfor %}

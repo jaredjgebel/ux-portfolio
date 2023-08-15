@@ -10,14 +10,14 @@ tags: case study
     <main>
         {# Header #}
         <header>
-            {# Hero and title #}
-            <div class="hero-image">
+            {# Header image #}
+            <div class="header-image">
                 <img
-                    class="h-[320px] xl:h-[400px] w-full object-cover"
-                    src="../../assets/images/case-studies/product-design/aerial-harvest.webp"
+                    class="h-[320px] xl:h-[400px] w-full object-cover object-left md:object-bottom max:object-left"
+                    src="../../assets/images/case-studies/research-value/bins.webp"
                     alt=""
                     width="1920"
-                    height="881"/>
+                    height="1187"/>
             </div>
             {# Title  #}
             <div class="title grid-layout-row bg-richBrown text-neutral-0">
@@ -36,22 +36,18 @@ tags: case study
         <div id="overview" class="overview-intro-sections grid-layout-row">
             <div class="grid-layout-content pt-6 pb-8">
                 {# Hero image #}
-                <!-- Contract Summary Mockup -->
+                <!-- Cash bids mockup -->
                     <figure class="w-full col-span-full xl:col-start-3 xl:col-span-12 flex justify-center"> <picture>
                         <source
-                            srcset="../../assets/images/case-studies/product-design/contract-summary-mockup.webp"
+                            srcset="../../assets/images/case-studies/research-value/cash-bids-tablet.webp"
                             media="(min-width:43rem)"
-                            width="2232"
-                            height="1880"/>
-                        <img
-                            src="../../assets/images/case-studies/product-design/contract-summary-mockup-sm.webp"
-                            alt=""
-                            width="432"
-                            height="1191"/>
+                            width="1704"
+                            height="1319"/>
+                        <img src="../../assets/images/case-studies/research-value/cash-bids-sm.webp" alt="" width="585" height="1266"/>
                     </picture>
                 </figure>
                 {# Overview #}
-                <div class="col-span-full prose prose-custom-fonts unordered-list-items">
+                <div class="col-span-full prose prose-custom-fonts unordered-list-items mt-8">
                     {% renderFile "src/_includes/case-studies/_research-value-overview.md" %}
                 </div>
             </div>
@@ -74,15 +70,19 @@ tags: case study
                 {# Table of contents #}
                 {% tableOfContents "richBrown" %}
                 {{ tocItem("Overview", "1", "#overview") }}
-                {{ tocItem("Being a successful farmer requires thinking like a stock trader", "1", "#being-a-successful-farmer-requires-thinking-like-a-stock-trader") }}
-                {{ tocItem("Increasing revenue and mitigating price risk", "1", "#increasing-revenue-and-mitigating-price-risk") }}
-                {{ tocItem("Monitoring market prices", "2", "#monitoring-market-prices") }}
-                {{ tocItem("Evaluating potential contracts", "2", "#evaluating-potential-contracts") }}
-                {{ tocItem("Engaging the other side of the marketplace", "1", "#engaging-the-other-side-of-the-marketplace") }}
-                {{ tocItem("Sending contract specs directly to farmers", "2", "#sending-contract-specs-directly-to-farmers") }}
-                {{ tocItem("Facilitating grain sales", "2", "#facilitating-grain-sales") }}
-                {{ tocItem("Promoting contract offerings", "2", "#promoting-contract-offerings") }}
-                {{ tocItem("Conclusion: Prioritizing multiple players in a marketplace", "1", "#prioritizing-multiple-players-in-a-marketplace") }}
+                {{ tocItem("The business problem", "2", "#the-business-problem") }}
+                {{ tocItem("The solution", "2", "#the-solution") }}
+                {{ tocItem("My research process", "1", "#my-research-process") }}
+                {{ tocItem("Secondary sources", "2", "#secondary-sources") }}
+                {{ tocItem("User research", "2", "#user-research") }}
+                {{ tocItem("Findings", "2", "#findings") }}
+                {{ tocItem("Impact of research", "1", "#impact-of-research") }}
+                {{ tocItem("Features that directly address workflow pain points", "2", "#features-that-directly-address-workflow-pain-points") }}
+                {{ tocItem("Shaping my design process", "2", "#shaping-my-design-process") }}
+                {{ tocItem("Creating a simple interface for a complex product", "2", "#creating-a-simple-interface-for-a-complex-product") }}
+                {{ tocItem("Getting the details right", "2", "#getting-the-details-right") }}
+                {{ tocItem("Linking together features to facilitate market strategies", "2", "#linking-together-features-to-facilitate-market-strategies") }}
+                {{ tocItem("Conclusion", "1", "#conclusion") }}
                 {% endtableOfContents %}
             </div>
         </div>

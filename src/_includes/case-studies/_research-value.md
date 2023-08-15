@@ -12,16 +12,24 @@ My sources included:
 
 I interviewed grain farmers, focusing on how they check the markets, their market strategies for selling grain, and their complete workflow when they decide to make a sale or place a hedge.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+   <img class="my-0 w-full max-w-md" src="../../assets/images/case-studies/research-value/interview-protocol.webp" alt="" width="836" height="537" />
+</div>
 
 Through observations, I learned about their technical literacy, the format in which they expect to see the information, and general pain points around using technology.
 
-\*\*\* \
-CTA link: [My interview protocol](https://docs.google.com/document/d/1bgfEe1HIbp1eq2GIZKgShCSli1iOXSMcC3CKQY8APm8/edit)
-
----
+<div class="flex flex-row items-center my-5 ml-[-0.75rem]">
+    <a href="https://docs.google.com/document/d/1bgfEe1HIbp1eq2GIZKgShCSli1iOXSMcC3CKQY8APm8/edit?usp=sharing" target="_blank" class="cta flex w-fit px-3 py-3 gap-3 rounded-[4px] group focus:outline focus:outline-2 active:outline active:outline-2 active:outline-primary-50">
+        <div class="shrink-0 flex items-center">
+    <svg width="24" height="24" class="fill-primary-70 group-hover:fill-primary-50 group-active:fill-primary-50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 5v14H5V5h14zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+    <path d="M14 17H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+</svg>
+</div>
+      <span class="sm-body-featured text-primary-70 group-hover:text-primary-50 group-active:text-primary-50
+        relative">The full interview protocol</span>
+    </a>
+  </div>
 
 ### Findings
 
@@ -29,15 +37,15 @@ CTA link: [My interview protocol](https://docs.google.com/document/d/1bgfEe1HIbp
 
 As the chart below demonstrates, there is a complex interplay between several entities in the marketplace.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.jpg "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+{% lightbox "case-studies/research-value/grain-exchange-chart", "1324", "755" %}
+</div>
 
 By understanding the scope of the marketplace, I was able to think critically about how local processors and derivatives brokers may be able to find use in the application by interacting with farmers.
 
 #### Trading and hedging strategies
 
-The variety of trading and hedging strategies farmers can utilize is a large topic unto itself. I focused on forward contracts and futures contracts, the most popular options for hedging.
+The variety of trading and hedging strategies farmers can utilize is a large topic unto itself. I focused on **forward contracts** and **futures contracts**, the most popular options for hedging.
 
 1. **Forward contracts** allow farmers to sell grain to local processors ahead of harvest when market prices are high
    - Benefit: Price is completely locked in for the season with a local processor
@@ -61,7 +69,11 @@ I learned that as a user base, farmers are:
 - Doubtful of their technical capabilities
 - Expecting to see market data in the standardized format
 
+{% callout "bg-richBrown" %}
+
 From my research, I learned that simply replicating their farmers’ existing workflows into technology was not going to be enough. Farmers would not deal with the hassle of learning how to use a new application unless it provided significant value.
+
+{% endcallout %}
 
 I used my research findings with an eye for what would give farmers the most opportunity to increase their profits.
 
@@ -81,7 +93,18 @@ To that end, I emphasized the market strategies that the personas engaged in, em
 
 {% accordion "4" "personas" %}
 
-CTA link: [The complete Market Watcher personas](https://docs.google.com/document/d/1XJsz47POAVJER1EOj32qGjbZtVwix7nO84YmfVRbYY0/edit)
+<div class="flex flex-row items-center my-5">
+    <a href="https://docs.google.com/document/d/1XJsz47POAVJER1EOj32qGjbZtVwix7nO84YmfVRbYY0/edit?usp=sharing" target="_blank" class="cta flex w-fit px-3 py-3 gap-3 rounded-[4px] group focus:outline focus:outline-2 active:outline active:outline-2 active:outline-primary-50">
+        <div class="shrink-0 flex items-center">
+    <svg width="24" height="24" class="fill-primary-70 group-hover:fill-primary-50 group-active:fill-primary-50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 5v14H5V5h14zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+    <path d="M14 17H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+</svg>
+</div>
+      <span class="sm-body-featured text-primary-70 group-hover:text-primary-50 group-active:text-primary-50
+        relative">The complete Market Watcher personas</span>
+    </a>
+  </div>
 
 Because the personas were based on reputable sources, I was more comfortable making them a central part of the design process. To that end, I wrote jobs-to-be-done style user stories for each persona that directly translated into user flows.
 
@@ -93,15 +116,15 @@ In a data-heavy interface, progressive disclosure is necessary to create hierarc
 
 For example, I used Carbon Design System to build out the interface, and I made heavy use of data tables. According to the design system guidelines, an overflow menu is the suggested UI element to list actions to take on a data table item.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+{% lightbox "case-studies/research-value/cash-bids-overflow", "1470", "649" %}
+</div>
 
 However, I was concerned that farmers would not find the overflow menu. To that end, the actions for each data table item are listed as labelled icon buttons.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+{% lightbox "case-studies/research-value/cash-bids-table-row", "1470", "445" %}
+</div>
 
 The buttons take up more room, so it’s a slightly less elegant solution. However, in this case the increased visibility of the actions was more important.
 
@@ -111,9 +134,9 @@ The buttons take up more room, so it’s a slightly less elegant solution. Howev
 
 Grain contracts are detailed documents. There are many specs associated with a contract, including storage rates, moisture requirements, and delivery charges.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+{% lightbox "case-studies/research-value/my-contracts", "1566", "2103" %}
+</div>
 
 My research allowed me to dig into the small contract details that increase the relevancy of the product. After all, I couldn’t expect saved contracts to have meaning if they were missing important charges.
 
@@ -121,9 +144,9 @@ My research allowed me to dig into the small contract details that increase the 
 
 Another key feature of the application is an overview of seasonal revenue statistics. Without research, I wouldn’t have understood which statistics held the most importance to farmers.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+{% lightbox "case-studies/research-value/contract-summary", "1470", "1069" %}
+</div>
 
 For example, in the contract summary above, _Bushels sold (per acre)_, _Average price (per bushel)_, and _Revenue (per acre)_ all have significant meaning to farmers. I may not have included any of them without learning more about the topic.
 
@@ -133,9 +156,9 @@ Finally, I crafted workflows that integrated my knowledge of market strategies. 
 
 Because I was aware of that strategy, I knew that farmers would want to closely follow changes in that contract price, particularly if prices fall. In the _[Add a futures contract](https://www.figma.com/file/Tjw04NNIDyaZpHf6ITOOMC/Market-Watcher?type=design&node-id=823%3A99665&mode=design&t=mEC4OT1tdtCOJOUI-1)_ workflow, I inserted a screen to add a market alert for the same month. The _Price Threshold_ alert send a notification to the farmer when prices go fifty cents above or below the entered contract price of 6.53.
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
+<div class="inline-flex flex-col items-center w-full my-4">
+{% lightbox "case-studies/research-value/add-market-alert", "951", "772" %}
+</div>
 
 This screen encourages farmers to sign up for a market alert. With knowledge of that strategy, the market alert request is timely and appropriate. If accepted by the user, an important feature to encourage further use of the product will be activated.
 
@@ -143,4 +166,13 @@ This screen encourages farmers to sign up for a market alert. With knowledge of 
 
 The process illustrated here exemplifies my approach to research and design: extending the value proposition by substantively understanding a problem area and integrating that knowledge into my designs. In this case, I needed to have a thorough understanding of the user and business perspectives to simplify farmers’ workflows.
 
-The more work it is for a user to successfully integrate a product into their business, the higher the potential reward from using said product has to be. With the specific use case and target user, even though the potential for additional profits was high, it was important to take every opportunity to reduce the effort for farmers to get started and see the value in the product.
+{% callout "bg-richBrown" %}
+The more work it is for a user to successfully integrate a product into their business, the higher the potential reward from using said product has to be.
+{% endcallout %}
+
+With the specific use case and target user, even though the potential for additional profits was high, it was important to take every opportunity to reduce the effort for farmers to get started and see the value in the product.
+
+### Attributions
+
+- Photo by [Svitlana Rusak](https://unsplash.com/@svitlana_rusak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/-neuFYni19o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Jim Witkowski](https://unsplash.com/@jcw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/ZaVUNY5rHmY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

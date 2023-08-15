@@ -140,15 +140,15 @@ module.exports = function (eleventyConfig) {
 </script>`
   });
 
-  eleventyConfig.addPairedShortcode("callout", function (content) {
-    return `<div class="callout max-w-prose bg-primary-50 rounded-lg text-neutral-0 px-6 py-4">
+  eleventyConfig.addPairedShortcode("callout", function (content, backgroundColor) {
+    return `<div class="callout max-w-prose ${backgroundColor} rounded-lg text-neutral-0 px-6 py-4">
     ${content} 
    </div>`
   });
 
   eleventyConfig.addPairedShortcode("featuredSection", function (content, bgColor) {
     return `<div class="overview-section grid-layout-row text-neutral-0 ${bgColor}">
-      <div class="col-span-full py-10 flex flex-col prose-xl prose-custom-fonts max-w-prose prose-h3:mt-0 prose-p:sm-body-featured prose-p:mb-3 prose-p:last-of-type:mb-0 prose-strong:font-semibold sm:prose-strong:prose-xl sm:prose-strong:leading-5 prose-li:list-disc-marker:text-neutral-10 prose-li:list-outside">
+      <div class="col-span-full pt-10 pb-8 flex flex-col prose-xl prose-custom-fonts max-w-prose prose-h3:mt-0 prose-p:sm-body-featured prose-p:mb-3 prose-p:last-of-type:mb-0 prose-strong:font-semibold sm:prose-strong:prose-xl sm:prose-strong:leading-5 prose-li:list-disc-marker:text-neutral-10 prose-li:list-outside">
         ${content}
       </div>
     </div>`
