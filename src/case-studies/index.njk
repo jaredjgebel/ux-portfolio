@@ -9,7 +9,9 @@ description: UX and product design case studies by Jared Gebel
 {% block content %}
     <div class="grid-layout-row">
         <div class="grid-col-layout">
-            {{ ghostButton("Home") }}
+            <div class="lg:hidden">
+                {{ ghostButton("Home") }}
+            </div>
             <div class="prose py-10 xl:py-12">
                 <h1 class="sm-heading-1 xl:xl-heading-1">Case studies</h1>
                 {% include "../_includes/_cards-case-studies.njk" %}

@@ -10,7 +10,9 @@ description: List of posts for Jared Gebel's UX journal/blog
 {% block content %}
   <div class="grid-layout-row">
     <div class="grid-col-layout">
-      {{ ghostButton("Home") }}
+      <div class="lg:hidden">
+        {{ ghostButton("Home") }}
+      </div>
       <div class="prose prose-custom-fonts first-header-no-margin italic-in-heading ordered-list-items unordered-list-items py-10
           xl:py-12">
         <h1>Journal</h1>
