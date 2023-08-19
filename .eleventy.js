@@ -193,7 +193,7 @@ module.exports = function (eleventyConfig) {
           "content": `<li class="pl-3 sm-paragraph-short xl:xl-paragraph-short mx-5 max:mx-12 mt-[-0.5rem]">Sells crops to local processors ahead of harvest on contract</li><li class="pl-3 sm-paragraph-short xl:xl-paragraph-short mx-5 max:mx-12">Pays close attention to market prices throughout the season and how prices vary among different local processors</li>`
         },
         {
-          "heading": "The Forward Contractor",
+          "heading": "The Derviatives Hedger",
           "content": `<li class="pl-3 sm-paragraph-short xl:xl-paragraph-short mx-5 max:mx-12 mt-[-0.5rem] list-outside">Uses hedging strategies to optimize prices</li><li class="pl-3 sm-paragraph-short xl:xl-paragraph-short mx-5 max:mx-12 list-inside">Has a sophisticated understanding of the interplay of the markets and a higher risk tolerance</li>`
         }
       ]
