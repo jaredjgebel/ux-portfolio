@@ -64,53 +64,5 @@
     "link": "https://github.com/jaynewey/charm-icons",
     "author": "Charm Icons",
     "paintType": "stroke"
-  },
-  {
-    "iconName": "Screen",
-    "fileName": "monitor",
-    "link": "https://thenounproject.com/icon/screen-3040227/",
-    "author": "Justin Blake",
-    "website": "NounProject.com",
-    "paintType": "fill"
-  },
-  {
-    "iconName": "UX Roadmap",
-    "fileName": "road",
-    "link": "https://thenounproject.com/icon/ux-roadmap-229099/",
-    "author": "Yu Luck",
-    "website": "NounProject.com",
-    "paintType": "fill"
-  },
-  {
-    "iconName": "Assist",
-    "fileName": "text-boxes",
-    "link": "https://thenounproject.com/icon/assist-3147031/",
-    "author": "Justin Blake",
-    "website": "NounProject.com",
-    "paintType": "fill"
-  },
-  {
-    "iconName": "Connection",
-    "fileName": "user-bubbles",
-    "link": "https://thenounproject.com/icon/connection-4180704/",
-    "author": "Justin Blake",
-    "website": "NounProject.com",
-    "paintType": "fill"
-  },
-  {
-    "iconName": "Evaluation",
-    "fileName": "evaluation",
-    "link": "https://thenounproject.com/icon/evaluation-3644103/",
-    "author": "Justin Blake",
-    "website": "NounProject.com",
-    "paintType": "fill"
-  },
-  {
-    "iconName": "Iteration",
-    "fileName": "iteration",
-    "link": "https://thenounproject.com/icon/iteration-339017/",
-    "author": "Yu luck",
-    "website": "NounProject.com",
-    "paintType": "fill"
   }
 ]
