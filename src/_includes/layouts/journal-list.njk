@@ -29,28 +29,30 @@
     {% include "../_nav.njk" %}
     <div class="grid-layout-base bg-neutral-10">
       {% include "../_sidebar.njk" %}
-      <div class="">
-        {% block content %}
-          {{ content | safe }}
-        {% endblock %}
+      <div class="flex flex-col min-h-screen">
+        <div class="grow">
+          {% block content %}
+            {{ content | safe }}
+          {% endblock %}
+        </div>
         {% include "../_footer.njk" %}
       </div>
     </div>
   </body>
   {# <body class="">
-                  {% include "../_nav.njk" %}
-                  <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
-                    {% include "../_sidebar.njk" %}
-                    <div>
-                      <div class="grid-layout-row">
-                        <div class="grid-layout-content">
-                          {% block content %}
-                            {{ content | safe }}
-                          {% endblock %}
-                        </div>
-                      </div>
-                      {% include "../_footer.njk" %}
-                    </div>
-                  </div>
-                </body> #}
+                            {% include "../_nav.njk" %}
+                            <div class="grid-layout-base min-h-screen grid-rows-[1fr] bg-neutral-10 sm:flex flex-col justify-between lg:grid">
+                              {% include "../_sidebar.njk" %}
+                              <div>
+                                <div class="grid-layout-row">
+                                  <div class="grid-layout-content">
+                                    {% block content %}
+                                      {{ content | safe }}
+                                    {% endblock %}
+                                  </div>
+                                </div>
+                                {% include "../_footer.njk" %}
+                              </div>
+                            </div>
+                          </body> #}
 </html>
