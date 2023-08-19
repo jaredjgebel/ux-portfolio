@@ -71,7 +71,7 @@ I learned that as a user base, farmers are:
 
 {% callout "bg-richBrown" %}
 
-From my research, I learned that simply replicating their farmers’ existing workflows into technology was not going to be enough. Farmers would not deal with the hassle of learning how to use a new application unless it provided significant value.
+From my research, I learned that simply replicating farmers’ existing workflows into technology was not going to be enough. Farmers would not deal with the hassle of learning how to use a new application unless it provided significant value.
 
 {% endcallout %}
 
